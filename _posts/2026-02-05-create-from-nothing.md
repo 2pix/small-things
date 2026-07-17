@@ -5,9 +5,6 @@ category: black-cat
 date: 2026-02-05
 start_here: true
 ---
-This is part of The Black Cat — a novel in pieces.
-
-*Photo: a large bridge over a large body of water, by Enguerrand Photography on Unsplash.*
 
 Three decades ago I stood at an intersection where petrochemical industry met residential, flanked by the Yarra River. A strip of grass between dusty road and water. Thirty meters long. Six meters wide.
 
