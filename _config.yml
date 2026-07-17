@@ -8,6 +8,10 @@ theme: null
 markdown: kramdown
 permalink: /:categories/:year-:month-:day-:title/
 
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
 sections:
   - key: black-cat
     label: Black Cat

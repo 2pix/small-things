@@ -57,6 +57,10 @@ a {
   opacity: 0.75;
 }
 
+.post__meta {
+  margin-bottom: var(--space-4);
+}
+
 .tag-pill {
   font-size: 0.875rem;
   letter-spacing: 0.02em;
@@ -165,6 +169,12 @@ main {
   overflow-x: auto;
   margin-top: var(--space-1);
   height: 7vh; /* mobile rail */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* old Edge */
+}
+
+.stories-row::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
 }
 
 .story-pill {
@@ -240,7 +250,7 @@ main {
   display: flex;
   justify-content: space-between;
   gap: var(--space-2);
-  padding: var(--space-3) 0;
+  padding: var(--space-3) 0 var(--space-8); /* extra bottom clearance so back-to-top (fixed, bottom-right) never sits over the Next link */
   border-top: 1px solid;
 }
 
