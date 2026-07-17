@@ -131,11 +131,20 @@ a {
 main {
   max-width: 640px;
   margin: 0 auto;
-  padding: var(--space-3) 5%; /* 5% either side so text doesn't slam into the phone edge */
+  padding: var(--space-2) 5%; /* 5% either side so text doesn't slam into the phone edge */
 }
 
 .site-header {
-  padding: var(--space-3);
+  padding: var(--space-3) var(--space-3) var(--space-2);
+}
+
+.latest-label {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  opacity: 0.6;
+  margin: 0 0 var(--space-1);
 }
 
 .stories-row {

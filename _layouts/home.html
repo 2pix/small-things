@@ -5,6 +5,7 @@ layout: default
 {% assign latest = site.posts | where_exp: "p", "p.start_here != true" | slice: 0, 3 %}
 
 <section class="latest">
+  <p class="latest-label">Latest</p>
   {% for post in latest %}
     {% include post-card.html post=post %}
   {% endfor %}
