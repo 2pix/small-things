@@ -1,0 +1,13 @@
+---
+layout: default
+---
+{% assign posts = site.categories[page.category] %}
+
+<section class="section-feed">
+  <h1 class="section-label">{{ page.title }}</h1>
+  {% for post in posts %}
+    {% include post-card.html post=post %}
+  {% else %}
+    <p class="empty-state">Nothing filed here yet.</p>
+  {% endfor %}
+</section>

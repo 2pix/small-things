@@ -1,0 +1,31 @@
+title: Small Things
+description: Black Cat + Art of Small Things
+url: "https://2pix.github.io"
+baseurl: "/small-things"
+
+theme: null
+
+markdown: kramdown
+permalink: /:categories/:year-:month-:day-:title/
+
+sections:
+  - key: black-cat
+    label: Black Cat
+  - key: the-floor
+    label: The Floor
+  - key: small-things
+    label: Small Things
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .bundle

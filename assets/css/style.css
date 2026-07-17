@@ -1,0 +1,59 @@
+/* Structural only — no colour, no type choices yet. That's the next layer. */
+
+:root {
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-6: 48px;
+  --space-8: 64px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: var(--space-3);
+}
+
+.site-header {
+  padding: var(--space-3);
+}
+
+.stories-row {
+  display: flex;
+  gap: var(--space-2);
+  overflow-x: auto;
+  margin-top: var(--space-2);
+}
+
+.story-pill {
+  white-space: nowrap;
+  padding: var(--space-1) var(--space-2);
+  border: 1px solid;
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+.post-card {
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid;
+}
+
+.post-card__title a {
+  text-decoration: none;
+}
+
+.site-footer {
+  padding: var(--space-3);
+  text-align: center;
+}

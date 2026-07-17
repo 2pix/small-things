@@ -1,0 +1,7 @@
+<nav class="stories-row">
+  <a href="{{ '/' | relative_url }}" class="story-pill{% if page.url == '/' %} is-active{% endif %}">Latest</a>
+  {% for section in site.sections %}
+  <a href="{{ site.baseurl }}/{{ section.key }}/" class="story-pill{% if page.category == section.key %} is-active{% endif %}">{{ section.label }}</a>
+  {% endfor %}
+  <a href="{{ '/about/' | relative_url }}" class="story-pill{% if page.url == '/about/' %} is-active{% endif %}">About</a>
+</nav>

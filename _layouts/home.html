@@ -1,0 +1,18 @@
+---
+layout: default
+---
+{% assign start_here = site.posts | where: "start_here", true | first %}
+{% assign latest = site.posts | where_exp: "p", "p.start_here != true" | slice: 0, 3 %}
+
+<section class="latest">
+  <h1 class="section-label">Latest</h1>
+  {% for post in latest %}
+    {% include post-card.html post=post %}
+  {% endfor %}
+</section>
+
+{% if start_here %}
+<section class="start-here">
+  {% include post-card.html post=start_here %}
+</section>
+{% endif %}
