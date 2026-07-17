@@ -116,16 +116,6 @@ a {
   padding: var(--space-4) 0;
 }
 
-.post-card--start-here {
-  border: 1px solid var(--color-accent);
-  background: color-mix(in srgb, var(--color-accent) 10%, transparent);
-  padding: var(--space-4);
-}
-
-.post-card--start-here .post-card__title {
-  font-size: 1.5rem;
-}
-
 main {
   max-width: 640px;
   margin: 0 auto;
@@ -198,6 +188,16 @@ main {
 .post-card {
   padding: var(--space-3) 0;
   border-bottom: 1px solid;
+}
+
+.post-card.post-card--start-here {
+  border: 1px solid var(--color-accent);
+  background: color-mix(in srgb, var(--color-accent) 10%, transparent);
+  padding: var(--space-4);
+}
+
+.post-card--start-here .post-card__title {
+  font-size: 1.5rem;
 }
 
 .post-card__title a {
