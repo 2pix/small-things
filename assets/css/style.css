@@ -22,7 +22,7 @@ body {
 main {
   max-width: 640px;
   margin: 0 auto;
-  padding: var(--space-3);
+  padding: var(--space-3) 5%; /* 5% either side so text doesn't slam into the phone edge */
 }
 
 .site-header {
@@ -31,9 +31,11 @@ main {
 
 .stories-row {
   display: flex;
+  align-items: center;
   gap: var(--space-2);
   overflow-x: auto;
   margin-top: var(--space-2);
+  height: 7vh; /* mobile rail */
 }
 
 .story-pill {
@@ -44,6 +46,23 @@ main {
   text-decoration: none;
 }
 
+/* Second-tier taxonomy — not wired into any section yet, no content needs it. Reserved so the height is decided before it's built. */
+.section-tags {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  overflow-x: auto;
+  height: 3vh;
+}
+
+.tag-pill {
+  white-space: nowrap;
+  padding: var(--space-1) var(--space-2);
+  border: 1px solid;
+  border-radius: 1px;
+  text-decoration: none;
+}
+
 .post-card {
   padding: var(--space-3) 0;
   border-bottom: 1px solid;
@@ -51,6 +70,19 @@ main {
 
 .post-card__title a {
   text-decoration: none;
+}
+
+.post-pagination {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-2);
+  padding: var(--space-3) 0;
+  border-top: 1px solid;
+}
+
+.post-pagination__next {
+  margin-left: auto;
+  text-align: right;
 }
 
 .site-footer {

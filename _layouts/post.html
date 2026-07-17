@@ -9,3 +9,22 @@ layout: default
     {{ content }}
   </div>
 </article>
+
+{% assign section_posts = site.categories[page.category] | sort: "date" %}
+{% assign post_index = 0 %}
+{% for p in section_posts %}
+  {% if p.url == page.url %}{% assign post_index = forloop.index0 %}{% endif %}
+{% endfor %}
+{% assign prev_index = post_index | minus: 1 %}
+{% assign next_index = post_index | plus: 1 %}
+
+<nav class="post-pagination">
+  {% if prev_index >= 0 %}
+    {% assign prev_post = section_posts[prev_index] %}
+    <a href="{{ prev_post.url | relative_url }}" class="post-pagination__prev">← {{ prev_post.title }}</a>
+  {% endif %}
+  {% if next_index < section_posts.size %}
+    {% assign next_post = section_posts[next_index] %}
+    <a href="{{ next_post.url | relative_url }}" class="post-pagination__next">{{ next_post.title }} →</a>
+  {% endif %}
+</nav>
