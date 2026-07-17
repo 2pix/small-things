@@ -83,9 +83,9 @@ a {
 }
 
 .site-subtitle {
-  font-size: 0.875rem;
+  font-size: 0.55rem;
   opacity: 0.75;
-  margin: var(--space-1) 0 0;
+  margin: 4px 0 0;
 }
 
 .section-label,
