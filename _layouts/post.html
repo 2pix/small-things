@@ -1,10 +1,14 @@
 ---
 layout: default
 ---
+{% assign section_label = page.category %}
+{% for section in site.sections %}
+  {% if section.key == page.category %}{% assign section_label = section.label %}{% endif %}
+{% endfor %}
 <article class="post">
   <h1 class="post__title">{{ page.title }}</h1>
   {% if page.subtitle %}<p class="post__subtitle">{{ page.subtitle }}</p>{% endif %}
-  <p class="post__meta">{{ page.category }} · {{ page.date | date: "%-d %b %Y" }}</p>
+  <p class="post__meta">{{ section_label }} · {{ page.date | date: "%-d %b %Y" }}</p>
   <div class="post__body">
     {{ content }}
   </div>

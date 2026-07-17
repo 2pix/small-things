@@ -1,6 +1,10 @@
+{% assign card_section_label = include.post.category %}
+{% for section in site.sections %}
+  {% if section.key == include.post.category %}{% assign card_section_label = section.label %}{% endif %}
+{% endfor %}
 <article class="post-card{% if include.post.start_here %} post-card--start-here{% endif %}">
   {% if include.post.start_here %}<p class="post-card__eyebrow">Start Here →</p>{% endif %}
   <h2 class="post-card__title"><a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a></h2>
   {% if include.post.subtitle %}<p class="post-card__subtitle">{{ include.post.subtitle }}</p>{% endif %}
-  <p class="post-card__meta">{{ include.post.category }} · {{ include.post.date | date: "%-d %b %Y" }}</p>
+  <p class="post-card__meta">{{ card_section_label }} · {{ include.post.date | date: "%-d %b %Y" }}</p>
 </article>
