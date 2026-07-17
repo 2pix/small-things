@@ -57,3 +57,35 @@ main {
   padding: var(--space-3);
   text-align: center;
 }
+
+/* Desktop — first-pass breakpoint, still structural only. Rail 5% / margin 15% / text+images 65% / margin 15%. */
+@media (min-width: 1024px) {
+  .site-header,
+  main,
+  .site-footer {
+    padding-left: 20%; /* rail 5% + left margin 15% */
+    padding-right: 15%; /* right margin */
+  }
+
+  main {
+    max-width: none;
+  }
+
+  .stories-row {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 5%;
+    height: 100vh;
+    flex-direction: column;
+    overflow-x: visible;
+    overflow-y: auto;
+    margin-top: 0;
+    padding-top: var(--space-6);
+    z-index: 10;
+  }
+
+  .post__body {
+    text-align: justify;
+  }
+}
