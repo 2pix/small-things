@@ -67,7 +67,7 @@ a {
 }
 
 .story-pill__label {
-  font-size: 0.6875rem;
+  font-size: 0.5625rem;
   letter-spacing: 0.02em;
 }
 
@@ -165,16 +165,13 @@ main {
 .stories-row {
   display: flex;
   align-items: center;
-  gap: var(--space-2);
+  gap: var(--space-3);
   overflow-x: auto;
   margin-top: var(--space-1);
-  height: 11vh; /* mobile rail - grown to fit larger circles */
+  height: 13vh; /* mobile rail - grown to fit larger circles */
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* old Edge */
-  /* bleed past site-header's padding so an overflowing last item can peek/cut off at the true screen edge - the Instagram-stories "there's more, swipe" cue */
-  margin-left: calc(-1 * var(--space-3));
-  margin-right: calc(-1 * var(--space-3));
-  padding-left: var(--space-3);
+  /* symmetric: same margin left (before Black Cat) as right (after About) - inherits site-header's equal left/right padding, no override needed */
 }
 
 .stories-row::-webkit-scrollbar {
@@ -198,8 +195,8 @@ main {
 }
 
 .story-pill__icon {
-  width: 44px;
-  height: 44px;
+  width: 60px;
+  height: 60px;
   fill: none;
   stroke: currentColor;
   stroke-width: 1.5;
