@@ -168,9 +168,13 @@ main {
   gap: var(--space-2);
   overflow-x: auto;
   margin-top: var(--space-1);
-  height: 7vh; /* mobile rail */
+  height: 11vh; /* mobile rail - grown to fit larger circles */
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* old Edge */
+  /* bleed past site-header's padding so an overflowing last item can peek/cut off at the true screen edge - the Instagram-stories "there's more, swipe" cue */
+  margin-left: calc(-1 * var(--space-3));
+  margin-right: calc(-1 * var(--space-3));
+  padding-left: var(--space-3);
 }
 
 .stories-row::-webkit-scrollbar {
@@ -194,8 +198,8 @@ main {
 }
 
 .story-pill__icon {
-  width: 20px;
-  height: 20px;
+  width: 44px;
+  height: 44px;
   fill: none;
   stroke: currentColor;
   stroke-width: 1.5;
