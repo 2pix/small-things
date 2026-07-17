@@ -243,6 +243,7 @@ main {
 }
 
 .post-card__title a {
+  color: var(--color-text);
   text-decoration: none;
 }
 
