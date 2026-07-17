@@ -113,6 +113,7 @@ a {
 
 .start-here {
   margin-top: var(--space-6);
+  padding: var(--space-4) 0;
 }
 
 .post-card--start-here {
