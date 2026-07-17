@@ -3,6 +3,7 @@ title: Create from Nothing
 subtitle: "1: On attention, exile, and returning to what is already yours"
 category: black-cat
 date: 2026-02-05
+start_here: true
 ---
 This is part of The Black Cat — a novel in pieces.
 
