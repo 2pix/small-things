@@ -18,7 +18,7 @@ sections:
   - key: the-floor
     label: The Floor
   - key: small-things
-    label: The Art of Small Things
+    label: The Art of
 
 defaults:
   - scope:
