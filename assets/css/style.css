@@ -208,7 +208,9 @@ main {
 }
 
 .story-pill__label {
-  white-space: nowrap;
+  white-space: normal;
+  text-align: center;
+  max-width: 60px;
 }
 
 /* Second-tier taxonomy — not wired into any section yet, no content needs it. Reserved so the height is decided before it's built. */
@@ -318,11 +320,6 @@ main {
     margin-top: 0;
     padding-top: var(--space-6);
     z-index: 10;
-  }
-
-  .story-pill__label {
-    white-space: normal;
-    text-align: center;
   }
 
   .post__body {
