@@ -1,5 +1,3 @@
-/* Structural only — no colour, no type choices yet. That's the next layer. */
-
 :root {
   --space-1: 8px;
   --space-2: 16px;
@@ -7,6 +5,13 @@
   --space-4: 32px;
   --space-6: 48px;
   --space-8: 64px;
+
+  --color-bg: #1a1814;
+  --color-text: #e8e0d5;
+  --color-accent: #c17a4d;
+
+  --font-serif: "Lora", Georgia, "Times New Roman", serif;
+  --font-sans: system-ui, sans-serif;
 }
 
 * {
@@ -15,8 +20,96 @@
 
 body {
   margin: 0;
-  font-family: system-ui, sans-serif;
-  line-height: 1.5;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--color-accent);
+}
+
+/* UI chrome — nav, meta, controls — stays sans, smaller, quieter than the reading type */
+.stories-row,
+.section-tags,
+.post__meta,
+.post-card__meta,
+.post-card__eyebrow,
+.post-pagination,
+.site-footer,
+.back-to-top,
+.site-subtitle {
+  font-family: var(--font-sans);
+}
+
+.post__meta,
+.post-card__meta {
+  font-size: 0.8125rem;
+  letter-spacing: 0.02em;
+  opacity: 0.75;
+}
+
+.story-pill,
+.tag-pill {
+  font-size: 0.875rem;
+  letter-spacing: 0.02em;
+}
+
+.post-card__eyebrow {
+  font-size: 0.8125rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin: 0 0 var(--space-1);
+}
+
+.site-title {
+  font-family: var(--font-sans);
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.site-subtitle {
+  font-size: 0.875rem;
+  opacity: 0.75;
+  margin: var(--space-1) 0 0;
+}
+
+.section-label,
+.post__title,
+.post-card__title {
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.section-label {
+  font-size: 1.75rem;
+}
+
+.post__title {
+  font-size: 2rem;
+  margin-bottom: var(--space-1);
+}
+
+.post__subtitle,
+.post-card__subtitle {
+  font-style: italic;
+  opacity: 0.8;
+  margin-top: 0;
+}
+
+.post-card__title {
+  font-size: 1.25rem;
+  margin: 0 0 var(--space-1);
+}
+
+.post-card--start-here {
+  border: 1px solid var(--color-accent);
+  padding: var(--space-3);
 }
 
 main {
