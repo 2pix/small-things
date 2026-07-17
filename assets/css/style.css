@@ -19,7 +19,8 @@
 }
 
 h1,
-h2 {
+h2,
+p {
   margin: 0;
 }
 
@@ -115,7 +116,10 @@ a {
 .post-card__subtitle {
   font-style: italic;
   opacity: 0.8;
-  margin-top: 0;
+}
+
+.post__body p {
+  margin: 0 0 var(--space-3);
 }
 
 .post-card__title {
@@ -124,18 +128,18 @@ a {
 }
 
 .start-here {
-  margin-top: var(--space-4);
-  padding: var(--space-3) 0;
+  margin-top: var(--space-3);
+  padding: var(--space-2) 0;
 }
 
 main {
   max-width: 640px;
   margin: 0 auto;
-  padding: var(--space-2) 5%; /* 5% either side so text doesn't slam into the phone edge */
+  padding: var(--space-1) 5%; /* 5% either side so text doesn't slam into the phone edge */
 }
 
 .site-header {
-  padding: var(--space-3) var(--space-3) var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-1);
 }
 
 .latest-label {
@@ -152,7 +156,7 @@ main {
   align-items: center;
   gap: var(--space-2);
   overflow-x: auto;
-  margin-top: var(--space-2);
+  margin-top: var(--space-1);
   height: 7vh; /* mobile rail */
 }
 
@@ -241,6 +245,10 @@ main {
 .site-footer {
   padding: var(--space-3);
   text-align: center;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  opacity: 0.6;
 }
 
 .back-to-top {
