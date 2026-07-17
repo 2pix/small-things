@@ -240,13 +240,13 @@ main {
   display: block;
 }
 
-/* Desktop — first-pass breakpoint, still structural only. Rail 5% / margin 25% / text+images 45% / margin 25%. Was 65% text - too wide on large screens, narrowed. */
+/* Desktop — first-pass breakpoint, still structural only. Rail 5% / margin 23.75% / text+images 47.5% / margin 23.75%. Text is 50% of the 95% leftover after the rail. */
 @media (min-width: 1024px) {
   .site-header,
   main,
   .site-footer {
-    padding-left: 30%; /* rail 5% + left margin 25% */
-    padding-right: 25%; /* right margin */
+    padding-left: 28.75%; /* rail 5% + left margin 23.75% */
+    padding-right: 23.75%; /* right margin */
   }
 
   main {
@@ -265,6 +265,11 @@ main {
     margin-top: 0;
     padding-top: var(--space-6);
     z-index: 10;
+  }
+
+  .story-pill__label {
+    white-space: normal;
+    text-align: center;
   }
 
   .post__body {
