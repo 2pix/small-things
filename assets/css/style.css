@@ -10,7 +10,7 @@
   --color-text: #e8e0d5;
   --color-accent: #c17a4d;
 
-  --font-serif: "Lora", Georgia, "Times New Roman", serif;
+  --font-serif: "Noto Serif", Georgia, "Times New Roman", serif;
   --font-sans: "Montserrat", system-ui, sans-serif;
 }
 
@@ -120,6 +120,12 @@ a {
 
 .post__body p {
   margin: 0 0 var(--space-3);
+}
+
+.post__body p.divider {
+  text-align: center;
+  opacity: 0.6;
+  margin: var(--space-4) 0;
 }
 
 .post-card__title {

@@ -16,7 +16,7 @@ I asked her what she meant.
 
 She wasn't throwing it away. But I understood why it felt that way.
 
-❖
+<p class="divider">❖</p>
 
 Two days later I had coffee with someone else.
 
@@ -28,7 +28,7 @@ She didn't know which direction to be exhausted toward.
 
 I thought about her for the rest of the week. About the fact that she had tried every version available — employed, then free, then employed again — and each one was wrong in a different way.
 
-❖
+<p class="divider">❖</p>
 
 There is a specific weight that comes with having been given everything.
 
@@ -38,7 +38,7 @@ But underneath the gratitude, something else. The sense that you owe a particula
 
 The survival was not meant to be the whole story. It was meant to be the floor.
 
-❖
+<p class="divider">❖</p>
 
 The formula was real. That is the part that makes this hard to talk about.
 
@@ -46,7 +46,7 @@ The founding generation proved it. They handed it to their children as truth, be
 
 There is a second problem, quieter than the first. The formula doesn't just point in the wrong direction. It leaves no room to find another one. When every unexpected thing is a calculation — no breathing room, the body running the numbers constantly — the question of what you're running it for cannot get in. You would need to stop first. And stopping requires ground.
 
-❖
+<p class="divider">❖</p>
 
 What it looks like when something shifts is almost embarrassingly small.
 
@@ -58,13 +58,13 @@ Neither of them is rejecting what was given. They are receiving it more complete
 
 Both of them had enough ground to do this. Not comfort — ground. Enough that the full survival calculation wasn't running at every moment, leaving a margin where the question could be heard. That is not incidental. That is what the floor was always for.
 
-❖
+<p class="divider">❖</p>
 
 The guilt says: they had nothing and I have everything and now I am saying everything is not enough. The guilt says: do you know what your grandmother's hands looked like. The guilt says: who are you to want more than this.
 
 It is the question that survival was always postponing: what is this life for?
 
-❖
+<p class="divider">❖</p>
 
 I see it in the people choosing to stop before they are wrecked.
 
@@ -72,7 +72,7 @@ In the woman handing in her letter, walking through a glass door, unable to expl
 
 In the question that arrives earlier than the formula said it would: not what pays but what holds.
 
-❖
+<p class="divider">❖</p>
 
 The formula was written by people who loved their children. The people who passed it on loved their children too. What they gave was the most valuable thing they had.
 
