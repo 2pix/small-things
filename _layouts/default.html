@@ -5,8 +5,10 @@
 </head>
 <body>
   <header class="site-header">
-    <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
-    <p class="site-subtitle">{{ site.description }}</p>
+    <div class="site-title-row">
+      <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
+      <p class="site-subtitle">{{ site.description }}</p>
+    </div>
     {% include nav.html %}
   </header>
 
