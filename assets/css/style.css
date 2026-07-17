@@ -86,6 +86,7 @@ a {
 .site-title-row {
   display: flex;
   align-items: baseline;
+  justify-content: center;
   gap: 4px;
 }
 
@@ -286,6 +287,11 @@ main {
 
   main {
     max-width: none;
+  }
+
+  .site-title-row {
+    justify-content: flex-start;
+    margin-left: -28.75%; /* pull back out of site-header's padding to sit at the true left edge, above the rail */
   }
 
   .stories-row {

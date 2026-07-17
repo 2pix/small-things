@@ -1,8 +1,4 @@
 <nav class="stories-row">
-  <a href="{{ '/' | relative_url }}" class="story-pill{% if page.url == '/' %} is-active{% endif %}">
-    <svg class="story-pill__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7"/></svg>
-    <span class="story-pill__label">Home</span>
-  </a>
   {% for section in site.sections %}
   <a href="{{ site.baseurl }}/{{ section.key }}/" class="story-pill{% if page.category == section.key %} is-active{% endif %}">
     <svg class="story-pill__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7"/></svg>
