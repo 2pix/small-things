@@ -1,7 +1,16 @@
 <nav class="stories-row">
-  <a href="{{ '/' | relative_url }}" class="story-pill{% if page.url == '/' %} is-active{% endif %}">Latest</a>
+  <a href="{{ '/' | relative_url }}" class="story-pill{% if page.url == '/' %} is-active{% endif %}">
+    <svg class="story-pill__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7"/></svg>
+    <span class="story-pill__label">Latest</span>
+  </a>
   {% for section in site.sections %}
-  <a href="{{ site.baseurl }}/{{ section.key }}/" class="story-pill{% if page.category == section.key %} is-active{% endif %}">{{ section.label }}</a>
+  <a href="{{ site.baseurl }}/{{ section.key }}/" class="story-pill{% if page.category == section.key %} is-active{% endif %}">
+    <svg class="story-pill__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7"/></svg>
+    <span class="story-pill__label">{{ section.label }}</span>
+  </a>
   {% endfor %}
-  <a href="{{ '/about/' | relative_url }}" class="story-pill{% if page.url == '/about/' %} is-active{% endif %}">About</a>
+  <a href="{{ '/about/' | relative_url }}" class="story-pill{% if page.url == '/about/' %} is-active{% endif %}">
+    <svg class="story-pill__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7"/></svg>
+    <span class="story-pill__label">About</span>
+  </a>
 </nav>

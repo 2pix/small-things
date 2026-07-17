@@ -51,9 +51,13 @@ a {
   opacity: 0.75;
 }
 
-.story-pill,
 .tag-pill {
   font-size: 0.875rem;
+  letter-spacing: 0.02em;
+}
+
+.story-pill__label {
+  font-size: 0.6875rem;
   letter-spacing: 0.02em;
 }
 
@@ -132,11 +136,36 @@ main {
 }
 
 .story-pill {
-  white-space: nowrap;
-  padding: var(--space-1) var(--space-2);
-  border: 1px solid;
-  border-radius: 999px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+  padding: var(--space-1);
   text-decoration: none;
+  color: var(--color-text);
+  opacity: 0.65;
+}
+
+.story-pill.is-active {
+  opacity: 1;
+}
+
+.story-pill__icon {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+}
+
+.story-pill.is-active .story-pill__icon {
+  fill: var(--color-accent);
+  stroke: var(--color-accent);
+}
+
+.story-pill__label {
+  white-space: nowrap;
 }
 
 /* Second-tier taxonomy — not wired into any section yet, no content needs it. Reserved so the height is decided before it's built. */
