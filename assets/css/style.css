@@ -140,6 +140,43 @@ a {
   border: 0;
 }
 
+.post-image {
+  margin: var(--space-4) 0;
+}
+
+.post-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.post-image figcaption {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  opacity: 0.6;
+  margin-top: var(--space-1);
+}
+
+.pull-quote {
+  margin: var(--space-4) 0;
+  padding-left: var(--space-3);
+  border-left: 2px solid var(--color-accent);
+  font-style: italic;
+}
+
+.pull-quote p {
+  margin: 0;
+}
+
+.pull-quote cite {
+  display: block;
+  font-family: var(--font-sans);
+  font-style: normal;
+  font-size: 0.8125rem;
+  opacity: 0.7;
+  margin-top: var(--space-1);
+}
+
 .post__body p.divider {
   text-align: center;
   opacity: 0.6;
