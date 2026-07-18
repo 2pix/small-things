@@ -2,7 +2,7 @@
 layout: default
 ---
 {% assign start_here = site.posts | where: "start_here", true | first %}
-{% assign latest = site.posts | where_exp: "p", "p.start_here != true" | slice: 0, 3 %}
+{% assign latest = site.posts | where_exp: "p", "p.start_here != true" | slice: 0, 5 %}
 
 <section class="latest">
   <p class="latest-label">Latest</p>
