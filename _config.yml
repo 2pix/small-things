@@ -17,7 +17,7 @@ sections:
     label: Black Cat
   - key: the-floor
     label: The Floor
-  - key: small-things
+  - key: the-art-of-small-things
     label: The Art of
 
 defaults:
