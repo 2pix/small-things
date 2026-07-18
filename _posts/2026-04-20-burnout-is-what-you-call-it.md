@@ -4,8 +4,6 @@ subtitle: "24. HCMC - 2014"
 category: black-cat
 date: 2026-04-20 15:45:06 +0000
 ---
-This is part of The Black Cat — a novel in pieces.
-
 The fair was in District 7, in a convention centre built to accommodate the particular chaos of several thousand people looking for things to buy and sell at scale.
 
 He'd come for three suppliers. Two sourcing contacts from a connection in Jakarta, one follow-up from a Singapore manufacturer who'd moved production here for the labour cost. He was setting up a new line. Cables had been the start — portable, easy to ship. Then power banks. Now this: t-shirts. A label called Bare. Classic cuts, fabric that hangs rather than clings. He'd stock it with brick and mortar shops first, then online. Rena wanted a run for her yoga members; he'd build that in on the side. His people in Manila handled the back-end. He came to fairs to find the things they couldn't find remotely.

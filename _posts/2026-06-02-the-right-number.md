@@ -4,8 +4,6 @@ subtitle: "32. A lie. The knowledge lives in the correction."
 category: black-cat
 date: 2026-06-02 15:34:00 +0000
 ---
-This is part of The Black Cat — a novel in pieces.
-
 I billed in six-minute increments. Every hour of the day was divisible, assignable, recoverable as income. Six minutes was the smallest unit of time the firm could convert into something countable. The number didn't lie. It said exactly what had been turned into something that would count.
 
 My father had a stroke in August 2020. A Tuesday. He was at the Pinnacle. I was not.

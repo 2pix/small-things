@@ -4,8 +4,6 @@ subtitle: "31. She had made this dish close to the way her mother had made it an
 category: black-cat
 date: 2026-06-02
 ---
-This is part of The Black Cat — a novel in pieces.
-
 She arrived at the Black Cat at ten past nine with a bag of galangal she hadn't trusted the assistant to buy correctly. And the brioche loaves — Mark's, from the morning, taken from the oven at seven forty-five.
 
 The café was already open. Mark was at the counter with his back to the room, adjusting something on the machine. He heard her come in — she knew this from the slight change in his posture, nothing more.

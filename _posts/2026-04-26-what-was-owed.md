@@ -4,8 +4,6 @@ subtitle: "27. Dec 2024 - He Was Fifty-One. He Had Been, By Every Account, Very 
 category: black-cat
 date: 2026-04-26 01:42:21 +0000
 ---
-This is part of The Black Cat — a novel in pieces.
-
 His name was Raymond.
 
 They'd known him in Melbourne — the particular way you know people at twenty-two, which is to say completely, and the way you lose track of them in the years after, which is to say gradually, without deciding to. He'd come back to Singapore the same year David had. Set up something in logistics. Married. Had children who were now in secondary school. David knew this the way you know things about people you'd once been close to and had stopped being close to without incident — through Facebook. The birthday notification. The occasional post about a holiday or a promotion that he'd liked without commenting, the algorithm delivering proof of a life continuing.

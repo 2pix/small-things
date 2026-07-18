@@ -4,8 +4,6 @@ subtitle: "3: Depth without performance"
 category: black-cat
 date: 2026-02-14 05:47:08 +0000
 ---
-This is part of The Black Cat — a novel in pieces.
-
 Some relationships were like this too.
 
 David doesn't talk to Kenny often now.

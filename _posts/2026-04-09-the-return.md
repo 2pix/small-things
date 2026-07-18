@@ -4,8 +4,6 @@ subtitle: "18. He only knew his part."
 category: black-cat
 date: 2026-04-09 16:13:47 +0000
 ---
-This is part of The Black Cat — a novel in pieces.
-
 The plane came in low over open water and David watched the coastline arrange itself below. Flat. Dense. The particular geometry of a city that had decided what it was going to be and built accordingly.
 
 He had a window seat. He'd asked for one specifically, which he didn't usually do.

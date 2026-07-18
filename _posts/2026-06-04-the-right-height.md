@@ -4,8 +4,6 @@ subtitle: "34. Things had been surfacing. She wasn't sure when they started."
 category: black-cat
 date: 2026-06-04 15:35:12 +0000
 ---
-This is part of The Black Cat — a novel in pieces.
-
 The flat was in Queenstown. Resale, a 3A HDB on a high floor. Eight months on the renovation, doing what architects do when they finally have a space entirely their own: built exactly what he wanted, without compromise, because there was no one to compromise with.
 
 The door opened onto the living space. A low joinery panel just inside — laminate that read as stone, a bench, hooks. The floor was screed throughout, grey and level, the kind of material that looked found until you noticed how precisely it was finished. Shoes came off here. Bag went here. The week stayed here, outside.

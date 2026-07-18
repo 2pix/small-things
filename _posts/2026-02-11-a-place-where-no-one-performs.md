@@ -4,8 +4,6 @@ subtitle: "2: And No One Needs To"
 category: black-cat
 date: 2026-02-11 02:52:18 +0000
 ---
-This is part of The Black Cat — a novel in pieces.
-
 Wen arrived early because her client was always late. Not dramatically. Just enough to suggest that time bent more easily around her than around anyone else.
 
 The café was two streets from Wen's office. Close enough to be practical. Far enough to feel like leaving.

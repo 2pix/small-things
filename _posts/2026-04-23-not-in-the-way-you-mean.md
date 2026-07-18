@@ -4,8 +4,6 @@ subtitle: "26. KL, December 2014"
 category: black-cat
 date: 2026-04-23 02:01:14 +0000
 ---
-This is part of The Black Cat — a novel in pieces.
-
 The emails had started in October.
 
 Not often. The particular cadence of two people who had agreed not to maintain something and had found, without discussing it, that they had things to say occasionally. He wrote the way she made him write — without preamble, without the soft tissue around the actual point.

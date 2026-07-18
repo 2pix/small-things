@@ -4,8 +4,6 @@ subtitle: "10. The week had been ordinary. That was the thing about it."
 category: black-cat
 date: 2026-03-17 15:43:52 +0000
 ---
-This is part of The Black Cat — a novel in pieces.
-
 The week had been ordinary.
 
 That was the thing about it. Nothing had gone wrong. The account was confirmed — the client had responded to his recommendation with a brief satisfied email and a purchase order that arrived the next morning. Priya had finished the campaign visuals. James had resolved the thing with the typography, or stopped arguing about it, which amounted to the same result. Invoices had gone out. Two new briefs had come in. The studio had done what it did, steadily, getting more fluent in ways that didn't announce themselves.

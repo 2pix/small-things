@@ -4,8 +4,6 @@ subtitle: "14. A meditation on space and sensation"
 category: black-cat
 date: 2026-03-24 12:01:38 +0000
 ---
-This is part of The Black Cat — a novel in pieces.
-
 He got home at seven-thirty.
 
 The apartment was exactly as he'd left it. This was always true and had never bothered him before — the particular stillness of a space that held its shape without him, that didn't need tending, that was simply there when he returned and simply not-there when he didn't. He had chosen it for this. The efficiency of it. The clean lines. The view from the living room window that gave him sky and the middle distance of the city without requiring him to be part of either.

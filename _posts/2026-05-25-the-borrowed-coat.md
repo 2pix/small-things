@@ -4,8 +4,6 @@ subtitle: "28. She had been looking. Just not only at dogs."
 category: black-cat
 date: 2026-05-25 14:53:30 +0000
 ---
-This is part of The Black Cat — a novel in pieces.
-
 She sat in the car for a few minutes before going up.
 
 The engine had been off for a while — she wasn't sure how long. She could hear it cooling: small sounds, metal settling back into itself after the heat. The carpark had its own quiet. Fluorescent lights, the same colour as nothing. She was still in the posture of driving — hands in her lap now, shoulders not quite dropped. Other people's grief still on her clothes somewhere, the particular weight of a room full of condolence.

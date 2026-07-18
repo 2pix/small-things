@@ -4,8 +4,6 @@ subtitle: "25. The ease of something exact"
 category: black-cat
 date: 2026-04-22 13:06:41 +0000
 ---
-This is part of The Black Cat — a novel in pieces.
-
 The Vietnamese mill in Hall A was better than the Taiwanese one.
 
 He found her at the booth next to it.

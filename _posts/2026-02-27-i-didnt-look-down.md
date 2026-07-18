@@ -4,8 +4,6 @@ subtitle: "5. A Lie. I just never noticed someone was holding it."
 category: black-cat
 date: 2026-02-27 04:47:38 +0000
 ---
-This is part of The Black Cat — a novel in pieces.
-
 The space felt gentle on my body.
 
 Open. Familiar. The kind of easy you don't question because nothing in it asks you to. I could move through it without checking first. Change my mind halfway through a sentence and find the sentence had already adjusted. Follow an impulse past where I'd usually stop and discover there was still ground under me, still warmth, still the particular quality of air that means someone has made room and intends to keep making it.

@@ -4,8 +4,6 @@ subtitle: "16. Twelve Days of Being Nobody in Particular"
 category: black-cat
 date: 2026-04-01 05:27:15 +0000
 ---
-This is part of The Black Cat — a novel in pieces.
-
 The driver was already waiting when David cleared immigration.
 
 A handwritten sign. His name spelled correctly, which meant Lina had written it out herself rather than leaving it to chance. He noticed this before he noticed anything else.

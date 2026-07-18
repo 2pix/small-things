@@ -4,8 +4,6 @@ subtitle: "36. He had been in other people's questions all day."
 category: black-cat
 date: 2026-06-10 17:20:05 +0000
 ---
-Part of The Black Cat — a novel in scenes. New here? Start at the index.
-
 Lina's door was open. The pungent smell reached him from the corridor — dried chillies, oil beginning to catch. Sunday.
 
 She was at the stove, her back to him, watching the paste. Mark was at the table with a coffee and a book and raised a hand without looking up. The bags were stacked near the window, nine or ten in two loose groups.

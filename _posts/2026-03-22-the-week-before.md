@@ -4,8 +4,6 @@ subtitle: "13. What the Heart Records When No One's Watching"
 category: black-cat
 date: 2026-03-22 14:01:21 +0000
 ---
-This is part of The Black Cat — a novel in pieces.
-
 The clinic was in Orchard. Eighth floor of a medical building, the kind that housed twelve different specialists behind frosted glass doors, each with their own receptionist and their own particular version of the same waiting room chairs. He'd gotten the name from Marcus, who'd gotten it from someone at his gym, the referral travelling the way referrals travelled in Singapore — through networks, through trust, through the particular confidence of someone saying just go to him, he's good.
 
 Dr Lim was mid-fifties. Unhurried in the way of someone who had stopped needing to perform competence decades ago. He listened to David describe the squeezing without writing anything down, just listened, his hands folded on the desk, his eyes on David's face rather than a screen.

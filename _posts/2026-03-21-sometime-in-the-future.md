@@ -4,8 +4,6 @@ subtitle: "12. A kitchen tells the truth before the people in it do."
 category: black-cat
 date: 2026-03-21 09:07:01 +0000
 ---
-This is part of The Black Cat — a novel in pieces.
-
 Karen had given him the address the week before. A condo at the edge of Toa Payoh, older than the new HDB going up around it, the kind that had been there long enough to stop trying to look like anything other than what it was.
 
 He took the stairs. Old habit. The lift was fine but stairs told you things about a building — the width of them, the quality of the light at each landing, whether the space had been designed for people to actually move through or just to technically provide access between floors. These were good stairs. Wide enough. The light coming through the slits that provided air circulation, and ambient light. When he got to the top he noticed how the afternoon light flooded the landing, sitting at a low angle that made the dust visible.

@@ -4,8 +4,6 @@ subtitle: "30. A morning in Spottiswoode"
 category: black-cat
 date: 2026-05-28 12:01:44 +0000
 ---
-This is part of The Black Cat — a novel in pieces.
-
 The alarm went at five-forty.
 
 Mark reached across and cancelled it before the second pulse. He dressed without turning the light on.

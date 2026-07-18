@@ -4,8 +4,6 @@ subtitle: "11. The table stays the same. You don't."
 category: black-cat
 date: 2026-03-19 12:08:51 +0000
 ---
-This is part of The Black Cat — a novel in pieces.
-
 Marina had left the food on the table and gone to her room by the time he arrived.
 
 This was her Friday rhythm — cook, set out, disappear. She had her own television, her own hours, the particular sovereignty of someone who had learned how to live inside someone else's house without being consumed by it. He'd heard the sound of her program through the door as he passed, something with a laugh track, comfortable and low.

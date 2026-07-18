@@ -4,8 +4,6 @@ subtitle: "15. A Man Who Has Never Spent a Saturday in His Own Apartment"
 category: black-cat
 date: 2026-03-27 12:20:16 +0000
 ---
-This is part of The Black Cat — a novel in pieces.
-
 He woke at seven without an alarm.
 
 Lay there for a moment. The ceiling. The morning light already coming through the gap in the curtains. The particular quality of a Saturday morning that had nothing in it — no calls, no studio, no client, no width to maintain. No birds.

@@ -4,8 +4,6 @@ subtitle: "29. On stopping before you're wrecked"
 category: black-cat
 date: 2026-05-27 12:59:13 +0000
 ---
-This is part of The Black Cat — a novel in pieces.
-
 The car arrived two minutes early. I noticed this before I noticed the lack of smell.
 
 No synthetic vanilla. No oud attempting grandeur. No air freshener announcing cleanliness over something it couldn't mask. Just air that had been through the system recently enough to still move.

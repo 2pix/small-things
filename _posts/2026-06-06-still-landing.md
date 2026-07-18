@@ -4,8 +4,6 @@ subtitle: "35. The current runs differently than the script assumed it would."
 category: black-cat
 date: 2026-06-06 11:48:23 +0000
 ---
-This is part of The Black Cat — a novel in pieces.
-
 Sunday morning. His flat.
 
 She woke at six-forty-three to a thin line of pre-dawn grey across the ceiling — the blackout curtains not quite meeting at the centre. He was still asleep. The temperature he liked. A door somewhere. The distant sound of cars leaving the carpark.
