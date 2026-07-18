@@ -6,4 +6,16 @@ permalink: /about/
 
 # About
 
-_Who this is, what this is. To write._
+## Why Git, not WordPress
+
+## Authorship and intention
+
+## Keeping the funding small — proof, not limitation
+
+## The roadmap
+
+## Free, by design
+
+## Tipping, not gatekeeping
+
+## A differentiated approach — starting with me
