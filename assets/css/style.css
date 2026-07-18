@@ -282,6 +282,37 @@ main {
   padding: var(--space-2) var(--space-3) var(--space-1);
 }
 
+.scenes-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-1);
+  padding: 6px var(--space-3);
+  background: color-mix(in srgb, var(--color-accent) 12%, var(--color-bg));
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.scenes-banner__icon {
+  width: 12px;
+  height: 12px;
+  fill: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.scenes-banner p {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.scenes-banner a {
+  color: inherit;
+  text-decoration: underline;
+}
+
 .latest-label {
   font-family: var(--font-sans);
   font-size: 12px;

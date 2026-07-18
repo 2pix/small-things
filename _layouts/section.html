@@ -5,10 +5,6 @@ layout: default
 
 <section class="section-feed">
   <h1 class="section-label">{{ page.title }}</h1>
-  {% if page.category == "black-cat" %}
-    {% capture start_here_text %}This is a novel in scenes. If you're new, <a href="{{ '/black-cat/2026-02-05-create-from-nothing/' | relative_url }}">start here</a>.{% endcapture %}
-    {% include callout.html text=start_here_text %}
-  {% endif %}
   {% for post in posts %}
     {% include post-card.html post=post feed=true %}
   {% else %}

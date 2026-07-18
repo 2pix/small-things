@@ -4,6 +4,7 @@
 {% include head.html %}
 </head>
 <body>
+  {% if page.layout == "section" and page.category == "black-cat" %}{% include scenes-banner.html %}{% endif %}
   <header class="site-header">
     <div class="site-title-row">
       <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
