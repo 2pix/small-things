@@ -107,4 +107,4 @@ A [link inside a sentence](/) uses the accent colour, same as everywhere else on
 
 ### This card, in the feed
 
-This post is now filed under The Floor — see it render as an actual feed card, title/subtitle/meta/excerpt and all, on [The Floor](/the-floor/) itself, alongside whatever else lives there.
+This post is now filed under The Floor — see it render as an actual feed card, title/subtitle/meta/excerpt and all, on [The Floor]({{ "/the-floor/" | relative_url }}) itself, alongside whatever else lives there.
