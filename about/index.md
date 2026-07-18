@@ -116,9 +116,9 @@ I stopped one.
 
 I am going to document the other.
 
-In the meantime: what I saw. No names. Just what I noticed.
-
 I took the calls. The patterns showed up on their own.
+
+In the meantime: the cases. What I saw. No names. Just what I noticed.
 
 What they showed me was a window. A chance to make a real difference for my own family. Or at least try, before it closes.
 
