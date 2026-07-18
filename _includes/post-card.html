@@ -7,4 +7,9 @@
   <h2 class="post-card__title"><a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a></h2>
   {% if include.post.subtitle %}<p class="post-card__subtitle">{{ include.post.subtitle }}</p>{% endif %}
   <p class="post-card__meta">{{ card_section_label }} · {{ include.post.date | date: "%-d %b %Y" }}</p>
+  {% if include.feed %}
+  <a href="{{ include.post.url | relative_url }}" class="post-card__excerpt-link">
+    <p class="post-card__excerpt">{{ include.post.excerpt | strip_html }}</p>
+  </a>
+  {% endif %}
 </article>

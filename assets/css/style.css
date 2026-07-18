@@ -300,6 +300,24 @@ main {
   text-decoration: none;
 }
 
+.post-card__excerpt-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.post-card__excerpt {
+  position: relative;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: var(--space-2) 0 0;
+  padding-bottom: 1.5em;
+  mask-image: linear-gradient(to bottom, black 0%, black 60%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, black 60%, transparent 100%);
+}
+
 .post-pagination {
   display: flex;
   justify-content: space-between;
