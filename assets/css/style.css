@@ -465,6 +465,7 @@ main {
   overflow: hidden;
   margin: var(--space-2) 0 0;
   padding-bottom: 1.5em;
+  opacity: 0.8;
   mask-image: linear-gradient(to bottom, black 0%, black 60%, transparent 100%);
   -webkit-mask-image: linear-gradient(to bottom, black 0%, black 60%, transparent 100%);
 }
