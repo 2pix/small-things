@@ -218,6 +218,21 @@ a {
   margin: 0;
 }
 
+/* Dev note - muted aside in working docs like the style guide, distinct from real body content */
+.dev-note {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  opacity: 0.5;
+  margin: var(--space-1) 0 var(--space-3);
+}
+
+.dev-note__label {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+  margin-right: var(--space-1);
+}
+
 /* Code blocks - syntax highlighting via Rouge (kramdown's built-in highlighter), warm palette to match the site */
 .highlight {
   background: color-mix(in srgb, var(--color-text) 6%, var(--color-bg));

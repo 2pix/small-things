@@ -16,6 +16,8 @@ Filed here for now, under The Floor — likely to move once UX has its own real 
 
 ## H2 — used for post-card titles in feeds (`.post-card__title`)
 
+<p class="dev-note"><span class="dev-note__label">Note</span> Both are in active use — they just aren't sized for heavy visual weight, so the hierarchy reads structurally (accessibility, SEO) rather than as an obvious size jump on the page.</p>
+
 ### H3 — not currently used anywhere on the site, default browser size
 
 #### H4 — not currently used anywhere on the site, default browser size
@@ -79,7 +81,7 @@ Syntax highlighting via Rouge (kramdown's built-in highlighter, already active �
 
 ### Lists
 
-Currently unstyled — browser defaults, not yet designed:
+<p class="dev-note"><span class="dev-note__label">Note</span> Currently unstyled — browser defaults, not yet designed.</p>
 
 - An unordered list item
 - A second unordered list item
@@ -101,7 +103,7 @@ A [link inside a sentence](/) uses the accent colour, same as everywhere else on
 
 {% include image.html src="/assets/images/placeholder.jpg" alt="Placeholder — swap for a real image to test" caption="This is the figcaption — small, sans, muted, sits under the image." %}
 
-*(The image above will show as broken until a real file exists at that path — the caption and spacing around it can still be judged.)*
+<p class="dev-note"><span class="dev-note__label">Note</span> The image above will show as broken until a real file exists at that path — the caption and spacing around it can still be judged.</p>
 
 {% include divider.html %}
 

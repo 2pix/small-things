@@ -80,5 +80,15 @@ Two elements get their look automatically, no `{% include %}` needed:
 
 ---
 
+## Dev note (`.dev-note`)
+
+A muted aside for working docs like the style guide — an explanation of a decision or a caveat, visually distinct from real body content so it doesn't read as prose. Not a shortcode, just a raw HTML paragraph with a class:
+
+```
+<p class="dev-note"><span class="dev-note__label">Note</span> The note text goes here.</p>
+```
+
+---
+
 *Building this out as it's needed — more shortcodes get added here as they're built. Eventually intended to become a releasable Jekyll theme; this file is the usage documentation for that.*
 {% endraw %}
