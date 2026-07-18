@@ -1,14 +1,12 @@
 ---
-layout: default
+layout: post
 title: "Style Guide"
+subtitle: "Every text element on the site, in one place, for tuning sizes and spacing"
+category: the-floor
 permalink: /style-guide/
+date: 2026-07-18
 ---
-
-# Style Guide
-
-*Every text element on the site, in one place, for tuning sizes and spacing*
-
-This page exists to design against — not real content, not part of any feed, not linked from navigation. Every heading level, blockquote, list, and shortcode the site currently knows how to render, shown together so sizing and spacing can be tuned in isolation rather than hunting through actual posts.
+Filed here for now, under The Floor — likely to move once UX has its own real place on the site. Every heading level, blockquote, list, and shortcode the site currently knows how to render, shown together so sizing and spacing can be tuned in isolation rather than hunting through actual posts. Still a working draft, not finished prose.
 
 {% include divider.html %}
 
@@ -34,7 +32,7 @@ This page exists to design against — not real content, not part of any feed, n
 
 ### Meta line
 
-<p class="post__meta">black-cat · 18 Jul 2026</p>
+<p class="post__meta">the-floor · 18 Jul 2026</p>
 
 This is `.post__meta` — small caps-adjacent sans, low opacity, sits under the subtitle on an actual post page.
 
@@ -92,6 +90,6 @@ A [link inside a sentence](/) uses the accent colour, same as everywhere else on
 
 {% include divider.html %}
 
-### Feed card (as it renders in a section page, not the homepage)
+### This card, in the feed
 
-This page isn't a real post, so it won't show up in a feed itself — for the actual card style (title, subtitle, meta, 3-line fading excerpt), see the `[TEST]` posts already sitting in [The Floor](/the-floor/) and [Art of Small Things](/small-things/), or any real Black Cat piece in [Black Cat](/black-cat/).
+This post is now filed under The Floor — see it render as an actual feed card, title/subtitle/meta/excerpt and all, on [The Floor](/the-floor/) itself, alongside whatever else lives there.
