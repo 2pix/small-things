@@ -183,6 +183,70 @@ a {
   margin: var(--space-4) 0;
 }
 
+/* Native markdown blockquote - "bootcamp" convention: left border, tinted background, small radius */
+.post__body blockquote {
+  margin: var(--space-3) 0;
+  padding: var(--space-2) var(--space-3);
+  border-left: 3px solid var(--color-accent);
+  background: color-mix(in srgb, var(--color-accent) 8%, transparent);
+  border-radius: 1px;
+}
+
+.post__body blockquote p {
+  margin: 0;
+}
+
+/* Callout - distinct from blockquote: full tint, no left border, rounded box, optional label */
+.callout {
+  margin: var(--space-3) 0;
+  padding: var(--space-3);
+  background: color-mix(in srgb, var(--color-accent) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--color-accent) 30%, transparent);
+  border-radius: 4px;
+}
+
+.callout__label {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-accent);
+  margin: 0 0 var(--space-1);
+}
+
+.callout p {
+  margin: 0;
+}
+
+/* Code blocks - syntax highlighting via Rouge (kramdown's built-in highlighter), warm palette to match the site */
+.highlight {
+  background: color-mix(in srgb, var(--color-text) 6%, var(--color-bg));
+  border-radius: 4px;
+  padding: var(--space-2);
+  overflow-x: auto;
+  margin: var(--space-3) 0;
+}
+
+.highlight pre {
+  margin: 0;
+}
+
+.highlight code {
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.highlight .c, .highlight .c1, .highlight .cm { color: var(--color-text); opacity: 0.5; font-style: italic; } /* comments */
+.highlight .k, .highlight .kd, .highlight .kn, .highlight .kt { color: var(--color-accent); } /* keywords */
+.highlight .s, .highlight .s1, .highlight .s2, .highlight .sb { color: #a8b88a; } /* strings - warm muted green */
+.highlight .m, .highlight .mi, .highlight .mf { color: #c9a679; } /* numbers - warm tan */
+.highlight .nc, .highlight .nf, .highlight .nl { color: var(--color-text); } /* names/properties */
+.highlight .no { color: #c9a679; } /* constants */
+.highlight .p { color: var(--color-text); opacity: 0.6; } /* punctuation */
+.highlight .nt { color: var(--color-accent); } /* HTML tags */
+.highlight .na { color: #c9a679; } /* HTML attributes */
+
 .post-card__title {
   font-size: 1.25rem;
   margin: 0 0 var(--space-1);

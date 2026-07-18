@@ -58,7 +58,22 @@ The scene-break used throughout Black Cat pieces:
 
 ### Plain markdown blockquote
 
-> This is a plain `>` blockquote, no shortcode, no custom class — currently unstyled, just whatever the browser does by default. Worth deciding: does this need its own look, or should every quote in practice just use the pull-quote shortcode instead?
+> This is a plain `>` blockquote — bootcamp convention: accent left border, tinted background, small radius. Decided 2026-07-18: distinct from the pull-quote shortcode, which is for a striking line pulled *out* of prose. A blockquote is for actually quoting something.
+
+### Callout
+
+{% include callout.html label="Note" text="This is the callout shortcode — full tinted background, bordered box, rounded corners, optional label. Distinct from a blockquote: a callout is an aside from the writer, not a quotation of someone else." %}
+
+### Code block
+
+Syntax highlighting via Rouge (kramdown's built-in highlighter, already active — no extra config needed), coloured to match the site's warm palette rather than the cool blues most syntax themes default to:
+
+```css
+.example {
+  color: var(--color-accent);
+  background: #1a1814;
+}
+```
 
 {% include divider.html %}
 

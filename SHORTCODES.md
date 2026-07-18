@@ -58,5 +58,27 @@ No parameters.
 
 ---
 
+## `{% include callout.html text="The aside you want to highlight." label="Optional label, e.g. Note" %}`
+
+A bordered, tinted box for an editorial aside from the writer — distinct from a blockquote (which quotes someone else) and from a pull-quote (which pulls a line out of the writer's own prose to emphasise it). Full background tint, rounded corners, optional uppercase label above the text.
+
+- `text` (required) — the callout content.
+- `label` (optional) — small uppercase label above the text, e.g. "Note," "Aside."
+
+```
+{% include callout.html label="Note" text="Worth knowing before you read further." %}
+```
+
+---
+
+## Native markdown, styled without a shortcode
+
+Two elements get their look automatically, no `{% include %}` needed:
+
+- **Blockquote** (`> quoted text`) — bootcamp convention: accent left border, tinted background, small radius. Use for actually quoting someone, not for pulling your own line (that's `pull-quote.html`).
+- **Fenced code blocks** (` ```language `) — syntax highlighted automatically via Rouge (kramdown's built-in highlighter), coloured to match the site's warm palette instead of a default cool-toned theme.
+
+---
+
 *Building this out as it's needed — more shortcodes get added here as they're built. Eventually intended to become a releasable Jekyll theme; this file is the usage documentation for that.*
 {% endraw %}
