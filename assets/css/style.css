@@ -127,6 +127,20 @@ a {
   margin: 0 0 var(--space-3);
 }
 
+.post__body ul,
+.post__body ol {
+  margin: 0 0 var(--space-3);
+  padding-left: var(--space-3);
+}
+
+.post__body li {
+  margin-bottom: var(--space-1);
+}
+
+.post__body li::marker {
+  color: var(--color-accent);
+}
+
 .video-embed {
   position: relative;
   width: 100%;
