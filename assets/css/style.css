@@ -295,10 +295,20 @@ main {
   overflow-x: auto;
 }
 
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
 .scenes-banner__icon {
-  width: 12px;
-  height: 12px;
-  fill: var(--color-accent);
+  font-size: 14px;
+  color: var(--color-accent);
   flex-shrink: 0;
 }
 
