@@ -123,6 +123,10 @@ a {
   opacity: 0.8;
 }
 
+.post-card__subtitle {
+  font-size: 0.9375rem;
+}
+
 .post__body p {
   margin: 0 0 var(--space-3);
 }
