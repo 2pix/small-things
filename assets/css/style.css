@@ -350,6 +350,14 @@ main {
   margin: 0 0 var(--space-1);
 }
 
+.rail-logo {
+  display: none; /* desktop-only mark - mobile keeps the text title in site-header instead */
+}
+
+.rail-nav-middle {
+  display: contents; /* unwrapped on mobile so its pills sit directly in the .stories-row flex row, unchanged order */
+}
+
 .stories-row {
   display: flex;
   align-items: center;
@@ -367,6 +375,7 @@ main {
 }
 
 .story-pill {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -376,6 +385,21 @@ main {
   text-decoration: none;
   color: var(--color-text);
   opacity: 0.65;
+}
+
+.story-pill__dot {
+  display: none;
+  position: absolute;
+  top: 2px;
+  right: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: #e0403a;
+}
+
+.story-pill__dot.is-visible {
+  display: block;
 }
 
 .story-pill.is-active {
@@ -553,6 +577,29 @@ main {
     margin-left: -28.75%; /* pull back out of site-header's padding to sit at the true left edge, above the rail */
   }
 
+  .rail-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: var(--space-4);
+    left: 0;
+    width: 5%;
+    z-index: 11;
+  }
+
+  .rail-logo__mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: color-mix(in srgb, var(--color-accent) 14%, transparent);
+    color: var(--color-accent);
+    font-size: 1rem;
+  }
+
   .stories-row {
     position: fixed;
     top: 0;
@@ -563,8 +610,34 @@ main {
     overflow-x: visible;
     overflow-y: auto;
     margin-top: 0;
-    padding-top: var(--space-6);
+    padding-top: var(--space-8);
+    padding-bottom: var(--space-4);
     z-index: 10;
+  }
+
+  .rail-nav-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-3);
+    margin: auto 0; /* centres this whole cluster in the space between the logo and About */
+  }
+
+  /* Bottom-to-top reading order Claire specified: Black Cat, then The Floor, then The Art of Small Things */
+  .story-pill--the-art-of-small-things {
+    order: 1;
+  }
+
+  .story-pill--the-floor {
+    order: 2;
+  }
+
+  .story-pill--black-cat {
+    order: 3;
+  }
+
+  .story-pill--about {
+    margin-top: auto; /* anchors About to the bottom of the rail, mirroring the logo at the top */
   }
 
   .post__body {

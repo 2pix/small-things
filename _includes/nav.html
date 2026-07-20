@@ -1,11 +1,19 @@
+<a href="{{ '/' | relative_url }}" class="rail-logo" aria-label="{{ site.title }}">
+  <span class="rail-logo__mark" aria-hidden="true">&#10070;</span>
+</a>
+
 <nav class="stories-row">
-  {% for section in site.sections %}
-  <a href="{{ site.baseurl }}/{{ section.key }}/" class="story-pill{% if page.category == section.key %} is-active{% endif %}">
-    <svg class="story-pill__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7"/></svg>
-    <span class="story-pill__label">{{ section.label }}</span>
-  </a>
-  {% endfor %}
-  <a href="{{ '/about/' | relative_url }}" class="story-pill{% if page.url == '/about/' %} is-active{% endif %}">
+  <div class="rail-nav-middle">
+    {% for section in site.sections %}
+    {% assign latest = site.categories[section.key] | first %}
+    <a href="{{ site.baseurl }}/{{ section.key }}/" class="story-pill story-pill--{{ section.key }}{% if page.category == section.key %} is-active{% endif %}" data-section="{{ section.key }}"{% if latest %} data-latest="{{ latest.date | date: '%Y-%m-%d' }}"{% endif %}>
+      <svg class="story-pill__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7"/></svg>
+      <span class="story-pill__label">{{ section.label }}</span>
+      <span class="story-pill__dot" aria-hidden="true"></span>
+    </a>
+    {% endfor %}
+  </div>
+  <a href="{{ '/about/' | relative_url }}" class="story-pill story-pill--about{% if page.url == '/about/' %} is-active{% endif %}">
     <svg class="story-pill__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7"/></svg>
     <span class="story-pill__label">About</span>
   </a>
