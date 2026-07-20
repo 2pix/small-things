@@ -10,11 +10,6 @@
       <a href="{{ '/' | relative_url }}" class="site-title site-title--home">The Art of Small Things</a>
       <p class="site-subtitle site-subtitle--home">At home in a world crowded with agenda.</p>
     </div>
-    {% else %}
-    <div class="site-title-row">
-      <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
-      {% if page.title %}<p class="site-subtitle">{{ page.title }}</p>{% endif %}
-    </div>
     {% endif %}
     {% include nav.html %}
   </header>

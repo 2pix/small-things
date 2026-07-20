@@ -311,7 +311,7 @@ main {
   padding: var(--space-1) 5%; /* 5% either side so text doesn't slam into the phone edge */
 }
 
-.page__body {
+.page__title {
   padding-top: var(--space-3);
 }
 
@@ -627,7 +627,7 @@ main {
     align-items: flex-start;
   }
 
-  .page__body {
+  .page__title {
     padding-top: calc(var(--space-3) * 2);
   }
 
