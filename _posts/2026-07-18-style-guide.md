@@ -121,7 +121,7 @@ Syntax highlighting via Rouge (kramdown's built-in highlighter, already active â
 
 ### Links and inline emphasis
 
-A [link inside a sentence](/) uses the accent colour, same as everywhere else on the site. Here is some **bold text** and some *italic text* inline, to see how emphasis reads against the body serif.
+A [link inside a sentence]({{ '/' | relative_url }}) uses the accent colour, same as everywhere else on the site. Here is some **bold text** and some *italic text* inline, to see how emphasis reads against the body serif.
 
 {% include divider.html %}
 
