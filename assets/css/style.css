@@ -316,6 +316,8 @@ main {
 }
 
 .site-header {
+  max-width: 640px;
+  margin: 0 auto;
   padding: var(--space-2) var(--space-3) var(--space-1);
 }
 
@@ -611,8 +613,10 @@ main {
     padding-right: 23.75%; /* right margin */
   }
 
-  main {
+  main,
+  .site-header {
     max-width: none;
+    margin: 0;
   }
 
   .site-title-row {
