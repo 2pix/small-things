@@ -4,6 +4,20 @@ title: About
 permalink: /about/
 ---
 
+Nothing on this page is waiting for you to hurry.
+
+No clock running underneath it, counting toward something you're supposed to decide before you're ready.
+
+You can stay as long as it takes. Longer, even, than that.
+
+This is the floor. Warmth first. Everything else after.
+
+Art of Small Things is built the same way — the room before the ask, belonging before the frame, before anyone is handed a single thing to do.
+
+You are standing on it now.
+
+{% include divider.html %}
+
 This is here so Black Cat has a home.
 
 Not a metaphor. No pun intended.
