@@ -412,11 +412,21 @@ main {
   fill: none;
   stroke: currentColor;
   stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.story-pill__icon .dot {
+  fill: currentColor;
+}
+
+.story-pill__icon .faint {
+  stroke-width: 0.6;
+  opacity: 0.6;
 }
 
 .story-pill.is-active .story-pill__icon {
-  fill: var(--color-accent);
-  stroke: var(--color-accent);
+  color: var(--color-accent);
 }
 
 .story-pill__label {
