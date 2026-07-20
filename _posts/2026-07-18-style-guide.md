@@ -6,7 +6,9 @@ category: the-floor
 permalink: /style-guide/
 date: 2026-07-18
 ---
-Filed here for now, under The Floor — likely to move once UX has its own real place on the site. Every heading level, blockquote, list, and shortcode the site currently knows how to render, shown together so sizing and spacing can be tuned in isolation rather than hunting through actual posts. Still a working draft, not finished prose.
+This is the floor for how the site was built — the reasoning, not just the result. Nothing here was abstract. Every element, every naming convention, was considered and argued with before it landed. Filed under The Floor because that's what this is: what the site gets built against, and what holds it up.
+
+Every heading level, blockquote, list, and shortcode the site currently knows how to render, shown together — both a visual reference for tuning sizing and spacing, and a usage guide for the shortcodes themselves, parameters included. Still a working draft, not finished prose.
 
 {% include divider.html %}
 
@@ -54,9 +56,25 @@ The scene-break used throughout Black Cat pieces:
 
 {% include divider.html %}
 
+No parameters.
+
+{% raw %}
+```
+{% include divider.html %}
+```
+{% endraw %}
+
 ### Pull-quote
 
 {% include pull-quote.html text="This is the pull-quote shortcode — accent-coloured left border, italic, breaks out of the paragraph flow for a line worth setting apart." attribution="Optional attribution line" %}
+
+A visually distinct pulled quote, for a striking line worth setting apart — not for the subtitle/epigraph, that's the post's own front matter. `text` required, `attribution` optional.
+
+{% raw %}
+```
+{% include pull-quote.html text="The line you want pulled out." attribution="Optional source" %}
+```
+{% endraw %}
 
 ### Plain markdown blockquote
 
@@ -65,6 +83,14 @@ The scene-break used throughout Black Cat pieces:
 ### Callout
 
 {% include callout.html label="Note" text="This is the callout shortcode — full tinted background, bordered box, rounded corners, optional label. Distinct from a blockquote: a callout is an aside from the writer, not a quotation of someone else." %}
+
+A bordered, tinted box for an editorial aside — distinct from a blockquote (quotes someone else) and a pull-quote (pulls out the writer's own line). `text` required, `label` optional.
+
+{% raw %}
+```
+{% include callout.html label="Note" text="The aside you want to highlight." %}
+```
+{% endraw %}
 
 ### Code block
 
@@ -101,9 +127,41 @@ A [link inside a sentence](/) uses the accent colour, same as everywhere else on
 
 ### Image with caption
 
-{% include image.html src="/assets/images/placeholder.jpg" alt="Placeholder — swap for a real image to test" caption="This is the figcaption — small, sans, muted, sits under the image." %}
+{% include image.html src="/assets/images/placeholder.jpg" alt="Placeholder — swap for a real image to test" caption="Polaroid frame — off-white, heavier on the bottom, caption handwritten in." %}
 
-<p class="dev-note"><span class="dev-note__label">Note</span> The image above will show as broken until a real file exists at that path — the caption and spacing around it can still be judged.</p>
+<p class="dev-note"><span class="dev-note__label">Note</span> The image above will show as broken until a real file exists at that path — the frame, caption font, and spacing around it can still be judged.</p>
+
+Full-width responsive image inside a polaroid frame — off-white background, heavier border on the bottom than the sides or top, caption sits inside that bottom margin in a marker font. Deliberately not polished. `src` and `alt` required, `caption` optional.
+
+{% raw %}
+```
+{% include image.html src="/assets/images/photo.jpg" alt="description" caption="Optional caption or credit" %}
+```
+{% endraw %}
+
+{% include divider.html %}
+
+### YouTube embed
+
+Responsive 16:9 embed, scales to the text column width. Not rendered live here to avoid pulling in an external video inside a style reference. `id` required — the video ID from the URL (the part after `v=`, or from Share → Embed).
+
+{% raw %}
+```
+{% include youtube.html id="VIDEO_ID" %}
+```
+{% endraw %}
+
+{% include divider.html %}
+
+### Dev note
+
+<p class="dev-note"><span class="dev-note__label">Note</span> This is a dev note — muted aside for a working doc like this one, visually distinct from real body content. Not a shortcode, just raw HTML with a class.</p>
+
+{% raw %}
+```
+<p class="dev-note"><span class="dev-note__label">Note</span> The note text goes here.</p>
+```
+{% endraw %}
 
 {% include divider.html %}
 

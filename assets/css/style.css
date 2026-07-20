@@ -133,9 +133,14 @@ a {
 }
 
 .post__subtitle,
-.post-card__subtitle {
+.post-card__subtitle,
+.section-excerpt {
   font-style: italic;
   opacity: 0.8;
+}
+
+.section-excerpt {
+  margin: 0 0 var(--space-2);
 }
 
 .post-card__subtitle {
@@ -175,6 +180,9 @@ a {
 
 .post-image {
   margin: var(--space-4) 0;
+  background: #f2ede4;
+  padding: var(--space-1) var(--space-1) var(--space-4);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
 }
 
 .post-image img {
@@ -184,10 +192,12 @@ a {
 }
 
 .post-image figcaption {
-  font-family: var(--font-sans);
-  font-size: 0.75rem;
-  opacity: 0.6;
-  margin-top: var(--space-1);
+  font-family: "Permanent Marker", cursive;
+  font-size: 1rem;
+  color: #1a1814;
+  text-align: center;
+  margin-top: var(--space-2);
+  padding: 0 var(--space-1);
 }
 
 .pull-quote {
@@ -323,15 +333,13 @@ main {
 
 .scenes-banner {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: var(--space-1);
-  padding: 6px var(--space-3);
+  padding: var(--space-1) var(--space-3);
   background: color-mix(in srgb, var(--color-accent) 12%, var(--color-bg));
   font-family: var(--font-sans);
   font-size: 0.75rem;
-  white-space: nowrap;
-  overflow-x: auto;
 }
 
 .material-symbols-outlined {
@@ -353,8 +361,6 @@ main {
 
 .scenes-banner p {
   margin: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .scenes-banner a {

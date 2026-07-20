@@ -1,0 +1,4 @@
+<div class="scenes-banner">
+  <span class="material-symbols-outlined scenes-banner__icon" aria-hidden="true">{{ include.icon | default: "start" }}</span>
+  <p>{{ include.text }}{% if include.link_url %} <a href="{{ include.link_url | relative_url }}">{{ include.link_text }}</a>{% endif %}{% if include.after %}{{ include.after }}{% endif %}</p>
+</div>

@@ -5,7 +5,15 @@ layout: default
 
 <section class="section-feed">
   <h1 class="section-label page__title">{{ page.title }}</h1>
-  {% if page.category == "black-cat" %}{% include scenes-banner.html %}{% endif %}
+  {% case page.category %}
+    {% when "black-cat" %}
+      {% include section-banner.html text="This is a novel in scenes. If you're new," link_url="/black-cat/2026-02-05-create-from-nothing/" link_text="start here" after="." %}
+    {% when "the-floor" %}
+      <p class="section-excerpt">What we push against, and what supports us. Found by resting, not pushing.</p>
+      {% include section-banner.html text="This is why the site looks the way it does. If you're new," link_url="/style-guide/" link_text="start here" after="." %}
+    {% when "the-art-of-small-things" %}
+      <p class="section-excerpt">Practices. All small. They turn big once networked.</p>
+  {% endcase %}
   {% for post in posts %}
     {% include post-card.html post=post feed=true %}
   {% else %}
