@@ -10,7 +10,7 @@ No clock running underneath it, counting toward something you're supposed to dec
 
 You can stay as long as it takes. Longer, even, than that.
 
-This is [the floor]({{ '/the-floor/' | relative_url }}). Warmth first. Everything else after.
+This is [The Floor]({{ '/the-floor/' | relative_url }}). Warmth first. Everything else after.
 
 [Art of Small Things]({{ '/the-art-of-small-things/' | relative_url }}) is built the same way — the room before the ask, belonging before the frame, before anyone is handed a single thing to do.
 
