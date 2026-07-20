@@ -127,9 +127,7 @@ A [link inside a sentence](/) uses the accent colour, same as everywhere else on
 
 ### Image with caption
 
-{% include image.html src="/assets/images/placeholder.jpg" alt="Placeholder — swap for a real image to test" caption="Polaroid frame — off-white, heavier on the bottom, caption handwritten in." %}
-
-<p class="dev-note"><span class="dev-note__label">Note</span> The image above will show as broken until a real file exists at that path — the frame, caption font, and spacing around it can still be judged.</p>
+{% include image.html src="/assets/images/yogi.jpg" alt="Yogi, a small apricot poodle, lying on a bed looking at the camera" caption="Yogi" %}
 
 Full-width responsive image inside a polaroid frame — off-white background, heavier border on the bottom than the sides or top, caption sits inside that bottom margin in a marker font. Deliberately not polished. `src` and `alt` required, `caption` optional.
 
