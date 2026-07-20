@@ -161,10 +161,6 @@ a {
   margin-bottom: var(--space-1);
 }
 
-.post__body li::marker {
-  color: var(--color-accent);
-}
-
 .video-embed {
   position: relative;
   width: 100%;
