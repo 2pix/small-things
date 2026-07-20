@@ -64,13 +64,11 @@ Not rooted in a direction. Rooted in the knowing in the body. That is what leads
 
 Someone I work with saw that immediately. Without being told.
 
-{% include divider.html %}
+I started by writing lies.
 
-It was never just a job.
+The ones we tell ourselves.
 
-The women I was interviewing could have been me. Different country. Different circumstances. That is the whole difference.
-
-My own family hired several of them, over the years, so we could spend our time on other things.
+The ones I told myself.
 
 {% include divider.html %}
 
@@ -78,7 +76,7 @@ I stopped formal work to take care of my parents.
 
 I am still writing.
 
-Not stopping.
+In fact I have more to say now that I have pockets of time.
 
 There are things that need to be said out loud. Not to normalise them. To release the shame sitting on them like a ghost attached to the phrase itself.
 
@@ -86,11 +84,17 @@ I had to do it for myself first.
 
 It shifted things for the people around me too. Especially in caregiving.
 
-Running both — the business, and the care I actually want to give my family — was too draining.
+Running both — the job, and the care I actually want to give my family — was too draining.
 
 I stopped one.
 
 I am going to document the other.
+
+{% include divider.html %}
+
+It was never just a job.
+
+The women I was interviewing could have been me. Different country. Different circumstances. That is the whole difference.
 
 I took the calls. The patterns showed up on their own.
 
