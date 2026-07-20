@@ -4,25 +4,27 @@ title: About
 permalink: /about/
 ---
 
-Nothing on this page is waiting for you to hurry.
+Nothing on these pages are waiting for you to hurry.
 
 No clock running underneath it, counting toward something you're supposed to decide before you're ready.
 
 You can stay as long as it takes. Longer, even, than that.
 
-This is the floor. Warmth first. Everything else after.
+This is [the floor]({{ '/the-floor/' | relative_url }}). Warmth first. Everything else after.
 
-Art of Small Things is built the same way — the room before the ask, belonging before the frame, before anyone is handed a single thing to do.
+[Art of Small Things]({{ '/the-art-of-small-things/' | relative_url }}) is built the same way — the room before the ask, belonging before the frame, before anyone is handed a single thing to do.
 
 You are standing on it now.
 
 {% include divider.html %}
 
+**Why put this outside substack now?**
+
 This is here so Black Cat has a home.
 
 Not a metaphor. No pun intended.
 
-Pieces sitting in folders that never went anywhere. They need somewhere to land.
+I have more pieces sitting in folders that never went anywhere. They need somewhere to land.
 
 {% include divider.html %}
 
@@ -46,40 +48,6 @@ That is just not looking away.
 
 {% include divider.html %}
 
-He said he loved her. He didn't move. Didn't end it either.
-
-Someone called this wishy washy. The gap between what he felt and what he did. A man who couldn't commit to his own life.
-
-From the outside, it looks like that.
-
-But there is a difference between avoidance and only claiming what is already true.
-
-Avoidance runs from the unknown. This stays inside it.
-
-Staying suspended in not-knowing takes more than reaching for an answer.
-
-It is harder still when what you have is not a direction but a pull. Not outward. Internal. Pointing nowhere you can name yet.
-
-Just pointing.
-
-You cannot say what you do not yet know.
-
-You can only say what is true so far.
-
-I know this because I am standing in the same place. Not about a person. About my own life.
-
-There is a tile under my feet that sounds hollow. Not wrong. Hollow. A gap beneath it that has not opened yet.
-
-When it opens, the floor goes sideways. The sky tilts ninety degrees left. Where the horizon was, there will be something that was always there.
-
-This is how you know what's underneath:
-
-You don't.
-
-You stand on it until it gives, and find out you were already standing on solid ground the whole time.
-
-{% include divider.html %}
-
 People respond to *How to Win a Million Dollars.* To *10 Steps to —.*
 
 I couldn't write those unless I had personally done it. Writing it any other way would feel like a lie.
@@ -91,16 +59,6 @@ This writing spirals.
 Not rooted in a direction. Rooted in the knowing in the body. That is what leads.
 
 Someone I work with saw that immediately. Without being told.
-
-{% include divider.html %}
-
-How I write is how I notice.
-
-Circular. Sideways.
-
-I grew up in Singapore with a specific slant.
-
-Domestic helpers I could confide in.
 
 {% include divider.html %}
 
@@ -137,13 +95,3 @@ In the meantime: the cases. What I saw. No names. Just what I noticed.
 What they showed me was a window. A chance to make a real difference for my own family. Or at least try, before it closes.
 
 The business was never mine.
-
-## Keeping the funding small — proof, not limitation
-
-## The roadmap
-
-## Free, by design
-
-## Tipping, not gatekeeping
-
-## A differentiated approach — starting with me
