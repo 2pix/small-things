@@ -176,9 +176,6 @@ a {
 
 .post-image {
   margin: var(--space-4) 0;
-  background: #f2ede4;
-  padding: var(--space-3) var(--space-3) var(--space-4);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
 }
 
 .post-image img {
@@ -187,13 +184,30 @@ a {
   display: block;
 }
 
-.post-image figcaption {
+.post-image--polaroid {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  background: #f2ede4;
+  padding: var(--space-3) var(--space-3) var(--space-4);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  transform: rotate(-2deg);
+}
+
+.post-image--polaroid figcaption {
   font-family: "Permanent Marker", cursive;
   font-size: 1rem;
   color: #1a1814;
   text-align: center;
   margin-top: var(--space-2);
   padding: 0 var(--space-1);
+}
+
+.post-image--full figcaption {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  opacity: 0.6;
+  margin-top: var(--space-1);
 }
 
 .pull-quote {

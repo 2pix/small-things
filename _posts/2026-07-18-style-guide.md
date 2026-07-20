@@ -125,15 +125,27 @@ A [link inside a sentence]({{ '/' | relative_url }}) uses the accent colour, sam
 
 {% include divider.html %}
 
-### Image with caption
+### Image with caption — polaroid (default)
 
 {% include image.html src="/assets/images/yogi.jpg" alt="Yogi, a small apricot poodle, lying on a bed looking at the camera" caption="Yogi" %}
 
-Full-width responsive image inside a polaroid frame — off-white background, heavier border on the bottom than the sides or top, caption sits inside that bottom margin in a marker font. Deliberately not polished. `src` and `alt` required, `caption` optional.
+Not full-width — deliberately narrower than the text column (65%) and tilted, so it reads as a small physical photo rather than a hero image. Off-white frame, heavier border on the bottom than the sides or top, caption sits inside that bottom margin in a marker font. `src` and `alt` required, `caption` optional.
 
 {% raw %}
 ```
 {% include image.html src="/assets/images/photo.jpg" alt="description" caption="Optional caption or credit" %}
+```
+{% endraw %}
+
+### Image with caption — full width
+
+{% include image.html src="/assets/images/yogi.jpg" alt="Yogi, a small apricot poodle, lying on a bed looking at the camera" caption="Yogi, full width" full=true %}
+
+No frame, no tilt, fills the text column — for when the image should carry full visual weight rather than sit as an incidental object. Same parameters, plus `full=true`.
+
+{% raw %}
+```
+{% include image.html src="/assets/images/photo.jpg" alt="description" caption="Optional caption or credit" full=true %}
 ```
 {% endraw %}
 
