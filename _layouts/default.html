@@ -5,10 +5,17 @@
 </head>
 <body{% if page.category %} data-category="{{ page.category }}"{% endif %}>
   <header class="site-header">
+    {% if page.url == '/' %}
+    <div class="site-title-row site-title-row--home">
+      <a href="{{ '/' | relative_url }}" class="site-title site-title--home">The Art of Small Things</a>
+      <p class="site-subtitle site-subtitle--home">At home in a world filled with agenda.</p>
+    </div>
+    {% else %}
     <div class="site-title-row">
       <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
-      <p class="site-subtitle">{{ site.description }}</p>
+      {% if page.title %}<p class="site-subtitle">{{ page.title }}</p>{% endif %}
     </div>
+    {% endif %}
     {% include nav.html %}
   </header>
 
