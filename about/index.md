@@ -36,6 +36,10 @@ Sometimes too much comes in at once. I learned to pause with it. Not push throug
 
 Making sense of the writing meant going back through years that had never been processed.
 
+I grew up learning by diagram. Drawing the shapes, connecting them, colouring them into categories until a pattern showed itself.
+
+That didn't help here.
+
 For a long time the story was: too sensitive. Felt too much.
 
 I sat with that story until it stopped being true.
