@@ -680,7 +680,4 @@ main {
     margin-top: auto; /* anchors About to the bottom of the rail, mirroring the logo at the top */
   }
 
-  .post__body {
-    text-align: justify;
-  }
 }
