@@ -220,10 +220,22 @@ a {
   margin-top: var(--space-1);
 }
 
-.post__body p.divider {
-  text-align: center;
+.post__body .divider {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
   opacity: 0.6;
   margin: var(--space-4) 0;
+}
+
+.divider__line {
+  flex: 1 1 0;
+  height: 1px;
+  background: currentColor;
+}
+
+.divider__mark {
+  flex-shrink: 0;
 }
 
 /* Native markdown blockquote - "bootcamp" convention: left border, tinted background, small radius */
