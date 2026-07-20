@@ -20,7 +20,7 @@ You are standing on it now.
 
 **Why put this outside substack now?**
 
-This is here so Black Cat has a home.
+This is here so [Black Cat]({{ '/black-cat/' | relative_url }}) has a home.
 
 Not a metaphor. No pun intended.
 
