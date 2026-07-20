@@ -566,10 +566,22 @@ main {
 
 .post-pagination {
   display: flex;
-  justify-content: space-between;
   gap: var(--space-2);
   padding: var(--space-3) 0 var(--space-8); /* extra bottom clearance so back-to-top (fixed, bottom-right) never sits over the Next link */
-  border-top: 1px solid;
+}
+
+.post-pagination__prev,
+.post-pagination__next {
+  flex: 1 1 0;
+  min-width: 0; /* lets text-overflow: ellipsis actually truncate inside a flex item */
+  padding: var(--space-2);
+  border: 1px solid color-mix(in srgb, var(--color-text) 25%, transparent);
+  border-radius: 8px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  color: inherit;
 }
 
 .post-pagination__next {
@@ -619,12 +631,8 @@ main {
     margin: 0;
   }
 
-  .site-title-row {
-    justify-content: flex-start; /* sits in normal flow now, aligned with main content — no longer pulled out over the rail */
-  }
-
   .site-title-row--home {
-    align-items: flex-start;
+    align-items: center;
   }
 
   .page__title {

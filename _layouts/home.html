@@ -1,8 +1,7 @@
 ---
 layout: default
 ---
-{% assign start_here = site.posts | where: "start_here", true | first %}
-{% assign latest = site.posts | where_exp: "p", "p.start_here != true" | slice: 0, 5 %}
+{% assign latest = site.posts | slice: 0, 5 %}
 
 <section class="latest">
   <p class="latest-label">Latest</p>
@@ -11,8 +10,10 @@ layout: default
   {% endfor %}
 </section>
 
-{% if start_here %}
 <section class="start-here">
-  {% include post-card.html post=start_here highlight=true %}
+  <article class="post-card post-card--start-here">
+    <p class="post-card__eyebrow">Start Here →</p>
+    <h2 class="post-card__title"><a href="{{ '/about/' | relative_url }}">About</a></h2>
+    <p class="post-card__subtitle">At home in a world crowded with agenda.</p>
+  </article>
 </section>
-{% endif %}
