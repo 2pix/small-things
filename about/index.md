@@ -76,9 +76,9 @@ I stopped formal work to take care of my parents.
 
 I am still writing.
 
-In fact I have more to say now that I have pockets of time.
+I have more to say.
 
-There are things that need to be said out loud. Not to normalise them. To release the shame sitting on them like a ghost attached to the phrase itself.
+There are things that need to be said out loud. Not to normalise them. To release the shame packed into each letter like pressure with nowhere else to go.
 
 I had to do it for myself first.
 
@@ -88,17 +88,21 @@ Running both — the job, and the care I actually want to give my family — was
 
 I stopped one.
 
-I am going to document the other.
-
-{% include divider.html %}
+I am going to document both.
 
 It was never just a job.
 
 The women I was interviewing could have been me. Different country. Different circumstances. That is the whole difference.
 
-I took the calls. The patterns showed up on their own.
+I took the calls. The cases. In Singapore. In real life.
 
-In the meantime: the cases. What I saw. No names. Just what I noticed.
+Each one felt like the only emergency in the world.
+
+Enough of them, and the emergency wore off. What was underneath had been there the whole time.
+
+The patterns showed up on their own.
+
+What I saw. No names. Just what I noticed.
 
 What they showed me was a window. A chance to make a real difference for my own family. Or at least try, before it closes.
 
