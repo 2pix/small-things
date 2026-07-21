@@ -233,6 +233,43 @@ a {
   margin-top: var(--space-1);
 }
 
+.footnote,
+.reversefootnote {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+sup.footnote {
+  font-size: 0.7em;
+}
+
+.footnotes {
+  margin-top: var(--space-4);
+  padding-top: var(--space-3);
+  border-top: 1px solid color-mix(in srgb, var(--color-text) 20%, transparent);
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  opacity: 0.85;
+}
+
+.footnotes ol {
+  padding-left: var(--space-3);
+  margin: 0;
+}
+
+.footnotes li {
+  margin-bottom: var(--space-1);
+}
+
+.footnotes li p {
+  margin: 0;
+  display: inline;
+}
+
+.reversefootnote {
+  margin-left: 4px;
+}
+
 .post__body .divider {
   display: flex;
   align-items: center;

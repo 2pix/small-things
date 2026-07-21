@@ -125,6 +125,26 @@ A [link inside a sentence]({{ '/' | relative_url }}) uses the accent colour, sam
 
 {% include divider.html %}
 
+### Footnotes
+
+Native Kramdown syntax, no shortcode needed — a superscript reference[^1] in the accent colour, linking down to a small reference list at the very bottom of the post, each one with its own return arrow back up to where it was cited[^2].
+
+<p class="dev-note"><span class="dev-note__label">Note</span> The actual footnote text doesn't appear here — Kramdown always collects every footnote on the page into one list at the very bottom of the post, regardless of where in the source they're defined. Scroll to the end to see these two.</p>
+
+{% raw %}
+```
+A superscript reference[^1] in the body text.
+
+[^1]: The footnote text, placed anywhere in the document — usually at the end.
+[^2]: A second footnote, same syntax, numbers itself automatically.
+```
+{% endraw %}
+
+[^1]: The footnote text can go anywhere in the source file — Kramdown collects them and renders the list at the bottom regardless of where they're written.
+[^2]: Numbering is automatic and follows citation order, not the order the footnotes are written in.
+
+{% include divider.html %}
+
 ### Image with caption — polaroid (default)
 
 {% include image.html src="/assets/images/yogi.jpg" alt="Yogi, a small apricot poodle, lying on a bed looking at the camera" caption="Yogi" %}
@@ -177,4 +197,4 @@ Responsive 16:9 embed, scales to the text column width. Not rendered live here t
 
 ### This card, in the feed
 
-This post is now filed under The Floor — see it render as an actual feed card, title/subtitle/meta/excerpt and all, on [The Floor]({{ "/the-floor/" | relative_url }}) itself, alongside whatever else lives there.
+This post is filed under UX at `/ux/style-guide/` — not linked in nav yet, since UX isn't built as a real section. Findable directly by URL.
