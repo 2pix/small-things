@@ -2,11 +2,11 @@
 layout: post
 title: "Style Guide"
 subtitle: "Every text element on the site, in one place, for tuning sizes and spacing"
-category: the-floor
-permalink: /style-guide/
+category: ux
+permalink: /ux/style-guide/
 date: 2026-07-18
 ---
-This is the floor for how the site was built — the reasoning, not just the result. Nothing here was abstract. Every element, every naming convention, was considered and argued with before it landed. Filed under The Floor because that's what this is: what the site gets built against, and what holds it up.
+This is the reasoning behind how the site was built, not just the result. Nothing here was abstract. Every element, every naming convention, was considered and argued with before it landed.
 
 Every heading level, blockquote, list, and shortcode the site currently knows how to render, shown together — both a visual reference for tuning sizing and spacing, and a usage guide for the shortcodes themselves, parameters included. Still a working draft, not finished prose.
 
