@@ -127,6 +127,14 @@ a {
   margin-bottom: var(--space-2);
 }
 
+.section-intro {
+  margin-bottom: var(--space-3);
+}
+
+.section-intro p {
+  margin: 0 0 var(--space-3);
+}
+
 .post__title {
   font-size: 2rem;
   margin-bottom: var(--space-1);
