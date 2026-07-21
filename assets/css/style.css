@@ -141,14 +141,9 @@ a {
 }
 
 .post__subtitle,
-.post-card__subtitle,
-.section-excerpt {
+.post-card__subtitle {
   font-style: italic;
   opacity: 0.8;
-}
-
-.section-excerpt {
-  margin: 0 0 var(--space-2);
 }
 
 .post-card__subtitle {
