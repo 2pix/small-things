@@ -1,6 +1,7 @@
 ---
 title: What Was Owed
 subtitle: "27. Dec 2024 - He Was Fifty-One. He Had Been, By Every Account, Very Busy."
+description: "27. Dec 2024 - He Was Fifty-One. He Had Been, By Every Account, Very Busy."
 category: black-cat
 date: 2026-04-26 01:42:21 +0000
 ---

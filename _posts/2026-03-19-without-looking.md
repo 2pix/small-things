@@ -1,6 +1,7 @@
 ---
 title: Without Looking
 subtitle: "11. The table stays the same. You don't."
+description: "11. The table stays the same. You don't."
 category: black-cat
 date: 2026-03-19 12:08:51 +0000
 ---

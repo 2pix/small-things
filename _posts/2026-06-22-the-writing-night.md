@@ -1,6 +1,7 @@
 ---
 title: The Writing Night
 subtitle: "39. The love was in the not-needing-to-look."
+description: "39. The love was in the not-needing-to-look."
 category: black-cat
 date: 2026-06-22 16:27:55 +0000
 ---

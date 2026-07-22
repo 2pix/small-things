@@ -1,6 +1,7 @@
 ---
 title: Still Landing
 subtitle: "35. The current runs differently than the script assumed it would."
+description: "35. The current runs differently than the script assumed it would."
 category: black-cat
 date: 2026-06-06 11:48:23 +0000
 ---

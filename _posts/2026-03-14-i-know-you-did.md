@@ -1,6 +1,7 @@
 ---
 title: I know you did
 subtitle: "9. He was present, warm, and somewhere else entirely."
+description: "9. He was present, warm, and somewhere else entirely."
 category: black-cat
 date: 2026-03-14 13:20:18 +0000
 ---
