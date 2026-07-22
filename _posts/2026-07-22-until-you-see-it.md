@@ -2,7 +2,7 @@
 title: Until You See It
 subtitle: "To break the structure, someone must see the structure first."
 description: "Two businesses started on desire, never asking if they should exist. This one started smaller — and the structure only became visible after enough of it was already built."
-category: the-art-of-small-things
+category: small-things
 date: 2026-07-22
 ---
 Some people say you should write toward a question you don't have the answer to yet. I don't work like that now. I used to.

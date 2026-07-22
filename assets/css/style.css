@@ -741,7 +741,7 @@ main {
   }
 
   /* Bottom-to-top reading order Claire specified: Black Cat, then The Floor, then The Art of Small Things */
-  .story-pill--the-art-of-small-things {
+  .story-pill--small-things {
     order: 1;
   }
 
