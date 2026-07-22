@@ -1,6 +1,7 @@
 ---
 title: The Garden Won't Do Itself
 subtitle: "16. Twelve Days of Being Nobody in Particular"
+description: "16. Twelve Days of Being Nobody in Particular"
 category: black-cat
 date: 2026-04-01 05:27:15 +0000
 ---

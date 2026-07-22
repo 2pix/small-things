@@ -1,6 +1,7 @@
 ---
 title: A Place Where No One Performs
 subtitle: "2: And No One Needs To"
+description: "2: And No One Needs To"
 category: black-cat
 date: 2026-02-11 02:52:18 +0000
 ---

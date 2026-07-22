@@ -1,6 +1,7 @@
 ---
 title: Not enough room
 subtitle: "15. A Man Who Has Never Spent a Saturday in His Own Apartment"
+description: "15. A Man Who Has Never Spent a Saturday in His Own Apartment"
 category: black-cat
 date: 2026-03-27 12:20:16 +0000
 ---

@@ -1,6 +1,7 @@
 ---
 title: The Return
 subtitle: "18. He only knew his part."
+description: "18. He only knew his part."
 category: black-cat
 date: 2026-04-09 16:13:47 +0000
 ---
