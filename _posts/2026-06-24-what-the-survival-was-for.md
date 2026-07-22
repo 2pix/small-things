@@ -1,6 +1,7 @@
 ---
 title: What the Survival Was For
 subtitle: "Lie 40. The instruction was given in good faith."
+description: "Lie 40. The instruction was given in good faith."
 category: black-cat
 date: 2026-06-24
 ---

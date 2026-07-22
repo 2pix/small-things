@@ -1,6 +1,7 @@
 ---
 title: "[TEST] Art of Small Things Placeholder"
 subtitle: "Delete this post once real content exists — a full-length mockup with every featured element"
+description: "Delete this post once real content exists — a full-length mockup with every featured element"
 category: the-art-of-small-things
 date: 2026-07-18
 ---

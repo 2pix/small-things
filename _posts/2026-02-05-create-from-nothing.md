@@ -1,6 +1,7 @@
 ---
 title: Create from Nothing
 subtitle: "1: On attention, exile, and returning to what is already yours"
+description: "1: On attention, exile, and returning to what is already yours"
 category: black-cat
 date: 2026-02-05
 ---

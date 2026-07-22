@@ -1,6 +1,7 @@
 ---
 title: Neither of You is Lying - Lie 3
 subtitle: "Lie 17: Enough honest doors, built from True materials, add up to a house you can live in with integrity."
+description: "Lie 17: Enough honest doors, built from True materials, add up to a house you can live in with integrity."
 category: black-cat
 date: 2026-04-04 12:02:25 +0000
 ---

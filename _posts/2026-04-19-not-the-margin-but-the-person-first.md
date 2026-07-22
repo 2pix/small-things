@@ -1,6 +1,7 @@
 ---
 title: Not the margin, but the person first
 subtitle: "23. It is enough to have done today's part."
+description: "23. It is enough to have done today's part."
 category: black-cat
 date: 2026-04-19 03:01:03 +0000
 ---

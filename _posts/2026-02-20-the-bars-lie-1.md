@@ -1,6 +1,7 @@
 ---
 title: The Bars
 subtitle: "4: A lie. On self-abandonment"
+description: "4: A lie. On self-abandonment"
 category: black-cat
 date: 2026-02-20 11:46:30 +0000
 ---

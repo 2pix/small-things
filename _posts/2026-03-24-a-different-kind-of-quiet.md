@@ -1,6 +1,7 @@
 ---
 title: The Room Is There
 subtitle: "14. A meditation on space and sensation"
+description: "14. A meditation on space and sensation"
 category: black-cat
 date: 2026-03-24 12:01:38 +0000
 ---
