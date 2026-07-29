@@ -8,6 +8,8 @@ theme: null
 markdown: kramdown
 permalink: /:categories/:year-:month-:day-:title/
 
+future: true
+
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
