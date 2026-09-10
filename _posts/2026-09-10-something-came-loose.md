@@ -3,7 +3,7 @@ title: Something Came Loose
 subtitle: "44. She had mistaken the staying for choosing."
 description: "44. A phone call with David about hiring his mother's caregiver turns into real advice about dignity over competence. Walking home, Amandha faces down a marriage built on staying rather than wanting, and decides to keep her own flat unfinished, on purpose."
 category: black-cat
-date: 2026-07-31
+date: 2026-09-10
 ---
 The café had mostly cleared by the time they stood to go, staff already flipping chairs onto the far tables. Amandha unfolded Yogi's pram back into its seat, and he climbed the little ramp himself, three short steps and a fourth pushing off with his back legs, then settled facing forward like leaving had been his idea.
 
