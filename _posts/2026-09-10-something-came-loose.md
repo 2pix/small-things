@@ -1,6 +1,6 @@
 ---
 title: Something Came Loose
-subtitle: "44. She had mistaken the staying for choosing."
+subtitle: "44. Arriving at the same decision, twice in two days, and it felt like the same thing."
 description: "44. A phone call with David about hiring his mother's caregiver turns into real advice about dignity over competence. Walking home, Amandha faces down a marriage built on staying rather than wanting, and decides to keep her own flat unfinished, on purpose."
 category: black-cat
 date: 2026-09-10
