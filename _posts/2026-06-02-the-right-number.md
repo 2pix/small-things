@@ -1,7 +1,5 @@
----
-title: The Right Number
+---title: The Right Number
 subtitle: "32. A lie. The knowledge lives in the correction."
-description: "32. A lie. The knowledge lives in the correction."
 category: black-cat
 date: 2026-06-02 15:34:00 +0000
 ---

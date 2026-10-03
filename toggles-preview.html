@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Small Things - toggle preview</title>
+<style>
+@font-face { font-family: "Lexend"; src: url("assets/fonts/Lexend-300.woff2") format("woff2"); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: "Lexend"; src: url("assets/fonts/Lexend-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Lexend"; src: url("assets/fonts/Lexend-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Lexend"; src: url("assets/fonts/Lexend-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
+</style>
+<style>
+:root {
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-6: 48px;
+  --space-8: 64px;
+
+  --color-bg: #0a2535;      /* FIX #10: Obsidian dark teal (her Hermes Teal ground) */
+  --color-text: #f2e9c9;    /* light yellow reading ink */
+  --color-accent: #e08a3c;  /* orange - links, eyebrows */
+  --color-heading: #e8963f; /* orange headings */
+
+
+  --font-serif: "Noto Serif", Georgia, "Times New Roman", serif;
+  --font-sans: "Montserrat", system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-heading);
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--color-accent);
+}
+
+/* UI chrome — nav, meta, controls — stays sans, smaller, quieter than the reading type */
+.stories-row,
+.section-tags,
+.post__meta,
+.post-card__meta,
+.post-card__eyebrow,
+.post-pagination,
+.site-footer,
+.back-to-top,
+.site-subtitle {
+  font-family: var(--font-sans);
+}
+
+.post__meta,
+.post-card__meta {
+  font-size: 1rem; /* FIX #12: was 0.8125rem and faded at 0.75 - hard to read at the moment someone decides to stay */
+  letter-spacing: 0.02em;
+  opacity: 1;
+}
+
+.post__meta {
+  margin-bottom: var(--space-4);
+}
+
+.tag-pill {
+  font-size: 0.875rem;
+  letter-spacing: 0.02em;
+}
+
+.story-pill__label {
+  font-size: 0.5625rem;
+  letter-spacing: 0.02em;
+}
+
+.post-card__eyebrow {
+  font-size: 0.8125rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin: 0 0 var(--space-1);
+}
+
+.site-title {
+  font-family: var(--font-sans);
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.site-title-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 4px;
+}
+
+.site-subtitle {
+  font-size: 0.55rem;
+  opacity: 0.75;
+  margin: 0;
+}
+
+.site-title-row--home {
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.site-title--home {
+  font-size: 1.4rem;
+}
+
+.site-subtitle--home {
+  font-size: 0.8rem;
+  opacity: 0.85;
+}
+
+.section-label,
+.post__title,
+.post-card__title {
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.section-label {
+  font-size: 1.75rem;
+  margin-bottom: var(--space-2);
+}
+
+.section-intro {
+  margin-bottom: var(--space-3);
+}
+
+.section-intro p {
+  margin: 0 0 var(--space-3);
+}
+
+.post__title {
+  font-size: 2rem;
+  margin-bottom: var(--space-1);
+}
+
+.post__subtitle,
+.post-card__subtitle {
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.post-card__subtitle {
+  font-size: 0.9375rem;
+}
+
+.post__body p {
+  margin: 0 0 var(--space-3);
+}
+
+.post__body ul,
+.post__body ol {
+  margin: 0 0 var(--space-3);
+  padding-left: var(--space-3);
+}
+
+.post__body li {
+  margin-bottom: var(--space-1);
+}
+
+.video-embed {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: var(--space-3) 0;
+}
+
+.video-embed iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.post-image {
+  margin: var(--space-4) 0;
+}
+
+.post-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.post-image--polaroid {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  background: #f2ede4;
+  padding: var(--space-3) var(--space-3) var(--space-4);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  transform: rotate(-2deg);
+}
+
+.post-image--polaroid figcaption {
+  font-family: "Permanent Marker", cursive;
+  font-size: 1rem;
+  color: #1a1814;
+  text-align: center;
+  margin-top: var(--space-2);
+  padding: 0 var(--space-1);
+}
+
+.post-image--full figcaption {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  opacity: 0.6;
+  margin-top: var(--space-1);
+}
+
+.pull-quote {
+  margin: var(--space-4) 0;
+  padding-left: var(--space-3);
+  border-left: 2px solid var(--color-accent);
+  font-style: italic;
+}
+
+.pull-quote p {
+  margin: 0;
+}
+
+.pull-quote cite {
+  display: block;
+  font-family: var(--font-sans);
+  font-style: normal;
+  font-size: 0.8125rem;
+  opacity: 0.7;
+  margin-top: var(--space-1);
+}
+
+.footnote,
+.reversefootnote {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+sup.footnote {
+  font-size: 0.7em;
+}
+
+.footnotes {
+  margin-top: var(--space-4);
+  padding-top: var(--space-3);
+  border-top: 1px solid color-mix(in srgb, var(--color-text) 20%, transparent);
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  opacity: 0.85;
+}
+
+.footnotes ol {
+  padding-left: var(--space-3);
+  margin: 0;
+}
+
+.footnotes li {
+  margin-bottom: var(--space-1);
+}
+
+.footnotes li p {
+  margin: 0;
+  display: inline;
+}
+
+.reversefootnote {
+  margin-left: 4px;
+}
+
+.post__body .divider {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  opacity: 0.6;
+  width: 33.333%;
+  margin: var(--space-4) auto;
+}
+
+.divider__line {
+  flex: 1 1 0;
+  height: 1px;
+  background: currentColor;
+}
+
+.divider__mark {
+  flex-shrink: 0;
+}
+
+/* Native markdown blockquote - "bootcamp" convention: left border, tinted background, small radius */
+.post__body blockquote {
+  margin: var(--space-3) 0;
+  padding: var(--space-2) var(--space-3);
+  border-left: 3px solid var(--color-accent);
+  background: color-mix(in srgb, var(--color-accent) 8%, transparent);
+  border-radius: 1px;
+}
+
+.post__body blockquote p {
+  margin: 0;
+}
+
+/* Callout - distinct from blockquote: full tint, no left border, rounded box, optional label */
+.callout {
+  margin: var(--space-3) 0;
+  padding: var(--space-3);
+  background: color-mix(in srgb, var(--color-accent) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--color-accent) 30%, transparent);
+  border-radius: 4px;
+}
+
+.callout__label {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-accent);
+  margin: 0 0 var(--space-1);
+}
+
+.callout p {
+  margin: 0;
+}
+
+/* Dev note - muted aside in working docs like the style guide, distinct from real body content */
+.dev-note {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  opacity: 0.5;
+  margin: var(--space-1) 0 var(--space-3);
+}
+
+.dev-note__label {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+  margin-right: var(--space-1);
+}
+
+/* Code blocks - syntax highlighting via Rouge (kramdown's built-in highlighter), warm palette to match the site */
+.highlight {
+  background: color-mix(in srgb, var(--color-text) 6%, var(--color-bg));
+  border-radius: 4px;
+  padding: var(--space-2);
+  overflow-x: auto;
+  margin: var(--space-3) 0;
+}
+
+.highlight pre {
+  margin: 0;
+}
+
+.highlight code {
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.highlight .c, .highlight .c1, .highlight .cm { color: var(--color-text); opacity: 0.5; font-style: italic; } /* comments */
+.highlight .k, .highlight .kd, .highlight .kn, .highlight .kt { color: var(--color-accent); } /* keywords */
+.highlight .s, .highlight .s1, .highlight .s2, .highlight .sb { color: #a8b88a; } /* strings - warm muted green */
+.highlight .m, .highlight .mi, .highlight .mf { color: #c9a679; } /* numbers - warm tan */
+.highlight .nc, .highlight .nf, .highlight .nl { color: var(--color-text); } /* names/properties */
+.highlight .no { color: #c9a679; } /* constants */
+.highlight .p { color: var(--color-text); opacity: 0.6; } /* punctuation */
+.highlight .nt { color: var(--color-accent); } /* HTML tags */
+.highlight .na { color: #c9a679; } /* HTML attributes */
+
+.post-card__title {
+  font-size: 1.25rem;
+  margin: 0 0 var(--space-1);
+}
+
+.start-here {
+  margin-top: var(--space-3);
+  padding: var(--space-2) 0;
+}
+
+main {
+  max-width: 600px; /* FIX #13: reading lines ~66 letters, was 640px (~72) */
+  margin: 0 auto;
+  padding: var(--space-1) 5%; /* 5% either side so text doesn't slam into the phone edge */
+}
+
+.page__title {
+  padding-top: var(--space-3);
+}
+
+.site-header {
+  max-width: 600px; /* FIX #13: reading lines ~66 letters, was 640px (~72) */
+  margin: 0 auto;
+  padding: var(--space-2) var(--space-3) var(--space-1);
+}
+
+.scenes-banner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--space-1);
+  padding: var(--space-1) var(--space-3);
+  background: color-mix(in srgb, var(--color-accent) 12%, var(--color-bg));
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+}
+
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.scenes-banner__icon {
+  font-size: 14px;
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.scenes-banner p {
+  margin: 0;
+}
+
+.scenes-banner a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.latest-label {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  opacity: 0.6;
+  margin: 0 0 var(--space-1);
+}
+
+.rail-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.rail-logo__mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--color-accent) 14%, transparent);
+  color: var(--color-accent);
+}
+
+.rail-nav-middle {
+  display: contents; /* unwrapped on mobile so its pills sit directly in the .stories-row flex row, unchanged order */
+}
+
+.stories-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  overflow-x: auto;
+  margin-top: var(--space-1);
+  height: 13vh; /* mobile rail - grown to fit larger circles */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* old Edge */
+  /* symmetric: same margin left (before Black Cat) as right (after About) - inherits site-header's equal left/right padding, no override needed */
+}
+
+.stories-row::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.story-pill {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+  padding: var(--space-1);
+  text-decoration: none;
+  color: var(--color-text);
+  opacity: 0.65;
+}
+
+.story-pill__dot {
+  display: none;
+  position: absolute;
+  top: 2px;
+  right: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: #e0403a;
+}
+
+.story-pill__dot.is-visible {
+  display: block;
+}
+
+.story-pill.is-active {
+  opacity: 1;
+}
+
+.story-pill__icon {
+  width: 60px;
+  height: 60px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.story-pill__icon .dot {
+  fill: currentColor;
+}
+
+.story-pill__icon .faint {
+  stroke-width: 0.6;
+  opacity: 0.6;
+}
+
+.story-pill.is-active .story-pill__icon {
+  color: var(--color-accent);
+}
+
+.story-pill__label {
+  white-space: normal;
+  text-align: center;
+  max-width: 60px;
+}
+
+/* Second-tier taxonomy — not wired into any section yet, no content needs it. Reserved so the height is decided before it's built. */
+.section-tags {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  overflow-x: auto;
+  height: 3vh;
+}
+
+.tag-pill {
+  white-space: nowrap;
+  padding: var(--space-1) var(--space-2);
+  border: 1px solid;
+  border-radius: 1px;
+  text-decoration: none;
+}
+
+.post-card {
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid;
+}
+
+/* Home page feed - divider shrunk to a thin centred line instead of a full-width rule */
+.latest .post-card {
+  border-bottom: none;
+}
+
+.latest .post-card::after {
+  content: "";
+  display: block;
+  width: 50%;
+  margin: var(--space-2) auto 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--color-text) 60%, transparent);
+}
+
+/* Tighter title/subtitle/meta rhythm on mobile so more of Start Here shows without scrolling */
+.latest .post-card__title {
+  margin: 0 0 4px;
+}
+
+.latest .post-card__subtitle {
+  line-height: 1.3;
+  margin: 0 0 4px;
+}
+
+.latest .post-card__meta {
+  line-height: 1.3;
+}
+
+/* Mobile shows 3 posts, desktop shows up to 5 */
+.latest article.post-card:nth-of-type(n+4) {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .latest article.post-card:nth-of-type(n+4) {
+    display: block;
+  }
+}
+
+.post-card.post-card--start-here {
+  border: 1px solid var(--color-accent);
+  background: color-mix(in srgb, var(--color-accent) 10%, transparent);
+  padding: var(--space-4);
+}
+
+.post-card--start-here .post-card__title {
+  font-size: 1.5rem;
+}
+
+.post-card__title a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.post-card__excerpt-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.post-card__excerpt {
+  position: relative;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: var(--space-2) 0 0;
+  padding-bottom: 1.5em;
+  opacity: 0.8;
+  mask-image: linear-gradient(to bottom, black 0%, black 60%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, black 60%, transparent 100%);
+}
+
+.post-pagination {
+  display: flex;
+  gap: var(--space-2);
+  padding: var(--space-3) 0 var(--space-8); /* extra bottom clearance so back-to-top (fixed, bottom-right) never sits over the Next link */
+}
+
+.post-pagination__prev,
+.post-pagination__next {
+  flex: 1 1 0;
+  min-width: 0; /* lets text-overflow: ellipsis actually truncate inside a flex item */
+  padding: var(--space-2);
+  border: 1px solid color-mix(in srgb, var(--color-text) 25%, transparent);
+  border-radius: 8px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-pagination__next {
+  margin-left: auto;
+  text-align: right;
+}
+
+.site-footer {
+  padding: var(--space-3);
+  text-align: center;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  opacity: 0.6;
+}
+
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: var(--space-3);
+  right: var(--space-3);
+  padding: var(--space-2);
+  border: 1px solid;
+  border-radius: 999px;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.back-to-top.is-visible {
+  display: block;
+}
+
+/* Desktop — first-pass breakpoint, still structural only. Rail 5% / margin 23.75% / text+images 47.5% / margin 23.75%. Text is 50% of the 95% leftover after the rail. */
+@media (min-width: 1024px) {
+  .site-header,
+  main,
+  .site-footer {
+    padding-left: 28.75%; /* rail 5% + left margin 23.75% */
+    padding-right: 23.75%; /* right margin */
+  }
+
+  main,
+  .site-header {
+    max-width: none;
+    margin: 0;
+  }
+
+  .site-title-row--home {
+    align-items: center;
+  }
+
+  .page__title {
+    padding-top: calc(var(--space-8) + var(--space-4));
+  }
+
+  .rail-logo {
+    position: fixed;
+    top: var(--space-4);
+    left: 0;
+    width: 5%;
+    margin: 0;
+    z-index: 11;
+  }
+
+  .stories-row {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 5%;
+    height: 100vh;
+    flex-direction: column;
+    overflow-x: visible;
+    overflow-y: auto;
+    margin-top: 0;
+    padding-top: var(--space-8);
+    padding-bottom: var(--space-4);
+    z-index: 10;
+  }
+
+  .rail-nav-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-3);
+    margin: auto 0; /* centres this whole cluster in the space between the logo and About */
+  }
+
+  /* Bottom-to-top reading order Claire specified: Black Cat, then The Floor, then The Art of Small Things */
+  .story-pill--the-art-of-small-things {
+    order: 1;
+  }
+
+  .story-pill--the-floor {
+    order: 2;
+  }
+
+  .story-pill--black-cat {
+    order: 3;
+  }
+
+  .story-pill--about {
+    margin-top: auto; /* anchors About to the bottom of the rail, mirroring the logo at the top */
+  }
+
+}
+
+/* ---- Theme toggles (Claire, 2026 Oct 3): sepia light + dyslexia font. Dark is the default; each toggle is independent and remembered. ---- */
+:root[data-theme="sepia"] {
+  --color-bg: #f4ecd8;
+  --color-text: #4b3621;
+}
+:root[data-theme="sepia"] .site-footer,
+:root[data-theme="sepia"] .post-card {
+  border-color: rgba(75, 54, 33, 0.25);
+}
+:root[data-font="hyperlegible"] {
+  --font-serif: "Atkinson Hyperlegible", var(--font-sans), sans-serif;
+  --font-sans: "Atkinson Hyperlegible", system-ui, sans-serif;
+}
+:root[data-font="hyperlegible"] body {
+  letter-spacing: 0.01em;
+  word-spacing: 0.08em;
+  line-height: 1.75;
+}
+.toggle-row {
+  display: flex;
+  gap: var(--space-2);
+  position: fixed;
+  right: var(--space-3);
+  bottom: var(--space-3);
+  z-index: 50;
+}
+.toggle-btn {
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  letter-spacing: 0.04em;
+  padding: 6px 10px;
+  border: 1px solid var(--color-text);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--color-text);
+  cursor: pointer;
+  opacity: 0.6;
+}
+.toggle-btn:hover, .toggle-btn:focus { opacity: 1; }
+.toggle-btn[aria-pressed="true"] {
+  background: var(--color-text);
+  color: var(--color-bg);
+  opacity: 1;
+}
+
+</style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-title-row"><span class="site-title">The Art of Small Things</span>
+    <p class="site-subtitle">Obsidian teal + yellow ink + orange headings - preview</p></div>
+  </header>
+  <main>
+    <article>
+      <h1>Never Twice</h1>
+      <h2>Scene notes</h2>
+      <p class="post__meta">2026 Sep 27 - Black Cat</p>
+      <p>This is the new ground: the same deep teal as your Obsidian, the Hermes skin color. The reading ink is light yellow, warm not pale. Headings and subheadings carry the orange. Links use the same orange family.</p>
+      <p class="post__meta">The date line above is 16px and solid now; the lines run about 66 letters.</p>
+      <p>The toggles bottom-right still work exactly as before - Sepia stays sepia (it never takes the teal), Easy read stays Atkinson. Click, reload, they remember.</p>
+      <p>Read a few sentences at arm's length and at reading distance. If the yellow feels too bright or too weak, it is one number in :root and I will tune it.</p>
+    </article>
+  </main>
+  <div class="toggle-row" role="group" aria-label="Reading preferences">
+    <button class="toggle-btn" id="theme-toggle" type="button" aria-pressed="false">Sepia</button>
+    <button class="toggle-btn" id="font-toggle" type="button" aria-pressed="false">Easy read</button>
+  </div>
+<script>
+// Reading toggles: sepia light mode + dyslexia-kind font. Dark + serif stay the default.
+// Each toggle is independent and remembered in localStorage (Claire, 2026 Oct 3).
+(function () {
+  var root = document.documentElement;
+
+  function apply(key, attr, onValue) {
+    var stored = null;
+    try { stored = localStorage.getItem(key); } catch (e) {}
+    if (stored) root.setAttribute(attr, stored);
+    var btn = document.getElementById(key === "st-theme" ? "theme-toggle" : "font-toggle");
+    if (!btn) return;
+    var on = root.getAttribute(attr) === onValue;
+    btn.setAttribute("aria-pressed", on ? "true" : "false");
+    btn.addEventListener("click", function () {
+      var nowOn = root.getAttribute(attr) === onValue;
+      if (nowOn) {
+        root.removeAttribute(attr);
+        try { localStorage.removeItem(key); } catch (e) {}
+        btn.setAttribute("aria-pressed", "false");
+      } else {
+        root.setAttribute(attr, onValue);
+        try { localStorage.setItem(key, onValue); } catch (e) {}
+        btn.setAttribute("aria-pressed", "true");
+      }
+    });
+  }
+
+  apply("st-theme", "data-theme", "sepia");
+  apply("st-font", "data-font", "hyperlegible");
+})();
+
+</script>
+</body>
+</html>

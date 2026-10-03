@@ -1,7 +1,5 @@
----
-title: The Uncommon Kitchen
+---title: The Uncommon Kitchen
 subtitle: "31. She had made this dish close to the way her mother had made it and not close at all"
-description: "31. She had made this dish close to the way her mother had made it and not close at all"
 category: black-cat
 date: 2026-06-02
 ---
@@ -17,7 +15,7 @@ He reached for something — the wrong thing, already ahead of himself. She shoo
 
 That was the arrangement. His side ran by his logic. Hers ran by hers.
 
-{% include divider.html %}
+<p class="divider">❖</p>
 
 The kitchen assistant was already in — she had a key and had learned to start the rice at eight-forty-five without being told. Forty portions. The cooker was running.
 
@@ -33,7 +31,7 @@ Adjusted nothing. Put the lid back.
 
 "The galangal," she said, setting the bag on the counter. "Slice it thin. Add it now."
 
-{% include divider.html %}
+<p class="divider">❖</p>
 
 Forty sets confirmed — she had checked the list yesterday evening, her eyes running down the names. She had told the assistant what to prep. Some names she recognised and a few she didn't, which meant someone had shared the number.
 
@@ -43,7 +41,7 @@ The system was not designed to be understood from the outside. It was designed t
 
 She cooked more than forty. She always had. Food didn't arrive at exact numbers — a shoulder of pork was a shoulder of pork, and she cooked it whole, not to a count. What was left over after the orders were filled would find its way somewhere. Mark would eat. The assistant would eat. A regular who came in hoping might be lucky. Her food was always eaten. She had never once thrown any out.
 
-{% include divider.html %}
+<p class="divider">❖</p>
 
 The vegetables were kai lan — cleaned, blanched, ready to go in the wok close to noon. She had her own method: high heat, garlic, a small amount of oyster sauce at the end, not before. The timing mattered. Kai lan could sit for two minutes without loss. Three was too many.
 
@@ -53,7 +51,7 @@ She moved through the prep the way she moved through the morning — without hur
 
 The kitchen held its particular sounds: the rice cooker's hiss, the low bubble from the back burner, the knife on the board. Through the pass-through she could hear the café — the machine, the occasional voice, the door. Mark's domain doing its own work.
 
-{% include divider.html %}
+<p class="divider">❖</p>
 
 At eleven-fifteen she tasted the sauce again.
 
@@ -71,7 +69,7 @@ Lina looked at her.
 
 She considered this as if it were an answer to a different question. Which it was.
 
-{% include divider.html %}
+<p class="divider">❖</p>
 
 The first orders came at twelve-ten.
 
@@ -87,7 +85,7 @@ The kitchen was quiet.
 
 The assistant was already cleaning. Lina wiped down the counter herself.
 
-{% include divider.html %}
+<p class="divider">❖</p>
 
 She passed through the café on her way out.
 

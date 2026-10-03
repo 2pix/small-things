@@ -1,7 +1,5 @@
----
-title: Sometime in the Future
+---title: Sometime in the Future
 subtitle: "12. A kitchen tells the truth before the people in it do."
-description: "12. A kitchen tells the truth before the people in it do."
 category: black-cat
 date: 2026-03-21 09:07:01 +0000
 ---

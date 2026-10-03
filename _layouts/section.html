@@ -8,6 +8,11 @@ layout: default
   {% case page.category %}
     {% when "black-cat" %}
       {% include section-banner.html text="This is a novel in scenes. If you're new," link_url="/black-cat/2026-02-05-create-from-nothing/" link_text="start here" after="." %}
+      <div class="section-intro">
+        <p>Updated: 27 Sept 2026 - this body of work came in pieces. I started on a writing workshop and where prompts were given daily. I didn't always follow the prompts but it helped me to get started. The scenes form whole in my mind's eye, complete with sound, smell and taste.</p>
+        <p>A friend said these pieces read more like scenes in a play. The lies can be read like a lone voice in the dark.</p>
+        <p>The politics in these pieces live in bodies, not in arguments. What a body holds for other people, what it refuses, what it knows before anyone has a chance to think it out.</p>
+      </div>
     {% when "the-floor" %}
       <div class="section-intro">
         <p>I worked at a caregiving agency.</p>
@@ -16,7 +21,7 @@ layout: default
         <p>So I ran the numbers.</p>
         <p>Some of what I found is here.</p>
       </div>
-    {% when "small-things" %}
+    {% when "the-art-of-small-things" %}
       <div class="section-intro">
         <p>The smallest unit is a small group.</p>
         <p>Two people. Three. A meal on the same day each month. A walk. A message thread that actually responds when something is hard.</p>
@@ -25,10 +30,11 @@ layout: default
         <p>The groups that form here make their own rules. Their own rhythm. Their own vibe.</p>
         <p>This is where you learn how to start one.</p>
       </div>
+      <div class="section-intro"><p><a href="{{ "/black-cat/line/" | relative_url }}">The whole novel on one line →</a></p></div>
   {% endcase %}
   {% for post in posts %}
     {% include post-card.html post=post feed=true %}
   {% else %}
-    <p class="empty-state">Nothing filed here yet.</p>
+    <p class="empty-state">Nothing filed here yet. The floor is swept. It waits.</p>
   {% endfor %}
 </section>

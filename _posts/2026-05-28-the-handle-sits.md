@@ -1,7 +1,5 @@
----
-title: The Handle Sits
+---title: The Handle Sits
 subtitle: "30. A morning in Spottiswoode"
-description: "30. A morning in Spottiswoode"
 category: black-cat
 date: 2026-05-28 12:01:44 +0000
 ---

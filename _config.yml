@@ -8,9 +8,8 @@ theme: null
 markdown: kramdown
 permalink: /:categories/:year-:month-:day-:title/
 
-future: true
-
 plugins:
+  - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
 
@@ -28,6 +27,9 @@ defaults:
       type: "posts"
     values:
       layout: post
+
+feed:
+  path: /feed.xml
 
 exclude:
   - Gemfile

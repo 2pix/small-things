@@ -6,9 +6,11 @@
   --space-6: 48px;
   --space-8: 64px;
 
-  --color-bg: #1a1814;
-  --color-text: #e8e0d5;
-  --color-accent: #c17a4d;
+  --color-bg: #0a2535;      /* FIX #10: Obsidian dark teal (her Hermes Teal ground) */
+  --color-text: #f2e9c9;    /* light yellow reading ink */
+  --color-accent: #e08a3c;  /* orange - links, eyebrows */
+  --color-heading: #e8963f; /* orange headings */
+
 
   --font-serif: "Noto Serif", Georgia, "Times New Roman", serif;
   --font-sans: "Montserrat", system-ui, sans-serif;
@@ -22,6 +24,12 @@ h1,
 h2,
 p {
   margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-heading);
 }
 
 body {
@@ -52,9 +60,9 @@ a {
 
 .post__meta,
 .post-card__meta {
-  font-size: 0.8125rem;
+  font-size: 1rem; /* FIX #12: was 0.8125rem and faded at 0.75 - hard to read at the moment someone decides to stay */
   letter-spacing: 0.02em;
-  opacity: 0.75;
+  opacity: 1;
 }
 
 .post__meta {
@@ -120,6 +128,7 @@ a {
 .post-card__title {
   font-weight: 600;
   line-height: 1.25;
+  font-size: 1.9rem; /* FIX #17: open the gap - was ~20px against an 18px body */
 }
 
 .section-label {
@@ -191,16 +200,19 @@ a {
   width: 65%;
   margin-left: auto;
   margin-right: auto;
-  background: #f2ede4;
+  background: var(--color-text); /* callout: ink-on-ground inversion */
+  color: var(--color-bg);
   padding: var(--space-3) var(--space-3) var(--space-4);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
   transform: rotate(-2deg);
 }
 
 .post-image--polaroid figcaption {
-  font-family: "Permanent Marker", cursive;
-  font-size: 1rem;
-  color: #1a1814;
+  font-family: var(--font-sans); /* FIX #18: Permanent Marker retired */
+  font-size: 0.8125rem;
+  font-style: italic;
+  color: var(--color-text);
+  opacity: 0.8;
   text-align: center;
   margin-top: var(--space-2);
   padding: 0 var(--space-1);
@@ -360,13 +372,13 @@ sup.footnote {
 
 .highlight .c, .highlight .c1, .highlight .cm { color: var(--color-text); opacity: 0.5; font-style: italic; } /* comments */
 .highlight .k, .highlight .kd, .highlight .kn, .highlight .kt { color: var(--color-accent); } /* keywords */
-.highlight .s, .highlight .s1, .highlight .s2, .highlight .sb { color: #a8b88a; } /* strings - warm muted green */
-.highlight .m, .highlight .mi, .highlight .mf { color: #c9a679; } /* numbers - warm tan */
+.highlight .s, .highlight .s1, .highlight .s2, .highlight .sb { color: var(--code-string); } /* strings - warm muted green */
+.highlight .m, .highlight .mi, .highlight .mf { color: var(--code-number); } /* numbers - warm tan */
 .highlight .nc, .highlight .nf, .highlight .nl { color: var(--color-text); } /* names/properties */
-.highlight .no { color: #c9a679; } /* constants */
+.highlight .no { color: var(--code-number); } /* constants */
 .highlight .p { color: var(--color-text); opacity: 0.6; } /* punctuation */
 .highlight .nt { color: var(--color-accent); } /* HTML tags */
-.highlight .na { color: #c9a679; } /* HTML attributes */
+.highlight .na { color: var(--code-number); } /* HTML attributes */
 
 .post-card__title {
   font-size: 1.25rem;
@@ -379,7 +391,7 @@ sup.footnote {
 }
 
 main {
-  max-width: 640px;
+  max-width: 600px; /* FIX #13: reading lines ~66 letters, was 640px (~72) */
   margin: 0 auto;
   padding: var(--space-1) 5%; /* 5% either side so text doesn't slam into the phone edge */
 }
@@ -389,7 +401,7 @@ main {
 }
 
 .site-header {
-  max-width: 640px;
+  max-width: 600px; /* FIX #13: reading lines ~66 letters, was 640px (~72) */
   margin: 0 auto;
   padding: var(--space-2) var(--space-3) var(--space-1);
 }
@@ -741,7 +753,7 @@ main {
   }
 
   /* Bottom-to-top reading order Claire specified: Black Cat, then The Floor, then The Art of Small Things */
-  .story-pill--small-things {
+  .story-pill--the-art-of-small-things {
     order: 1;
   }
 
@@ -758,3 +770,64 @@ main {
   }
 
 }
+
+/* ---- Theme toggles (Claire, 2026 Oct 3): sepia light + dyslexia font. Dark is the default; each toggle is independent and remembered. ---- */
+:root[data-theme="sepia"] {
+  --color-bg: #f4ecd8;
+  --color-text: #4b3621;
+  --color-heading: #2e1c10; /* Claire: sepia headings are near-black brown, not orange */
+}
+:root[data-theme="sepia"] .site-footer,
+:root[data-theme="sepia"] .post-card {
+  border-color: rgba(75, 54, 33, 0.25);
+}:root {
+  --code-string: #a8b88a;
+  --code-number: #c9a679;
+}
+
+:root[data-theme="sepia"] .post-card__eyebrow {
+  color: #6b4423; /* eyebrow accent follows the brown family in sepia, not orange */
+}
+:root[data-font="hyperlegible"] {
+  --font-serif: "Lexend", var(--font-sans), sans-serif; /* easy-read face: Lexend (Claire, 2026 Oct 3) */
+  --font-sans: "Lexend", system-ui, sans-serif;
+}
+:root[data-font="hyperlegible"] body {
+  letter-spacing: 0.01em;
+  word-spacing: 0.08em;
+  line-height: 1.75;
+}
+.toggle-row {
+  display: flex;
+  gap: var(--space-2);
+  position: fixed;
+  right: var(--space-3);
+  bottom: var(--space-3);
+  z-index: 50;
+}
+.toggle-btn {
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  letter-spacing: 0.04em;
+  padding: 6px 10px;
+  border: 1px solid var(--color-text);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--color-text);
+  cursor: pointer;
+  opacity: 0.6;
+}
+.toggle-btn:hover, .toggle-btn:focus { opacity: 1; }
+.toggle-btn[aria-pressed="true"] {
+  background: var(--color-text);
+  color: var(--color-bg);
+  opacity: 1;
+}
+
+/* FIX #5: The Floor holds space; an empty room is not an unfinished one. */
+.empty-state {
+  opacity: 0.85;
+  font-style: italic;
+}
+
+

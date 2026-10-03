@@ -1,7 +1,5 @@
----
-title: What Holds
+---title: What Holds
 subtitle: "38. Saying it had become less effort than not saying it."
-description: "38. Saying it had become less effort than not saying it."
 category: black-cat
 date: 2026-06-21 13:55:44 +0000
 ---

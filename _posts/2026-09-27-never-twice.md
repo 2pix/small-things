@@ -1,207 +1,217 @@
 ---
-title: Never Twice
-subtitle: "45. An old dog reads the walk home. Then she learns it again on a screen, in the dark."
-description: "45. A dog's thirteen years of reading a body versus a screen. When she finally trusts the first signal instead of waiting for a second one, something between them settles differently."
+title: "Never Twice"
+date: 2026-09-27 00:00:00 +0800
 category: black-cat
-date: 2026-09-27
+description: "A dog’s thirteen years of reading a body versus a screen. When she finally trusts the first signal instead of waiting for a second one, something between them settles differently."
 ---
-{% include image.html src="/assets/images/yogi-the-walk-home.jpg" alt="A small apricot poodle walking ahead on a leash down a covered HDB walkway" caption="Yogi, leading the way home" %}
 
-I am small.
-But I have been here a long time.
 
-I know her by the sound of her feet in the corridor.
+    <figure class="post-image post-image--polaroid">
+  <img src="/assets/images/yogi-the-walk-home.jpg" alt="A small apricot poodle walking ahead on a leash down a covered HDB walkway" />
+  <figcaption>Yogi, leading the way home</figcaption>
+</figure>
+
+<p>I am small.
+But I have been here a long time.</p>
+
+<p>I know her by the sound of her feet in the corridor.
 By her gait and what it carries before she says anything.
 By her smell, which changes with the day, the week, the year.
-I have been reading it for thirteen years.
+I have been reading it for thirteen years.</p>
 
-I know her before she turns the key.
+<p>I know her before she turns the key.</p>
 
-Long enough to watch the same walk change without changing.
+<p>Long enough to watch the same walk change without changing.</p>
 
-Long enough to remember the one who walked with us before.
+<p>Long enough to remember the one who walked with us before.</p>
 
-He was not unkind. He moved at the right pace. He held the leash correctly.
+<p>He was not unkind. He moved at the right pace. He held the leash correctly.</p>
 
-But there was always a line.
+<p>But there was always a line.</p>
 
-I felt it the first walk. Not aggression. Not fear. A boundary he carried the way some animals carry their perimeter. It's from the inside, without marking it. He knew where it was. He had always known.
+<p>I felt it the first walk. Not aggression. Not fear. A boundary he carried the way some animals carry their perimeter. It’s from the inside, without marking it. He knew where it was. He had always known.</p>
 
-She did not feel it.
+<p>She did not feel it.</p>
 
-She moved toward him the way she moved toward things she wanted to understand. Closer. Closer again. He did not retreat. He held.
+<p>She moved toward him the way she moved toward things she wanted to understand. Closer. Closer again. He did not retreat. He held.</p>
 
-He was not reading the field between us.
+<p>He was not reading the field between us.
 He was reading himself.
-Always.
+Always.</p>
 
-I watched this for years.
+<p>I watched this for years.</p>
 
-The line was always there. It was not going to open. This was not a door pretending to be a wall. It was a wall that had always been a wall.
+<p>The line was always there. It was not going to open. This was not a door pretending to be a wall. It was a wall that had always been a wall.</p>
 
-I could not tell her.
+<p>I could not tell her.</p>
 
-I do not have those words.
+<p>I do not have those words.</p>
 
-Long enough to see her stop trusting the first signal
-and wait for a second that never comes.
+<p>Long enough to see her stop trusting the first signal
+and wait for a second that never comes.</p>
 
-I have seen her pause where the ground was already clear.
+<p>I have seen her pause where the ground was already clear.
 I have seen her move when the air said stay.
 She reads.
 She scrolls.
-She listens to voices that do not smell the wind.
+She listens to voices that do not smell the wind.</p>
 
-I do not blame her.
+<p>I do not blame her.
 Humans forget what the body knows
-when it is no longer asked.
+when it is no longer asked.</p>
 
-I am a scout.
+<p>I am a scout.
 I do not decide the path.
 I read it while it is still forming.
 I know the difference
 between curiosity and threat,
 between noise and pressure,
-between play and spill.
+between play and spill.</p>
 
-This is not thought.
-This is inheritance.
+<p>This is not thought.
+This is inheritance.</p>
 
-Two dogs came toward us.
+<p>Two dogs came toward us.
 Soft in the face. Loud in the field.
 Their bodies said peace.
-Their space said hunger.
+Their space said hunger.</p>
 
-I have met this before.
+<p>I have met this before.
 Not the bite.
-The blur.
+The blur.</p>
 
-Dogs who do not know where they end.
-Dogs who mean well and take too much.
+<p>Dogs who do not know where they end.
+Dogs who mean well and take too much.</p>
 
-The old question rose in me.
+<p>The old question rose in me.
 Do I step in?
 Do I hold?
-Do I become sharp?
+Do I become sharp?</p>
 
-I can still do this.
+<p>I can still do this.
 Even now.
-Even slower.
+Even slower.</p>
 
-But before the question finished, she moved.
+<p>But before the question finished, she moved.</p>
 
-Not fast.
-Not late.
+<p>Not fast.
+Not late.</p>
 
-She did not look for instruction.
+<p>She did not look for instruction.
 She did not check herself.
 She stepped half a body ahead of me
-and turned outward.
+and turned outward.</p>
 
-Her silence arrived before the dogs did.
-The line closed.
+<p>Her silence arrived before the dogs did.
+The line closed.</p>
 
-She did not tighten the leash.
-Her hand changed just enough to be felt.
+<p>She did not tighten the leash.
+Her hand changed just enough to be felt.</p>
 
-I gave the work back to the ground.
+<p>I gave the work back to the ground.
 The dogs passed.
-Nothing broke.
+Nothing broke.</p>
 
-Something in me settled differently.
+<p>Something in me settled differently.</p>
 
-I have watched her hesitate for years.
+<p>I have watched her hesitate for years.
 Read about walking instead of walking.
-Doubt what her feet had already answered.
+Doubt what her feet had already answered.</p>
 
-Today she did not ask the question twice.
-Today she trusted the first signal.
+<p>Today she did not ask the question twice.
+Today she trusted the first signal.</p>
 
-This is what she does not always understand.
+<p>This is what she does not always understand.
 Leadership is not a posture.
-It is timing.
+It is timing.</p>
 
-You step in when the field wobbles.
-You step out when it settles.
+<p>You step in when the field wobbles.
+You step out when it settles.</p>
 
-Humans stay too long.
+<p>Humans stay too long.
 Or not at all.
 They want certainty that lasts forever
-so they do not have to feel the moment.
+so they do not have to feel the moment.</p>
 
-When we turned back, the world simplified.
-It always does.
+<p>When we turned back, the world simplified.
+It always does.</p>
 
-Once the field is mapped,
-the body knows the way home.
+<p>Once the field is mapped,
+the body knows the way home.</p>
 
-I moved ahead.
-Fast.
+<p>I moved ahead.
+Fast.</p>
 
-She thinks speed means urgency.
+<p>She thinks speed means urgency.
 It does not.
-It means the question has been answered.
+It means the question has been answered.</p>
 
-I do not jump the way I once did.
+<p>I do not jump the way I once did.
 The world speaks sooner now.
-The ground answers slower.
+The ground answers slower.</p>
 
-I listen.
+<p>I listen.</p>
 
-This is not loss.
+<p>This is not loss.
 It is refinement.
-I have learned to do less.
+I have learned to do less.</p>
 
-Humans think knowing comes from accumulation.
+<p>Humans think knowing comes from accumulation.
 Books.
 Screens.
-Opinions.
+Opinions.</p>
 
-They forget that knowing arrives in moments,
-in the body.
+<p>They forget that knowing arrives in moments,
+in the body.</p>
 
-You step in when it is time.
+<p>You step in when it is time.
 You step out when it passes.
 Not because you are finished,
-but because the work is done.
+but because the work is done.</p>
 
-She stepped in.
-Then she released it.
+<p>She stepped in.
+Then she released it.</p>
 
-That is how I know she is learning again.
+<p>That is how I know she is learning again.</p>
 
-I do not watch her now.
-I walk with her.
+<p>I do not watch her now.
+I walk with her.</p>
 
-The house is quiet.
+<p>The house is quiet.
 The field is clean.
 No one is carrying
-what does not belong to them.
+what does not belong to them.</p>
 
-{% include divider.html %}
+<div class="divider">
+  <span class="divider__line"></span>
+  <span class="divider__mark" aria-hidden="true">❖</span>
+  <span class="divider__line"></span>
+</div>
 
-The television was on in the living room, a Netflix Chinese drama with the volume up for her father. Her mother called out without turning round.
+<p>The television was on in the living room, a Netflix Chinese drama with the volume up for her father. Her mother called out without turning round.</p>
 
-"Eat already?"
+<p>“Eat already?”</p>
 
-"Eat already."
+<p>“Eat already.”</p>
 
-She unclipped Yogi's lead at her bedroom door and he went past her to the new bed. Grey foam, a raised edge on three sides. She'd bought it the month before, the week when she heard him try the jump onto her bed twice and then lie down on the floor beside it instead. She had put it where she could see it from her pillow. He scratched first, turned three times and lowered himself in. Chin on the raised edge, facing her side of the room.
+<p>She unclipped Yogi’s lead at her bedroom door and he went past her to the new bed. Grey foam, a raised edge on three sides. She’d bought it the month before, the week when she heard him try the jump onto her bed twice and then lie down on the floor beside it instead. She had put it where she could see it from her pillow. He scratched first, turned three times and lowered himself in. Chin on the raised edge, facing her side of the room.</p>
 
-She switched on the computer. The two monitors came on one after the other, the left one lagging behind, the way it always did.
+<p>She switched on the computer. The two monitors came on one after the other, the left one lagging behind, the way it always did.</p>
 
-Hollow Knight on the right, where she'd left it, her knight standing in the rain at the foot of the spire in the City of Tears. On the left, the video she'd paused last night. Someone she would never know had died to the Watcher Knights more times than she had, so that she wouldn't have to. No voice over it. Only the game.
+<p>Hollow Knight on the right, where she’d left it, her knight standing in the rain at the foot of the spire in the City of Tears. On the left, the video she’d paused last night. Someone she would never know had died to the Watcher Knights more times than she had, so that she wouldn’t have to. No voice over it. Only the game.</p>
 
-She moved the notebook an inch to make room for her wrist. It lived there, beside the keyboard, a pen clipped to the cover. She didn't open it.
+<p>She moved the notebook an inch to make room for her wrist. It lived there, beside the keyboard, a pen clipped to the cover. She didn’t open it.</p>
 
-She pressed play and kept the volume low. Rain. The clank of armour. The flat sound of the nail. On the left screen the other knight struck once and stepped back. Struck once and stepped back. Never twice.
+<p>She pressed play and kept the volume low. Rain. The clank of armour. The flat sound of the nail. On the left screen the other knight struck once and stepped back. Struck once and stepped back. Never twice.</p>
 
-The first Watcher Knight dropped off its ledge and she got two hits in and died. She watched the video do it again. She tried again and got one hit in and got out, and one hit in and got out, and the first knight went down, and the second one killed her.
+<p>The first Watcher Knight dropped off its ledge and she got two hits in and died. She watched the video do it again. She tried again and got one hit in and got out, and one hit in and got out, and the first knight went down, and the second one killed her.</p>
 
-Through the wall the episode ended, and her parents went to bed. Her father's door, then the bathroom tap, then her mother's slippers down the corridor, stopping for a moment outside her room, then going on.
+<p>Through the wall the episode ended, and her parents went to bed. Her father’s door, then the bathroom tap, then her mother’s slippers down the corridor, stopping for a moment outside her room, then going on.</p>
 
-She saved and turned the screens off. The room went dark except for the bedside light and a small dot of light under the left monitor.
+<p>She saved and turned the screens off. The room went dark except for the bedside light and a small dot of light under the left monitor.</p>
 
-Yogi's eyes were open. She hadn't heard him wake, and she didn't know how long he'd been looking.
+<p>Yogi’s eyes were open. She hadn’t heard him wake, and she didn’t know how long he’d been looking.</p>
 
-She lay down on her side so she was facing him. It was a while before either of them closed their eyes.
+<p>She lay down on her side so she was facing him. It was a while before either of them closed their eyes.</p>
+
+  

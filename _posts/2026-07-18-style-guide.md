@@ -1,12 +1,9 @@
----
-layout: post
+---layout: post
 title: "Style Guide"
 subtitle: "Every text element on the site, in one place, for tuning sizes and spacing"
-description: "Every text element on the site, in one place, for tuning sizes and spacing"
 category: ux
 permalink: /ux/style-guide/
 date: 2026-07-18
-published: false
 ---
 This is the reasoning behind how the site was built, not just the result. Nothing here was abstract. Every element, every naming convention, was considered and argued with before it landed.
 

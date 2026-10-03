@@ -1,7 +1,5 @@
----
-title: The Longer Walk
+---title: The Longer Walk
 subtitle: "36. He had been in other people's questions all day."
-description: "36. He had been in other people's questions all day."
 category: black-cat
 date: 2026-06-10 17:20:05 +0000
 ---
