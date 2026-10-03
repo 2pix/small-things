@@ -500,7 +500,7 @@ main {
   padding: var(--space-1);
   text-decoration: none;
   color: var(--color-text);
-  opacity: 0.65;
+  opacity: 0.45; /* Claire, 2026 Oct 3: accent louder - idle pills recede further so the active orange pops */
 }
 
 .story-pill__dot {
