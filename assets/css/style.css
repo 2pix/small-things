@@ -200,8 +200,8 @@ a {
   width: 65%;
   margin-left: auto;
   margin-right: auto;
-  background: var(--color-text); /* callout: ink-on-ground inversion */
-  color: var(--color-bg);
+  background: #f2ede4; /* PAPER: the polaroid is a physical prop - cream in every theme, unlike UI */
+  color: #1a1814;
   padding: var(--space-3) var(--space-3) var(--space-4);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
   transform: rotate(-2deg);
@@ -211,8 +211,8 @@ a {
   font-family: var(--font-sans); /* FIX #18: Permanent Marker retired */
   font-size: 0.8125rem;
   font-style: italic;
-  color: var(--color-text);
-  opacity: 0.8;
+  color: #1a1814; /* ink on paper - theme-independent like the frame */
+  opacity: 0.85;
   text-align: center;
   margin-top: var(--space-2);
   padding: 0 var(--space-1);
