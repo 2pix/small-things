@@ -1,4 +1,5 @@
----title: Walk with Me
+---
+title: Walk with Me
 subtitle: "3: Depth without performance"
 category: black-cat
 date: 2026-02-14 05:47:08 +0000

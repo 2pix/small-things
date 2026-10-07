@@ -1,4 +1,5 @@
----title: Not in the Way You Mean
+---
+title: Not in the Way You Mean
 subtitle: "26. KL, December 2014"
 category: black-cat
 date: 2026-04-23 02:01:14 +0000

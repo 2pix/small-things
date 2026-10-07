@@ -1,4 +1,5 @@
----description: ""
+---
+description: ""
 
 title: Neither of You is Lying - Lie 3
 subtitle: "Lie 17: Enough honest doors, built from True materials, add up to a house you can live in with integrity."

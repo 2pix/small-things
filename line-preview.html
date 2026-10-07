@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Black Cat - the Line (preview of /black-cat/)</title>
+<style>
+  /* DARK (default): Hermes-sidebar ground, brighter than teal-dark; bright orange */
+  :root { --bg:#061520; --ink:#f2e9c9; --accent:#ff9d3b; --muted:rgba(242,233,201,0.6); --card:rgba(242,233,201,0.06); }
+  /* LIGHT: sepia ground, dark-brown ink, burnt orange */
+  :root[data-theme="light"] { --bg:#f4ecd8; --ink:#4b3621; --accent:#c1622e; --muted:rgba(75,54,33,0.65); --card:rgba(75,54,33,0.07); }
+  /* EASY READ (dyslexia-kind): bigger, looser, open shapes; colours untouched */
+  :root[data-font="easy"] body { font-family: Verdana, "Atkinson Hyperlegible", sans-serif; }
+  :root[data-font="easy"] .t { font-size:18px; line-height:1.5; letter-spacing:0.01em; }
+  :root[data-font="easy"] .dek { font-size:14.5px; line-height:1.6; }
+  * { box-sizing:border-box; margin:0; }
+  body { background:var(--bg); color:var(--ink); font-family:Georgia,serif; padding:20px 16px 64px; transition:background .25s,color .25s; }
+  /* toggle row - fixed, bottom right on phone, bottom right corner on desktop */
+  .toggle-row { position:fixed; right:14px; bottom:14px; display:flex; gap:8px; z-index:10; }
+  .toggle-btn { width:44px; height:44px; border-radius:50%; border:1.5px solid var(--accent); background:var(--card);
+    color:var(--accent); display:flex; align-items:center; justify-content:center; cursor:pointer; padding:0; }
+  .toggle-btn svg { width:22px; height:22px; stroke:currentColor; fill:none; stroke-width:1.8; }
+  .toggle-btn[aria-pressed="true"] { background:var(--accent); color:var(--bg); }
+  .crumb { font-family:system-ui,sans-serif; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:var(--muted); margin-bottom:6px; }
+  h1 { color:var(--accent); font-size:26px; font-weight:normal; }
+  .banner { font-family:system-ui,sans-serif; font-size:14px; color:var(--muted); margin:10px 0 2px; }
+  .banner a { color:var(--accent); text-decoration:none; border-bottom:1px solid var(--accent); }
+  .intro p { max-width:60ch; line-height:1.7; font-size:16px; margin:14px 0; }
+  .rule { border:none; border-top:1px solid var(--accent); opacity:0.25; margin:26px 0 20px; }
+  .line { position:relative; max-width:560px; margin:0 auto; padding-left:6px; }
+  .line::before { content:""; position:absolute; left:12px; top:0; bottom:0; width:3px; background:var(--accent); border-radius:2px; opacity:0.8; }
+  .band { position:relative; margin:22px 0 4px; font-family:ui-monospace,monospace; font-size:12px; letter-spacing:0.12em; display:flex; align-items:center; gap:8px; }
+  .banddot { width:13px; height:13px; border-radius:50%; border:2px solid var(--bg); margin-left:-3px; flex:none; }
+  .st { position:relative; display:flex; align-items:baseline; gap:9px; padding:8px 0 8px 6px; flex-wrap:wrap; }
+  .num { font-family:ui-monospace,monospace; font-size:10.5px; opacity:0.8; flex:none; width:22px; text-align:right; }
+  .dot { position:absolute; left:-1px; top:15px; width:10px; height:10px; border-radius:50%; background:var(--bg); border:3px solid var(--accent); flex:none; transition:background .25s; }
+  .t { font-size:16px; line-height:1.35; }
+  .t a { color:var(--ink); text-decoration:none; }
+  .t a:hover { color:var(--accent); }
+  .t a:visited { color:var(--muted); }
+  .dek { flex-basis:100%; font-family:Georgia,serif; font-style:italic; font-size:14px; line-height:1.5; color:var(--muted); padding-left:31px; }
+  .d { font-family:ui-monospace,monospace; font-size:10px; opacity:0.6; flex:none; }
+  .tag { margin-left:auto; font-family:ui-monospace,monospace; font-size:9px; letter-spacing:0.08em; color:var(--accent); flex:none; }
+  .st.interchange .dot { border-radius:3px; transform:rotate(45deg); }
+  /* LIES: gradient text, warm ember to violet (the Hermes label look) */
+  .st.interchange .t a {
+    background:linear-gradient(90deg, var(--accent) 0%, #7aa7ff 90%);
+    -webkit-background-clip:text; background-clip:text;
+    color:transparent; -webkit-text-fill-color:transparent;
+    transition:filter .2s;
+  }
+  .st.interchange .t a:hover { filter:brightness(1.25); }
+  .st.interchange .t a:visited { opacity:0.75; }
+  .st.interchange .tag { background:linear-gradient(90deg, var(--accent), #7aa7ff); -webkit-background-clip:text; background-clip:text; color:transparent; -webkit-text-fill-color:transparent; }
+  .note { font-family:system-ui,sans-serif; font-size:12px; color:var(--muted); max-width:60ch; margin-top:26px; }
+  @media (min-width:700px) {
+    body { padding:48px 32px 80px; }
+    h1 { font-size:30px; }
+    .line { max-width:640px; }
+    .t { font-size:17px; }
+    .band { font-size:13px; }
+  }
+</style></head>
+<body>
+<p class="crumb">artofsmallthings.com / black cat</p>
+<h1>Black Cat</h1>
+<p class="banner">This is a novel in scenes. If you're new, <a href="/black-cat/2026-02-05-create-from-nothing/">start here</a>.</p>
+<div class="intro">
+<p>Updated: 27 Sept 2026 - this body of work came in pieces. I started on a writing workshop and where prompts were given daily. I didn't always follow the prompts but it helped me to get started. The scenes form whole in my mind's eye, complete with sound, smell and taste.</p>
+<p>A friend said these pieces read more like scenes in a play. The lies can be read like a lone voice in the dark.</p>
+<p>The politics in these pieces live in bodies, not in arguments. What a body holds for other people, what it refuses, what it knows before anyone has a chance to think it out.</p>
+</div>
+<hr class="rule">
+<div class="st"><span class="num">1</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-02-05-create-from-nothing/">Create from Nothing</a></span><span class="d">2026 Feb 5</span><span class="dek">1: On attention, exile, and returning to what is already yours</span></div>
+<div class="st"><span class="num">2</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-02-11-a-place-where-no-one-performs/">A Place Where No One Performs</a></span><span class="d">2026 Feb 11</span><span class="dek">2: And No One Needs To</span></div>
+<div class="st"><span class="num">3</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-02-14-walk-with-me/">Walk With Me</a></span><span class="d">2026 Feb 14</span><span class="dek">3: Depth without performance</span></div>
+<div class="st interchange"><span class="num">4</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-02-20-the-bars-lie-1/">The Bars — Lie 1</a></span><span class="d">2026 Feb 20</span><span class="tag">LIE</span><span class="dek">4: A lie. On self-abandonment</span></div>
+<div class="st interchange"><span class="num">5</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-02-27-i-didnt-look-down/">I Didn't Look Down — Lie 2</a></span><span class="d">2026 Feb 27</span><span class="tag">LIE</span><span class="dek">5. A Lie. I just never noticed someone was holding it.</span></div>
+<div class="st"><span class="num">6</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-03-02-2012-body/">Body</a></span><span class="d">2026 Mar 2</span><span class="dek">6. Before the floor</span></div>
+<div class="st"><span class="num">7</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-03-08-2012-guangzhou/">GuangZhou</a></span><span class="d">2026 Mar 8</span><span class="dek">7. Where the squeezing stopped</span></div>
+<div class="st"><span class="num">8</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-03-11-2012-four-days-more/">Four Days More</a></span><span class="d">2026 Mar 11</span><span class="dek">8. You haven't solved anything. You've just been somewhere else.</span></div>
+<div class="st"><span class="num">9</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-03-14-i-know-you-did/">I know you did</a></span><span class="d">2026 Mar 14</span><span class="dek">9. He was present, warm, and somewhere else entirely.</span></div>
+<div class="st"><span class="num">10</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-03-17-the-studio-floor/">The Studio Floor</a></span><span class="d">2026 Mar 17</span><span class="dek">10. The week had been ordinary. That was the thing about it.</span></div>
+<div class="st"><span class="num">11</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-03-19-without-looking/">Without Looking</a></span><span class="d">2026 Mar 19</span><span class="dek">11. The table stays the same. You don't.</span></div>
+<div class="st"><span class="num">12</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-03-21-sometime-in-the-future/">Sometime in the Future</a></span><span class="d">2026 Mar 21</span><span class="dek">12. A kitchen tells the truth before the people in it do.</span></div>
+<div class="st"><span class="num">13</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-03-22-the-week-before/">The Week Before</a></span><span class="d">2026 Mar 22</span><span class="dek">13. What the Heart Records When No One's Watching</span></div>
+<div class="st"><span class="num">14</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-03-24-a-different-kind-of-quiet/">The Room is There</a></span><span class="d">2026 Mar 24</span><span class="dek">14. A meditation on space and sensation</span></div>
+<div class="st"><span class="num">15</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-03-27-not-enough-room/">Not Enough Room</a></span><span class="d">2026 Mar 27</span><span class="dek">15. A Man Who Has Never Spent a Saturday in His Own Apartment</span></div>
+<div class="st"><span class="num">16</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-04-01-the-garden-wont-do-itself/">The Garden Won't Do Itself</a></span><span class="d">2026 Apr 1</span><span class="dek">16. Twelve Days of Being Nobody in Particular</span></div>
+<div class="st interchange"><span class="num">17</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-04-04-neither-of-you-is-lying-lie-3/">Neither of you is Lying - Lie 3</a></span><span class="d">2026 Apr 4</span><span class="tag">LIE</span><span class="dek">Lie 17: Enough honest doors, built from True materials, add up to a house you can live in with integrity.</span></div>
+<div class="st"><span class="num">18</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-04-09-the-return/">The Return</a></span><span class="d">2026 Apr 9</span><span class="dek">18. He only knew his part.</span></div>
+<div class="st interchange"><span class="num">19</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-04-14-enough/">Enough: another lie about love</a></span><span class="d">2026 Apr 14</span><span class="tag">LIE</span><span class="dek">19. Lie. She asked the right question. I was answering mine.</span></div>
+<div class="st"><span class="num">20</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-04-14-kunming/">Kunming</a></span><span class="d">2026 Apr 14</span><span class="dek">20. 昆明 — Bright Clarity</span></div>
+<div class="st"><span class="num">22</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-04-14-two-lines/">Two Lines</a></span><span class="d">2026 Apr 14</span><span class="dek">21. He left the notebook on the desk. The phone was enough.</span></div>
+<div class="st"><span class="num">23</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-04-19-not-the-margin-but-the-person-first/">Not the Margin, but the person first</a></span><span class="d">2026 Apr 19</span><span class="dek">23. It is enough to have done today's part.</span></div>
+<div class="st"><span class="num">24</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-04-20-burnout-is-what-you-call-it/">Burn out is what you call it</a></span><span class="d">2026 Apr 20</span><span class="dek">24. HCMC - 2014</span></div>
+<div class="st"><span class="num">25</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-04-22-sixty-thirty-ten/">Sixty-Thirty-Ten</a></span><span class="d">2026 Apr 22</span><span class="dek">25. The ease of something exact</span></div>
+<div class="st"><span class="num">26</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-04-23-not-in-the-way-you-mean/">Not in the way you mean</a></span><span class="d">2026 Apr 23</span><span class="dek">26. KL, December 2014</span></div>
+<div class="st"><span class="num">27</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-04-26-what-was-owed/">What Was Owed</a></span><span class="d">2026 Apr 26</span><span class="dek">27. Dec 2024 - He Was Fifty-One. He Had Been, By Every Account, Very Busy.</span></div>
+<div class="st"><span class="num">28</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-05-25-the-borrowed-coat/">The Borrowed Coat</a></span><span class="d">2026 May 25</span><span class="dek">28. She had been looking. Just not only at dogs.</span></div>
+<div class="st"><span class="num">29</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-05-27-four-hours-is-more-than-enough/">Four Hours Is More Than Enough</a></span><span class="d">2026 May 27</span><span class="dek">29. On stopping before you're wrecked</span></div>
+<div class="st"><span class="num">30</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-05-28-the-handle-sits/">The Handle Sits</a></span><span class="d">2026 May 28</span><span class="dek">30. A morning in Spottiswoode</span></div>
+<div class="st"><span class="num">31</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-06-02-the-uncommon-kitchen/">The Uncommon Kitchen</a></span><span class="d">2026 Jun 2</span><span class="dek">31. She had made this dish close to the way her mother had made it and not close at all</span></div>
+<div class="st"><span class="num">32</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-06-02-the-right-number/">The Right Number</a></span><span class="d">2026 Jun 2</span><span class="dek">32. A lie. The knowledge lives in the correction.</span></div>
+<div class="st"><span class="num">33</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-06-03-the-live/">The Live</a></span><span class="d">2026 Jun 3</span><span class="dek">33. You think watching is safer. It isn't.</span></div>
+<div class="st"><span class="num">34</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-06-04-the-right-height/">The Right Height</a></span><span class="d">2026 Jun 4</span><span class="dek">34. Things had been surfacing. She wasn't sure when they started.</span></div>
+<div class="st"><span class="num">35</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-06-06-still-landing/">Still Landing</a></span><span class="d">2026 Jun 6</span><span class="dek">35. The current runs differently than the script assumed it would.</span></div>
+<div class="st"><span class="num">36</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-06-10-the-longer-walk/">The Longer Walk</a></span><span class="d">2026 Jun 10</span><span class="dek">36. He had been in other people's questions all day.</span></div>
+<div class="st interchange"><span class="num">37</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-06-13-the-architecture-of-nothing/">The Architecture of Nothing</a></span><span class="d">2026 Jun 13</span><span class="tag">LIE</span><span class="dek">37. A Lie. What are you the gravity of?</span></div>
+<div class="st"><span class="num">38</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-06-21-what-holds/">What Holds</a></span><span class="d">2026 Jun 21</span><span class="dek">38. Saying it had become less effort than not saying it.</span></div>
+<div class="st"><span class="num">39</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-06-22-the-writing-night/">The Writing Night</a></span><span class="d">2026 Jun 22</span><span class="dek">39. The love was in the not-needing-to-look.</span></div>
+<div class="st interchange"><span class="num">40</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-06-24-what-the-survival-was-for/">What the survival was for</a></span><span class="d">2026 Jun 24</span><span class="tag">LIE</span><span class="dek">Lie 40. The instruction was given in good faith.</span></div>
+<div class="st"><span class="num">41</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-06-27-the-apple/">The Apple</a></span><span class="d">2026 Jun 27</span><span class="dek">41. She wasn't closing any doors. She just wasn't opening them either.</span></div>
+<div class="st"><span class="num">42</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-07-29-start-small/">Start Small</a></span><span class="d">2026 Jul 29</span><span class="dek">42. The first time you've said that out loud.</span></div>
+<div class="st"><span class="num">43</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-07-30-uncomfortable-questions/">Uncomfortable Questions</a></span><span class="d">2026 Jul 31</span><span class="dek">A Sunday brunch in Singapore. Two neighbours ask each other about marriage, wanting, and who they’d grow old beside - questions they can’t ask themselves.</span></div>
+<div class="st"><span class="num">44</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-09-10-something-came-loose/">Something came Loose</a></span><span class="d">2026 Sep 27</span><span class="dek">A phone call with David about hiring his mother’s caregiver turns into real advice about dignity over competence. Walking home, Amandha faces down a marriage built on staying rather than wanting, and decides to keep her own flat unfinished, on purpose.</span></div>
+<div class="st interchange"><span class="num">45</span><span class="dot"></span><span class="t"><a href="/black-cat/2026-09-27-never-twice/">Never Twice</a></span><span class="d">2026 Oct 3</span><span class="tag">LIE</span><span class="dek">A dog’s thirteen years of reading a body versus a screen. When she finally trusts the first signal instead of waiting for a second one, something between them settles differently.</span></div>
+<p class="note">One line, top to bottom. Numbers follow the Substack index (no Scene 21). Diamonds are the Lies - where the line jumps. Every italic line under a title is the scene's own dek, pulled from the post's frontmatter. PREVIEW of /black-cat/ rebuilt on the line: data file + loop, sun/moon light toggle, universal accessibility toggle.</p>
+<div class="toggle-row" role="group" aria-label="Reading preferences">
+  <button class="toggle-btn" id="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to light mode" title="Light / dark">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>
+  </button>
+  <button class="toggle-btn" id="font-toggle" type="button" aria-pressed="false" aria-label="Easy read mode" title="Easy read">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="4.5" r="2"/><path d="M12 7v6m0 0-4 7m4-7 4 7M4.5 9.5 12 11l7.5-1.5"/></svg>
+  </button>
+</div>
+<script>
+(function(){
+  var root=document.documentElement, moon='\u263e';
+  var tbtn=document.getElementById('theme-toggle'), fbtn=document.getElementById('font-toggle');
+  var sun='<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M19.8 4.2 18 6M6 18l-1.8 1.8"/></svg>';
+  var mo='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>';
+  function paint(){
+    var light=root.getAttribute('data-theme')==='light';
+    tbtn.innerHTML = light ? sun : mo;
+    tbtn.setAttribute('aria-pressed', light);
+    tbtn.setAttribute('aria-label', light ? 'Switch to dark mode' : 'Switch to light mode');
+    fbtn.setAttribute('aria-pressed', root.getAttribute('data-font')==='easy');
+  }
+  tbtn.addEventListener('click',function(){
+    root.setAttribute('data-theme', root.getAttribute('data-theme')==='light'?'':'light');
+    try{localStorage.setItem('bc-theme',root.getAttribute('data-theme')||'dark');}catch(e){}
+    paint();
+  });
+  fbtn.addEventListener('click',function(){
+    var on=root.getAttribute('data-font')==='easy';
+    root.setAttribute('data-font', on?'':'easy');
+    try{localStorage.setItem('bc-font',on?'':'easy');}catch(e){}
+    paint();
+  });
+  try{
+    var th=localStorage.getItem('bc-theme'); if(th) root.setAttribute('data-theme', th==='light'?'light':'');
+    var fo=localStorage.getItem('bc-font'); if(fo) root.setAttribute('data-font', fo==='easy'?'easy':'');
+  }catch(e){}
+  paint();
+})();
+</script>
+</body></html>

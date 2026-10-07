@@ -25,3 +25,11 @@ The site builds from the repo, not from this folder. See 00-README.md.
 ## 5. One public identity: the Substack.
 
 No X, no Instagram links unless either opens up. The site says only what's true.
+
+---
+Footnote
+---
+
+## 2026 Oct 3 — created in the site working session
+
+The site's standing rules written down at Claire's direction (#8): rule 1 is do-not-SEO-the-novel with a stop-and-ask clause; also mobile-first, palette-as-variables, sync-back, one-identity. Later amended: rule 1 now points at the SEO Descriptions Registry as the revision surface. Note: the descriptions themselves were stripped from the posts same day (Claire: no SEO yet) - the Registry survives as the drafted record.

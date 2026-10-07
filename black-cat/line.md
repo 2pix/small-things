@@ -98,3 +98,10 @@ permalink: /black-cat/line/
 <div class="band band-end"><span class="banddot" style="background:#e08a3c"></span>2026</div>
 </div>
 
+---
+Footnote
+---
+
+## 2026 Oct 3 — created, wired into the site
+
+The Line: one vertical metro map, exact web titles, Substack-index numbering, publication dates per station, story-year bands, Lies as interchange diamonds, 2026 as an edge marker with no titles (Claire: the book has not crossed into 2026). Wired as /black-cat/line/ and linked from the Black Cat section page. Deployed and verified.

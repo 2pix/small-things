@@ -3,7 +3,8 @@ title: "Never Twice"
 date: 2026-09-27 00:00:00 +0800
 category: black-cat
 description: "A dog’s thirteen years of reading a body versus a screen. When she finally trusts the first signal instead of waiting for a second one, something between them settles differently."
----![A small apricot poodle walking ahead on a leash down a covered HDB walkway](/assets/images/yogi-the-walk-home.jpg)
+---
+![A small apricot poodle walking ahead on a leash down a covered HDB walkway](/assets/images/yogi-the-walk-home.jpg)
 *Yogi, leading the way home*
 
 I am small.

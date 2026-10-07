@@ -1,4 +1,5 @@
----title: Sixty Thirty Ten
+---
+title: Sixty Thirty Ten
 subtitle: "25. The ease of something exact"
 category: black-cat
 date: 2026-04-22 13:06:41 +0000

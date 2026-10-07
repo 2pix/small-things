@@ -3,7 +3,8 @@ title: "Something Came Loose"
 date: 2026-09-10 00:00:00 +0800
 category: black-cat
 description: "A phone call with David about hiring his mother’s caregiver turns into real advice about dignity over competence. Walking home, Amandha faces down a marriage built on staying rather than wanting, and decides to keep her own flat unfinished, on purpose."
----The café had mostly cleared by the time they stood to go, staff already flipping chairs onto the far tables. Amandha unfolded Yogi’s pram back into its seat, and he climbed the little ramp himself, three short steps and a fourth pushing off with his back legs, then settled facing forward like leaving had been his idea.
+---
+The café had mostly cleared by the time they stood to go, staff already flipping chairs onto the far tables. Amandha unfolded Yogi’s pram back into its seat, and he climbed the little ramp himself, three short steps and a fourth pushing off with his back legs, then settled facing forward like leaving had been his idea.
 
 They walked back together as far as the mall’s side entrance, the pram’s front wheels catching on every third paving stone, a small stutter and release. Wen went off there, something she needed from inside, already reaching for her phone to check a list.
 

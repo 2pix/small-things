@@ -1,4 +1,5 @@
----title: The Week Before
+---
+title: The Week Before
 subtitle: "13. What the Heart Records When No One's Watching"
 category: black-cat
 date: 2026-03-22 14:01:21 +0000

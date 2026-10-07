@@ -1,0 +1,288 @@
+# The Line - single source of truth for the Black Cat spine.
+# Numbers follow the Substack index (no Scene 21). band = the story-year the station sits in.
+# slug = the site post it links to (absent = unwritten stub). dek = the little intro line -
+# pulled from the post's own frontmatter (subtitle, falling back to description). New posts
+# bring their own dek automatically; add 'intro:' here only to override one by hand.
+# date = the station's line date (Claire's map), NOT always the post's sitemap date.
+
+- band: "2025"
+  stations:
+  - n: 1
+    title: "Create from Nothing"
+    date: "2026 Feb 5"
+    lie: false
+    dek: "1: On attention, exile, and returning to what is already yours"
+    slug: "2026-02-05-create-from-nothing"
+  - n: 2
+    title: "A Place Where No One Performs"
+    date: "2026 Feb 11"
+    lie: false
+    dek: "2: And No One Needs To"
+    slug: "2026-02-11-a-place-where-no-one-performs"
+  - n: 3
+    title: "Walk With Me"
+    date: "2026 Feb 14"
+    lie: false
+    dek: "3: Depth without performance"
+    slug: "2026-02-14-walk-with-me"
+  - n: 4
+    title: "The Bars — Lie 1"
+    date: "2026 Feb 20"
+    lie: true
+    dek: "4: A lie. On self-abandonment"
+    slug: "2026-02-20-the-bars-lie-1"
+  - n: 5
+    title: "I Didn't Look Down — Lie 2"
+    date: "2026 Feb 27"
+    lie: true
+    dek: "5. A Lie. I just never noticed someone was holding it."
+    slug: "2026-02-27-i-didnt-look-down"
+
+- band: "2012"
+  stations:
+  - n: 6
+    title: "Body"
+    date: "2026 Mar 2"
+    lie: false
+    dek: "6. Before the floor"
+    slug: "2026-03-02-2012-body"
+  - n: 7
+    title: "GuangZhou"
+    date: "2026 Mar 8"
+    lie: false
+    dek: "7. Where the squeezing stopped"
+    slug: "2026-03-08-2012-guangzhou"
+  - n: 8
+    title: "Four Days More"
+    date: "2026 Mar 11"
+    lie: false
+    dek: "8. You haven't solved anything. You've just been somewhere else."
+    slug: "2026-03-11-2012-four-days-more"
+  - n: 9
+    title: "I know you did"
+    date: "2026 Mar 14"
+    lie: false
+    dek: "9. He was present, warm, and somewhere else entirely."
+    slug: "2026-03-14-i-know-you-did"
+  - n: 10
+    title: "The Studio Floor"
+    date: "2026 Mar 17"
+    lie: false
+    dek: "10. The week had been ordinary. That was the thing about it."
+    slug: "2026-03-17-the-studio-floor"
+  - n: 11
+    title: "Without Looking"
+    date: "2026 Mar 19"
+    lie: false
+    dek: "11. The table stays the same. You don't."
+    slug: "2026-03-19-without-looking"
+  - n: 12
+    title: "Sometime in the Future"
+    date: "2026 Mar 21"
+    lie: false
+    dek: "12. A kitchen tells the truth before the people in it do."
+    slug: "2026-03-21-sometime-in-the-future"
+  - n: 13
+    title: "The Week Before"
+    date: "2026 Mar 22"
+    lie: false
+    dek: "13. What the Heart Records When No One's Watching"
+    slug: "2026-03-22-the-week-before"
+  - n: 14
+    title: "The Room is There"
+    date: "2026 Mar 24"
+    lie: false
+    dek: "14. A meditation on space and sensation"
+    slug: "2026-03-24-a-different-kind-of-quiet"
+  - n: 15
+    title: "Not Enough Room"
+    date: "2026 Mar 27"
+    lie: false
+    dek: "15. A Man Who Has Never Spent a Saturday in His Own Apartment"
+    slug: "2026-03-27-not-enough-room"
+  - n: 16
+    title: "The Garden Won't Do Itself"
+    date: "2026 Apr 1"
+    lie: false
+    dek: "16. Twelve Days of Being Nobody in Particular"
+    slug: "2026-04-01-the-garden-wont-do-itself"
+  - n: 17
+    title: "Neither of you is Lying - Lie 3"
+    date: "2026 Apr 4"
+    lie: true
+    dek: "Lie 17: Enough honest doors, built from True materials, add up to a house you can live in with integrity."
+    slug: "2026-04-04-neither-of-you-is-lying-lie-3"
+  - n: 18
+    title: "The Return"
+    date: "2026 Apr 9"
+    lie: false
+    dek: "18. He only knew his part."
+    slug: "2026-04-09-the-return"
+  - n: 19
+    title: "Enough: another lie about love"
+    date: "2026 Apr 14"
+    lie: true
+    dek: "19. Lie. She asked the right question. I was answering mine."
+    slug: "2026-04-14-enough"
+
+- band: "2013"
+  stations:
+  - n: 20
+    title: "Kunming"
+    date: "2026 Apr 14"
+    lie: false
+    dek: "20. 昆明 — Bright Clarity"
+    slug: "2026-04-14-kunming"
+  - n: 22
+    title: "Two Lines"
+    date: "2026 Apr 14"
+    lie: false
+    dek: "21. He left the notebook on the desk. The phone was enough."
+    slug: "2026-04-14-two-lines"
+  - n: 23
+    title: "Not the Margin, but the person first"
+    date: "2026 Apr 19"
+    lie: false
+    dek: "23. It is enough to have done today's part."
+    slug: "2026-04-19-not-the-margin-but-the-person-first"
+
+- band: "2014"
+  stations:
+  - n: 24
+    title: "Burn out is what you call it"
+    date: "2026 Apr 20"
+    lie: false
+    dek: "24. HCMC - 2014"
+    slug: "2026-04-20-burnout-is-what-you-call-it"
+  - n: 25
+    title: "Sixty-Thirty-Ten"
+    date: "2026 Apr 22"
+    lie: false
+    dek: "25. The ease of something exact"
+    slug: "2026-04-22-sixty-thirty-ten"
+  - n: 26
+    title: "Not in the way you mean"
+    date: "2026 Apr 23"
+    lie: false
+    dek: "26. KL, December 2014"
+    slug: "2026-04-23-not-in-the-way-you-mean"
+
+- band: "2024"
+  stations:
+  - n: 27
+    title: "What Was Owed"
+    date: "2026 Apr 26"
+    lie: false
+    dek: "27. Dec 2024 - He Was Fifty-One. He Had Been, By Every Account, Very Busy."
+    slug: "2026-04-26-what-was-owed"
+  - n: 28
+    title: "The Borrowed Coat"
+    date: "2026 May 25"
+    lie: false
+    dek: "28. She had been looking. Just not only at dogs."
+    slug: "2026-05-25-the-borrowed-coat"
+
+- band: "2025"
+  stations:
+  - n: 29
+    title: "Four Hours Is More Than Enough"
+    date: "2026 May 27"
+    lie: false
+    dek: "29. On stopping before you're wrecked"
+    slug: "2026-05-27-four-hours-is-more-than-enough"
+  - n: 30
+    title: "The Handle Sits"
+    date: "2026 May 28"
+    lie: false
+    dek: "30. A morning in Spottiswoode"
+    slug: "2026-05-28-the-handle-sits"
+  - n: 31
+    title: "The Uncommon Kitchen"
+    date: "2026 Jun 2"
+    lie: false
+    dek: "31. She had made this dish close to the way her mother had made it and not close at all"
+    slug: "2026-06-02-the-uncommon-kitchen"
+  - n: 32
+    title: "The Right Number"
+    date: "2026 Jun 2"
+    lie: false
+    dek: "32. A lie. The knowledge lives in the correction."
+    slug: "2026-06-02-the-right-number"
+  - n: 33
+    title: "The Live"
+    date: "2026 Jun 3"
+    lie: false
+    dek: "33. You think watching is safer. It isn't."
+    slug: "2026-06-03-the-live"
+  - n: 34
+    title: "The Right Height"
+    date: "2026 Jun 4"
+    lie: false
+    dek: "34. Things had been surfacing. She wasn't sure when they started."
+    slug: "2026-06-04-the-right-height"
+  - n: 35
+    title: "Still Landing"
+    date: "2026 Jun 6"
+    lie: false
+    dek: "35. The current runs differently than the script assumed it would."
+    slug: "2026-06-06-still-landing"
+  - n: 36
+    title: "The Longer Walk"
+    date: "2026 Jun 10"
+    lie: false
+    dek: "36. He had been in other people's questions all day."
+    slug: "2026-06-10-the-longer-walk"
+  - n: 37
+    title: "The Architecture of Nothing"
+    date: "2026 Jun 13"
+    lie: true
+    dek: "37. A Lie. What are you the gravity of?"
+    slug: "2026-06-13-the-architecture-of-nothing"
+  - n: 38
+    title: "What Holds"
+    date: "2026 Jun 21"
+    lie: false
+    dek: "38. Saying it had become less effort than not saying it."
+    slug: "2026-06-21-what-holds"
+  - n: 39
+    title: "The Writing Night"
+    date: "2026 Jun 22"
+    lie: false
+    dek: "39. The love was in the not-needing-to-look."
+    slug: "2026-06-22-the-writing-night"
+  - n: 40
+    title: "What the survival was for"
+    date: "2026 Jun 24"
+    lie: true
+    dek: "Lie 40. The instruction was given in good faith."
+    slug: "2026-06-24-what-the-survival-was-for"
+  - n: 41
+    title: "The Apple"
+    date: "2026 Jun 27"
+    lie: false
+    dek: "41. She wasn't closing any doors. She just wasn't opening them either."
+    slug: "2026-06-27-the-apple"
+  - n: 42
+    title: "Start Small"
+    date: "2026 Jul 29"
+    lie: false
+    dek: "42. The first time you've said that out loud."
+    slug: "2026-07-29-start-small"
+  - n: 43
+    title: "Uncomfortable Questions"
+    date: "2026 Jul 31"
+    lie: false
+    dek: "A Sunday brunch in Singapore. Two neighbours ask each other about marriage, wanting, and who they’d grow old beside - questions they can’t ask themselves."
+    slug: "2026-07-30-uncomfortable-questions"
+  - n: 44
+    title: "Something came Loose"
+    date: "2026 Sep 27"
+    lie: false
+    dek: "A phone call with David about hiring his mother’s caregiver turns into real advice about dignity over competence. Walking home, Amandha faces down a marriage built on staying rather than wanting, and decides to keep her own flat unfinished, on purpose."
+    slug: "2026-09-10-something-came-loose"
+  - n: 45
+    title: "Never Twice"
+    date: "2026 Oct 3"
+    lie: true
+    dek: "A dog’s thirteen years of reading a body versus a screen. When she finally trusts the first signal instead of waiting for a second one, something between them settles differently."
+    slug: "2026-09-27-never-twice"

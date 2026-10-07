@@ -1,4 +1,5 @@
----layout: post
+---
+layout: post
 title: "Style Guide"
 subtitle: "Every text element on the site, in one place, for tuning sizes and spacing"
 category: ux

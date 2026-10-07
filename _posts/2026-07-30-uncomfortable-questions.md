@@ -3,7 +3,8 @@ title: "Uncomfortable Questions"
 date: 2026-07-30 00:00:00 +0800
 category: black-cat
 description: "A Sunday brunch in Singapore. Two neighbours ask each other about marriage, wanting, and who they’d grow old beside - questions they can’t ask themselves."
----The cafe was a short walk from the block. Striped awnings over a row of outdoor tables, a chalkboard specials list, oat milk as the default rather than the ask. Amandha had already claimed a table outside when Wen arrived. Beside her chair sat Yogi’s pram, its back folded flat into something closer to a bed than a seat, and a small metal bowl of water set on the pavement next to it.
+---
+The cafe was a short walk from the block. Striped awnings over a row of outdoor tables, a chalkboard specials list, oat milk as the default rather than the ask. Amandha had already claimed a table outside when Wen arrived. Beside her chair sat Yogi’s pram, its back folded flat into something closer to a bed than a seat, and a small metal bowl of water set on the pavement next to it.
 
 As Wen sat, Yogi climbed out on his own, unhurried, no lift required, turned twice, and settled at Amandha’s feet.
 
