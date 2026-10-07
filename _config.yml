@@ -37,3 +37,13 @@ exclude:
   - README.md
   - vendor
   - .bundle
+  # vault instruments, not site content (2026 Oct 8): the index-sweep files and the
+  # internal README carry vault conversation - the design doc's law is that none of
+  # it renders on the live site.
+  - 00-Index.md
+  - 00-README.md
+  - black-cat/00-Index.md
+  - small-things/00-Index.md
+  - the-floor/00-Index.md
+  - about/00-Index.md
+  - RULES.md
