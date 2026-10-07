@@ -6,6 +6,7 @@
 # date = the station's line date (Claire's map), NOT always the post's sitemap date.
 
 - band: "2025"
+  dot: "#5f9e7e"
   stations:
   - n: 1
     title: "Create from Nothing"
@@ -39,6 +40,7 @@
     slug: "2026-02-27-i-didnt-look-down"
 
 - band: "2012"
+  dot: "#5e8fa8"
   stations:
   - n: 6
     title: "Body"
@@ -126,6 +128,7 @@
     slug: "2026-04-14-enough"
 
 - band: "2013"
+  dot: "#8a7ea8"
   stations:
   - n: 20
     title: "Kunming"
@@ -147,6 +150,7 @@
     slug: "2026-04-19-not-the-margin-but-the-person-first"
 
 - band: "2014"
+  dot: "#7a6ba8"
   stations:
   - n: 24
     title: "Burn out is what you call it"
@@ -168,6 +172,7 @@
     slug: "2026-04-23-not-in-the-way-you-mean"
 
 - band: "2024"
+  dot: "#b0685a"
   stations:
   - n: 27
     title: "What Was Owed"
@@ -183,6 +188,7 @@
     slug: "2026-05-25-the-borrowed-coat"
 
 - band: "2025"
+  dot: "#5f9e7e"
   stations:
   - n: 29
     title: "Four Hours Is More Than Enough"

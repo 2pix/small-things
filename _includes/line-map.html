@@ -1,0 +1,25 @@
+{%- comment -%}
+  The Line - rendered from _data/line.yml. Single source of truth.
+  Used by /black-cat/ (section spine) and /black-cat/line/ (the Line page).
+  Band = story-year; slug = the post door (the URL is deterministic under the
+  site permalink: /black-cat/<slug>/); dek = the scene's own intro from its
+  frontmatter (subtitle, falling back to description).
+{%- endcomment -%}
+{%- assign line = site.data.line -%}
+{%- if line -%}
+<div class="lm">
+  {%- for band in line -%}
+  <div class="lm__band"><span class="lm__banddot" style="background:{{ band.dot }}"></span>{{ band.band }}</div>
+    {%- for st in band.stations -%}
+    <div class="lm__st{% if st.lie %} lm__lie{% endif %}{% unless st.slug %} lm__future{% endunless %}">
+      <span class="lm__num">{{ st.n }}</span><span class="lm__dot"></span>
+      <span class="lm__t">{% if st.slug %}<a href="/black-cat/{{ st.slug }}/">{{ st.title }}</a>{% else %}{{ st.title }}{% endif %}</span>
+      {%- if st.dek -%}<span class="lm__dek">{{ st.dek }}</span>{%- endif -%}
+      {%- if st.lie -%}<span class="lm__tag">LIE</span>{%- endif -%}
+    </div>
+    {%- endfor -%}
+  {%- endfor -%}
+  <div class="lm__st lm__future"><span class="lm__num">·</span><span class="lm__dot"></span></div>
+  <div class="lm__band"><span class="lm__banddot" style="background:var(--color-accent)"></span>2026</div>
+</div>
+{%- endif -%}

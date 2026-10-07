@@ -13,6 +13,8 @@ layout: default
         <p>A friend said these pieces read more like scenes in a play. The lies can be read like a lone voice in the dark.</p>
         <p>The politics in these pieces live in bodies, not in arguments. What a body holds for other people, what it refuses, what it knows before anyone has a chance to think it out.</p>
       </div>
+      {% include line-map.html %}
+      <p class="section-intro"><a href="{{ "/black-cat/line/" | relative_url }}">The whole novel on one line →</a></p>
     {% when "the-floor" %}
       <div class="section-intro">
         <p>I worked at a caregiving agency.</p>
@@ -30,11 +32,13 @@ layout: default
         <p>The groups that form here make their own rules. Their own rhythm. Their own vibe.</p>
         <p>This is where you learn how to start one.</p>
       </div>
-      <div class="section-intro"><p><a href="{{ "/black-cat/line/" | relative_url }}">The whole novel on one line →</a></p></div>
+      <div class="section-intro"><p><a href="{{ "/small-things/" | relative_url }}">All the small things →</a></p></div>
   {% endcase %}
+  {% unless page.category == "black-cat" %}
   {% for post in posts %}
     {% include post-card.html post=post feed=true %}
   {% else %}
     <p class="empty-state">Nothing filed here yet. The floor is swept. It waits.</p>
   {% endfor %}
+  {% endunless %}
 </section>

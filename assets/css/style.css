@@ -6,10 +6,10 @@
   --space-6: 48px;
   --space-8: 64px;
 
-  --color-bg: #0a2535;      /* FIX #10: Obsidian dark teal (her Hermes Teal ground) */
+  --color-bg: #061520;      /* 2026 Oct 8 (Claire): Hermes desktop sidebar ground - darker than the old teal #0a2535 */
   --color-text: #f2e9c9;    /* light yellow reading ink */
-  --color-accent: #e08a3c;  /* orange - links, eyebrows */
-  --color-heading: #e8963f; /* orange headings */
+  --color-accent: #ff9d3b;  /* bright orange (Claire, 2026 Oct 8) */
+  --color-heading: #ff9d3b; /* bright orange headings */
 
 
   --font-serif: "Noto Serif", Georgia, "Times New Roman", serif;
@@ -773,6 +773,7 @@ main {
 
 /* ---- Theme toggles (Claire, 2026 Oct 3): sepia light + dyslexia font. Dark is the default; each toggle is independent and remembered. ---- */
 :root[data-theme="sepia"] {
+  --color-accent: #c1622e;  /* burnt orange in sepia (Claire, 2026 Oct 8) */
   --color-bg: #f4ecd8;
   --color-text: #4b3621;
   --color-heading: #2e1c10; /* Claire: sepia headings are near-black brown, not orange */
@@ -799,30 +800,28 @@ main {
 }
 .toggle-row {
   display: flex;
-  gap: var(--space-2);
+  gap: 8px;
   position: fixed;
-  right: var(--space-3);
-  bottom: var(--space-3);
+  right: 14px;
+  bottom: 14px;
   z-index: 50;
 }
 .toggle-btn {
-  font-family: var(--font-sans);
-  font-size: 0.6875rem;
-  letter-spacing: 0.04em;
-  padding: 6px 10px;
-  border: 1px solid var(--color-text);
-  border-radius: 999px;
-  background: transparent;
-  color: var(--color-text);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1.5px solid var(--color-accent);
+  background: color-mix(in srgb, var(--color-accent) 8%, var(--color-bg));
+  color: var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  opacity: 0.6;
+  padding: 0;
 }
+.toggle-btn svg { width: 22px; height: 22px; stroke: currentColor; fill: none; stroke-width: 1.8; }
+.toggle-btn[aria-pressed="true"] { background: var(--color-accent); color: var(--color-bg); }
 .toggle-btn:hover, .toggle-btn:focus { opacity: 1; }
-.toggle-btn[aria-pressed="true"] {
-  background: var(--color-text);
-  color: var(--color-bg);
-  opacity: 1;
-}
 
 /* FIX #5: The Floor holds space; an empty room is not an unfinished one. */
 .empty-state {
@@ -830,4 +829,39 @@ main {
   font-style: italic;
 }
 
-
+/* ============================================================
+   THE LINE (lm) - rendered from _data/line.yml via _includes/line-map.html
+   Claire's spec, 2026 Oct 8: mobile-first flex rows (nothing cramps),
+   Lies as ember-to-blue gradient text, hover = ember, dek stays grey.
+   ============================================================ */
+.lm { position: relative; max-width: 560px; margin: 0 auto; padding-left: 6px; }
+.lm::before { content: ""; position: absolute; left: 12px; top: 0; bottom: 0; width: 3px; background: var(--color-accent); border-radius: 2px; opacity: 0.8; }
+.lm__band { position: relative; margin: 22px 0 4px; font-family: var(--font-sans); font-size: 12px; letter-spacing: 0.12em; display: flex; align-items: center; gap: 8px; }
+.lm__banddot { width: 13px; height: 13px; border-radius: 50%; border: 2px solid var(--color-bg); margin-left: -3px; flex: none; }
+.lm__st { position: relative; display: flex; align-items: baseline; gap: 9px; padding: 8px 0 8px 6px; flex-wrap: wrap; }
+.lm__num { font-family: ui-monospace, monospace; font-size: 10.5px; opacity: 0.8; flex: none; width: 22px; text-align: right; }
+.lm__dot { position: absolute; left: -1px; top: 15px; width: 10px; height: 10px; border-radius: 50%; background: var(--color-bg); border: 3px solid var(--color-accent); flex: none; }
+.lm__t { font-size: 1.05rem; line-height: 1.35; }
+.lm__t a { color: var(--color-text); text-decoration: none; }
+.lm__t a:hover, .lm__t a:focus { color: var(--color-accent); } /* the door under your hand glows ember */
+.lm__dek { flex-basis: 100%; font-style: italic; font-size: 0.9rem; line-height: 1.5; color: var(--color-text); opacity: 0.65; padding-left: 31px; }
+.lm__tag { margin-left: auto; font-family: ui-monospace, monospace; font-size: 9px; letter-spacing: 0.08em; flex: none; }
+/* LIES: the interchange diamonds. Gradient text, ember to blue. */
+.lm__lie .lm__dot { border-radius: 3px; transform: rotate(45deg); }
+.lm__lie .lm__t a, .lm__lie .lm__tag {
+  background: linear-gradient(90deg, var(--color-accent) 0%, #7aa7ff 90%);
+  -webkit-background-clip: text; background-clip: text;
+  color: transparent; -webkit-text-fill-color: transparent;
+  transition: filter .2s;
+}
+.lm__lie .lm__t a:hover, .lm__lie .lm__t a:focus { filter: brightness(1.25); }
+.lm__future { opacity: 0.55; }
+.lm__future .lm__dot { border-style: dashed; background: transparent; }
+.lm__future .lm__t { font-style: italic; }
+@media (min-width: 700px) {
+  .lm { max-width: 640px; }
+  .lm__t { font-size: 1.1rem; }
+  .lm__band { font-size: 13px; }
+  .lm__sub { max-width: 640px; }
+}
+.lm__sub { font-family: var(--font-sans); font-size: 0.85rem; opacity: 0.7; max-width: 560px; margin: 6px auto 18px; line-height: 1.45; }

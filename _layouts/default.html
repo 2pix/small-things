@@ -21,8 +21,8 @@
   {% include footer.html %}
 
   <div class="toggle-row" role="group" aria-label="Reading preferences">
-    <button class="toggle-btn" id="theme-toggle" type="button" aria-pressed="false">Sepia</button>
-    <button class="toggle-btn" id="font-toggle" type="button" aria-pressed="false">Easy read</button>
+    <button class="toggle-btn" id="theme-toggle" type="button" aria-pressed="false" aria-label="Light mode" title="Sepia light / dark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg></button>
+    <button class="toggle-btn" id="font-toggle" type="button" aria-pressed="false" aria-label="Easy read mode" title="Easy read"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="4.5" r="2"/><path d="M12 7v6m0 0-4 7m4-7 4 7M4.5 9.5 12 11l7.5-1.5"/></svg></button>
   </div>
   <button class="back-to-top" aria-label="Back to top">↑</button>
   <script src="{{ '/assets/js/back-to-top.js' | relative_url }}" defer></script>

@@ -1,6 +1,6 @@
 ---
 title: "Something Came Loose"
-date: 2026-09-10 00:00:00 +0800
+date: 2026-09-10
 category: black-cat
 description: "A phone call with David about hiring his mother’s caregiver turns into real advice about dignity over competence. Walking home, Amandha faces down a marriage built on staying rather than wanting, and decides to keep her own flat unfinished, on purpose."
 ---
