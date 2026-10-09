@@ -1,6 +1,6 @@
 ---
 title: The Uncommon Kitchen
-subtitle: "31. She had made this dish close to the way her mother had made it and not close at all"
+subtitle: "She had made this dish close to the way her mother had made it and not close at all"
 category: black-cat
 date: 2026-06-02
 ---

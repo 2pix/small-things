@@ -1,6 +1,6 @@
 ---
 title: Four Hours Is More Than Enough
-subtitle: "29. On stopping before you're wrecked"
+subtitle: "On stopping before you're wrecked"
 category: black-cat
 date: 2026-05-27 12:59:13 +0000
 ---

@@ -1,6 +1,6 @@
 ---
 title: The Right Height
-subtitle: "34. Things had been surfacing. She wasn't sure when they started."
+subtitle: "Things had been surfacing. She wasn't sure when they started."
 category: black-cat
 date: 2026-06-04 15:35:12 +0000
 ---

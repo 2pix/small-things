@@ -1,6 +1,6 @@
 ---
 title: The Borrowed Coat
-subtitle: "28. She had been looking. Just not only at dogs."
+subtitle: "She had been looking. Just not only at dogs."
 category: black-cat
 date: 2026-05-25 14:53:30 +0000
 ---

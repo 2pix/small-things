@@ -1,6 +1,6 @@
 ---
 title: Burnout Is What You Call It
-subtitle: "24. HCMC - 2014"
+subtitle: "HCMC - 2014"
 category: black-cat
 date: 2026-04-20 15:45:06 +0000
 ---

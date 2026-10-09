@@ -1,6 +1,6 @@
 ---
 title: The Architecture of Nothing
-subtitle: "37. A Lie. What are you the gravity of?"
+subtitle: "A Lie. What are you the gravity of?"
 category: black-cat
 date: 2026-06-13 13:57:03 +0000
 ---

@@ -1,6 +1,6 @@
 ---
 title: The Studio Floor
-subtitle: "10. The week had been ordinary. That was the thing about it."
+subtitle: "The week had been ordinary. That was the thing about it."
 category: black-cat
 date: 2026-03-17 15:43:52 +0000
 ---
