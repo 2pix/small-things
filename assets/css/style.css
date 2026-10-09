@@ -849,7 +849,7 @@ main {
 /* LIES: the interchange diamonds. Gradient text, ember to blue. */
 .lm__lie .lm__dot { border-radius: 3px; transform: rotate(45deg); }
 .lm__lie .lm__t a, .lm__lie .lm__tag {
-  background: linear-gradient(90deg, var(--color-accent) 0%, #7aa7ff 90%);
+  background: linear-gradient(90deg, #cc7e2f 0%, #6286cc 90%); /* darkened 20% for readability (Claire, 2026 Oct 9) */
   -webkit-background-clip: text; background-clip: text;
   color: transparent; -webkit-text-fill-color: transparent;
   transition: filter .2s;
