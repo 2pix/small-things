@@ -6,9 +6,11 @@
   --space-6: 48px;
   --space-8: 64px;
 
-  --color-bg: #1a1814;
-  --color-text: #e8e0d5;
-  --color-accent: #c17a4d;
+  --color-bg: #061520;      /* 2026 Oct 8 (Claire): Hermes desktop sidebar ground - darker than the old teal #0a2535 */
+  --color-text: #f2e9c9;    /* light yellow reading ink */
+  --color-accent: #ff9d3b;  /* bright orange (Claire, 2026 Oct 8) */
+  --color-heading: #ff9d3b; /* bright orange headings */
+
 
   --font-serif: "Noto Serif", Georgia, "Times New Roman", serif;
   --font-sans: "Montserrat", system-ui, sans-serif;
@@ -22,6 +24,12 @@ h1,
 h2,
 p {
   margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-heading);
 }
 
 body {
@@ -52,9 +60,9 @@ a {
 
 .post__meta,
 .post-card__meta {
-  font-size: 0.8125rem;
+  font-size: 1rem; /* FIX #12: was 0.8125rem and faded at 0.75 - hard to read at the moment someone decides to stay */
   letter-spacing: 0.02em;
-  opacity: 0.75;
+  opacity: 1;
 }
 
 .post__meta {
@@ -120,6 +128,7 @@ a {
 .post-card__title {
   font-weight: 600;
   line-height: 1.25;
+  font-size: 1.9rem; /* FIX #17: open the gap - was ~20px against an 18px body */
 }
 
 .section-label {
@@ -191,16 +200,19 @@ a {
   width: 65%;
   margin-left: auto;
   margin-right: auto;
-  background: #f2ede4;
+  background: #f2ede4; /* PAPER: the polaroid is a physical prop - cream in every theme, unlike UI */
+  color: #1a1814;
   padding: var(--space-3) var(--space-3) var(--space-4);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
   transform: rotate(-2deg);
 }
 
 .post-image--polaroid figcaption {
-  font-family: "Permanent Marker", cursive;
-  font-size: 1rem;
-  color: #1a1814;
+  font-family: var(--font-sans); /* FIX #18: Permanent Marker retired */
+  font-size: 0.8125rem;
+  font-style: italic;
+  color: #1a1814; /* ink on paper - theme-independent like the frame */
+  opacity: 0.85;
   text-align: center;
   margin-top: var(--space-2);
   padding: 0 var(--space-1);
@@ -360,13 +372,13 @@ sup.footnote {
 
 .highlight .c, .highlight .c1, .highlight .cm { color: var(--color-text); opacity: 0.5; font-style: italic; } /* comments */
 .highlight .k, .highlight .kd, .highlight .kn, .highlight .kt { color: var(--color-accent); } /* keywords */
-.highlight .s, .highlight .s1, .highlight .s2, .highlight .sb { color: #a8b88a; } /* strings - warm muted green */
-.highlight .m, .highlight .mi, .highlight .mf { color: #c9a679; } /* numbers - warm tan */
+.highlight .s, .highlight .s1, .highlight .s2, .highlight .sb { color: var(--code-string); } /* strings - warm muted green */
+.highlight .m, .highlight .mi, .highlight .mf { color: var(--code-number); } /* numbers - warm tan */
 .highlight .nc, .highlight .nf, .highlight .nl { color: var(--color-text); } /* names/properties */
-.highlight .no { color: #c9a679; } /* constants */
+.highlight .no { color: var(--code-number); } /* constants */
 .highlight .p { color: var(--color-text); opacity: 0.6; } /* punctuation */
 .highlight .nt { color: var(--color-accent); } /* HTML tags */
-.highlight .na { color: #c9a679; } /* HTML attributes */
+.highlight .na { color: var(--code-number); } /* HTML attributes */
 
 .post-card__title {
   font-size: 1.25rem;
@@ -379,7 +391,7 @@ sup.footnote {
 }
 
 main {
-  max-width: 640px;
+  max-width: 600px; /* FIX #13: reading lines ~66 letters, was 640px (~72) */
   margin: 0 auto;
   padding: var(--space-1) 5%; /* 5% either side so text doesn't slam into the phone edge */
 }
@@ -389,7 +401,7 @@ main {
 }
 
 .site-header {
-  max-width: 640px;
+  max-width: 600px; /* FIX #13: reading lines ~66 letters, was 640px (~72) */
   margin: 0 auto;
   padding: var(--space-2) var(--space-3) var(--space-1);
 }
@@ -488,7 +500,7 @@ main {
   padding: var(--space-1);
   text-decoration: none;
   color: var(--color-text);
-  opacity: 0.65;
+  opacity: 0.45; /* Claire, 2026 Oct 3: accent louder - idle pills recede further so the active orange pops */
 }
 
 .story-pill__dot {
@@ -741,7 +753,7 @@ main {
   }
 
   /* Bottom-to-top reading order Claire specified: Black Cat, then The Floor, then The Art of Small Things */
-  .story-pill--small-things {
+  .story-pill--the-art-of-small-things {
     order: 1;
   }
 
@@ -758,3 +770,98 @@ main {
   }
 
 }
+
+/* ---- Theme toggles (Claire, 2026 Oct 3): sepia light + dyslexia font. Dark is the default; each toggle is independent and remembered. ---- */
+:root[data-theme="sepia"] {
+  --color-accent: #c1622e;  /* burnt orange in sepia (Claire, 2026 Oct 8) */
+  --color-bg: #f4ecd8;
+  --color-text: #4b3621;
+  --color-heading: #2e1c10; /* Claire: sepia headings are near-black brown, not orange */
+}
+:root[data-theme="sepia"] .site-footer,
+:root[data-theme="sepia"] .post-card {
+  border-color: rgba(75, 54, 33, 0.25);
+}:root {
+  --code-string: #a8b88a;
+  --code-number: #c9a679;
+}
+
+:root[data-theme="sepia"] .post-card__eyebrow {
+  color: #6b4423; /* eyebrow accent follows the brown family in sepia, not orange */
+}
+:root[data-font="hyperlegible"] {
+  --font-serif: "Lexend", var(--font-sans), sans-serif; /* easy-read face: Lexend (Claire, 2026 Oct 3) */
+  --font-sans: "Lexend", system-ui, sans-serif;
+}
+:root[data-font="hyperlegible"] body {
+  letter-spacing: 0.01em;
+  word-spacing: 0.08em;
+  line-height: 1.75;
+}
+.toggle-row {
+  display: flex;
+  gap: 8px;
+  position: fixed;
+  right: 14px;
+  bottom: 14px;
+  z-index: 50;
+}
+.toggle-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1.5px solid var(--color-accent);
+  background: color-mix(in srgb, var(--color-accent) 8%, var(--color-bg));
+  color: var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+}
+.toggle-btn svg { width: 22px; height: 22px; stroke: currentColor; fill: none; stroke-width: 1.8; }
+.toggle-btn[aria-pressed="true"] { background: var(--color-accent); color: var(--color-bg); }
+.toggle-btn:hover, .toggle-btn:focus { opacity: 1; }
+
+/* FIX #5: The Floor holds space; an empty room is not an unfinished one. */
+.empty-state {
+  opacity: 0.85;
+  font-style: italic;
+}
+
+/* ============================================================
+   THE LINE (lm) - rendered from _data/line.yml via _includes/line-map.html
+   Claire's spec, 2026 Oct 8: mobile-first flex rows (nothing cramps),
+   Lies as ember-to-blue gradient text, hover = ember, dek stays grey.
+   ============================================================ */
+.lm { position: relative; max-width: 560px; margin: 0 auto; padding-left: 6px; }
+.lm::before { content: ""; position: absolute; left: 12px; top: 0; bottom: 0; width: 3px; background: var(--color-accent); border-radius: 2px; opacity: 0.8; }
+.lm__band { position: relative; margin: 22px 0 4px; font-family: var(--font-sans); font-size: 12px; letter-spacing: 0.12em; display: flex; align-items: center; gap: 8px; }
+.lm__banddot { width: 13px; height: 13px; border-radius: 50%; border: 2px solid var(--color-bg); margin-left: -3px; flex: none; }
+.lm__st { position: relative; display: flex; align-items: baseline; gap: 9px; padding: 8px 0 8px 6px; flex-wrap: wrap; }
+.lm__num { font-family: ui-monospace, monospace; font-size: 10.5px; opacity: 0.8; flex: none; width: 22px; text-align: right; }
+.lm__dot { position: absolute; left: -1px; top: 15px; width: 10px; height: 10px; border-radius: 50%; background: var(--color-bg); border: 3px solid var(--color-accent); flex: none; }
+.lm__t { font-size: 1.05rem; line-height: 1.35; }
+.lm__t a { color: var(--color-text); text-decoration: none; }
+.lm__t a:hover, .lm__t a:focus { color: var(--color-accent); } /* the door under your hand glows ember */
+.lm__dek { flex-basis: 100%; font-style: italic; font-size: 0.9rem; line-height: 1.5; color: var(--color-text); opacity: 0.65; padding-left: 31px; }
+.lm__tag { margin-left: auto; font-family: ui-monospace, monospace; font-size: 9px; letter-spacing: 0.08em; flex: none; }
+/* LIES: the interchange diamonds. Gradient text, ember to blue. */
+.lm__lie .lm__dot { border-radius: 3px; transform: rotate(45deg); }
+.lm__lie .lm__t a, .lm__lie .lm__tag {
+  background: linear-gradient(90deg, #cc7e2f 0%, #6286cc 90%); /* darkened 20% for readability (Claire, 2026 Oct 9) */
+  -webkit-background-clip: text; background-clip: text;
+  color: transparent; -webkit-text-fill-color: transparent;
+  transition: filter .2s;
+}
+.lm__lie .lm__t a:hover, .lm__lie .lm__t a:focus { filter: brightness(1.25); }
+.lm__future { opacity: 0.55; }
+.lm__future .lm__dot { border-style: dashed; background: transparent; }
+.lm__future .lm__t { font-style: italic; }
+@media (min-width: 700px) {
+  .lm { max-width: 640px; }
+  .lm__t { font-size: 1.1rem; }
+  .lm__band { font-size: 13px; }
+  .lm__sub { max-width: 640px; }
+}
+.lm__sub { font-family: var(--font-sans); font-size: 0.85rem; opacity: 0.7; max-width: 560px; margin: 6px auto 18px; line-height: 1.45; }

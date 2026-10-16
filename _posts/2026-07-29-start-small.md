@@ -1,6 +1,6 @@
 ---
 title: Start Small
-subtitle: "42. The first time you've said that out loud."
+subtitle: "The first time you've said that out loud."
 description: "42. A Saturday night dinner in Singapore. Two women say the things they haven't said before - to anyone, and now to each other. Greysexuality, a two-year relationship, a want that's been written down but not named out loud. What happens when the honest part finally starts."
 category: black-cat
 date: 2026-07-29

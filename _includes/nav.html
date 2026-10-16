@@ -17,7 +17,7 @@
   </a>
   <div class="rail-nav-middle">
     {% for section in site.sections %}
-    {% assign latest = site.categories[section.key] | first %}
+    {% assign latest = site.categories[section.key] %}{% if latest %}{% assign latest = latest | first %}{% endif %}
     <a href="{{ site.baseurl }}/{{ section.key }}/" class="story-pill story-pill--{{ section.key }}{% if page.category == section.key %} is-active{% endif %}" data-section="{{ section.key }}"{% if latest %} data-latest="{{ latest.date | date: '%Y-%m-%d' }}"{% endif %}>
       <svg class="story-pill__icon" viewBox="0 0 24 24" aria-hidden="true">
         {% case section.key %}

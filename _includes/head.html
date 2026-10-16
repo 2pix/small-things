@@ -1,6 +1,31 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {% seo %}
+<!-- FIX #6: author/entity schema. One public identity: the Substack. No X (not used), no IG (locked personal) - add a sameAs line only if either opens up. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://cseet.substack.com/about#claire",
+      "name": "Claire",
+      "url": "https://cseet.substack.com",
+      "sameAs": [
+        "https://cseet.substack.com"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://artofsmallthings.com/#website",
+      "url": "https://artofsmallthings.com",
+      "name": "small things",
+      "description": "Black Cat + Art of Small Things",
+      "publisher": { "@id": "https://cseet.substack.com/about#claire" }
+    }
+  ]
+}
+</script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9EPK2GMZ8R"></script>
 <script>
@@ -10,8 +35,6 @@
 
   gtag('config', 'G-9EPK2GMZ8R');
 </script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600&family=Permanent+Marker&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=start" />
+<link rel="stylesheet" href="{{ '/assets/css/fonts.css' | relative_url }}">
+<!-- FIX #14: fonts self-hosted (assets/css/fonts.css). Zero third-party font requests. -->
 <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">

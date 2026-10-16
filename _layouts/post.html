@@ -14,7 +14,7 @@ layout: default
   </div>
 </article>
 
-{% assign section_posts = site.categories[page.category] | sort: "date" %}
+{% assign section_posts = site.categories[page.category] %}{% if section_posts %}{% assign section_posts = section_posts | sort: "date" %}{% endif %}
 {% assign post_index = 0 %}
 {% for p in section_posts %}
   {% if p.url == page.url %}{% assign post_index = forloop.index0 %}{% endif %}
