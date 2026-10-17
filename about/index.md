@@ -4,106 +4,31 @@ title: About
 permalink: /about/
 ---
 
-Nothing on these pages are waiting for you to hurry.
+<p class="section-marker">// ABOUT</p>
 
-No clock running underneath it, counting toward something you're supposed to decide before you're ready.
+I started writing on Substack early 2026. I got tired of not completing the writing I started. So I oriented towards publishing, not to keep to a schedule but to keep a promise to myself.
 
-You can stay as long as it takes. Longer, even, than that.
+Sometime in late June, I felt the urge to give the Black Cat a home, outside of the walled garden. I have more pieces that are not fiction that have never left my Google Drive.
 
-This is [The Floor]({{ '/the-floor/' | relative_url }}).
+My name is Claire.
 
-[Art of Small Things]({{ '/the-art-of-small-things/' | relative_url }}) is built the same way — the room before the ask, belonging before the frame, before anyone is handed a single thing to do.
+Fifty and I live in Singapore. Recently I stopped work to care for my parents.
 
-You are standing on it now.
+I graduated from architecture school and met Deleuze and Guattari there. I still re-read them today. But I am not an architect. And I do read other books. Fun books.
 
-{% include divider.html %}
+Between leaving school and now, I have led different lives. In marketing, advertising, retail and e-commerce. I've built websites for others but never my own.
 
-**Why put this outside substack now?**
+What I am trying to do here is build a website, and a home for my projects. To share them. Without all the bells and whistles. To do it, I leaned toward the spirit of the tiny house movement. Not because it's cheap. Or temporary. But to build just what is needed. And go from there.
 
-This is here so [Black Cat]({{ '/black-cat/' | relative_url }}) has a home.
-
-Not a metaphor. No pun intended.
-
-I have more pieces sitting in folders that never went anywhere. They need somewhere to land.
+Someone once told me in order to belong, I needed to belong to myself first. I am doing that. Little by little each day.
 
 {% include divider.html %}
 
-Writing gave me a way of describing exactly how I see things.
+Nothing on these pages are waiting for me to hurry.
 
-Felt first. In the body.
+Nothing here is waiting for you to hurry either.
 
-Sometimes too much comes in at once. I learned to pause with it. Not push through it.
+If you want to reach out to connect, [drop me a note](https://forms.gle/dRbW1Sh4xftKFL5m6).
 
-Making sense of the writing meant going back through years that had never been processed.
-
-I grew up learning by diagram. Drawing the shapes, connecting them, colouring them into categories until a pattern showed itself.
-
-That didn't help here.
-
-For a long time the story was: too sensitive. Felt too much.
-
-I sat with that story until it stopped being true.
-
-What I actually discuss are the things that get my own hackles up.
-
-That is not the same as too much.
-
-That is just not looking away.
-
-{% include divider.html %}
-
-People respond to *How to Win a Million Dollars.* To *10 Steps to —.*
-
-I couldn't write those unless I had personally done it. Writing it any other way would feel like a lie.
-
-Even then, I would confuse myself. If this happens, then this. And there might be three of those branches. Or thirty.
-
-This writing spirals.
-
-Not rooted in a direction. Rooted in the knowing in the body. That is what leads.
-
-Someone I work with saw that immediately. Without being told.
-
-I started by writing lies.
-
-The ones we tell ourselves.
-
-The ones I told myself.
-
-{% include divider.html %}
-
-I stopped formal work to take care of my parents.
-
-I am still writing.
-
-I have more to say.
-
-There are things that need to be said out loud. Not to normalise them. To release the shame packed into each letter like pressure with nowhere else to go.
-
-I had to do it for myself first.
-
-It shifted things for the people around me too. Especially in caregiving.
-
-Running both — the job, and the care I actually want to give my family — was too draining.
-
-I stopped one.
-
-I am going to document both.
-
-It was never just a job.
-
-The women I was interviewing could have been me. Different country. Different circumstances. That is the whole difference.
-
-I took the calls. The cases. In Singapore. In real life.
-
-Each one felt like the only emergency in the world.
-
-Enough of them, and the emergency wore off. What was underneath had been there the whole time.
-
-The patterns showed up on their own.
-
-What I saw. No names. Just what I noticed.
-
-What they showed me was a window. A chance to make a real difference for my own family. Or at least try, before it closes.
-
-The business was never mine.
+From my basement to yours.
+Claire
