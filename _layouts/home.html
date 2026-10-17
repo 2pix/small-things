@@ -125,6 +125,12 @@ layout: default
   .fd-linehead + .lm-cut { margin-top: var(--space-2); }
   .lm-cut .lm__band { margin-top: 14px; }
 }
+/* Other Posts: title/subtitle as one unit + visible link affordance (Claire, 2026 Oct 17) */
+.other-posts .post-card__title { margin: 0 0 2px; font-size: 1.25rem; }
+.other-posts .post-card__subtitle { margin: 0 0 2px; }
+.other-posts .post-card__title a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; text-decoration-color: color-mix(in srgb, var(--color-accent) 45%, transparent); }
+.other-posts .post-card__meta { margin: 0; }
+
 /* front door lighter type (Claire, 2026 Oct 17): heavy weights off these surfaces */
 .fd-door { font-weight: 400; }
 .fd-hint { font-weight: 400; }
