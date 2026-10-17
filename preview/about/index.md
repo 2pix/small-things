@@ -13,7 +13,6 @@ permalink: /preview/about/
 }
 </style>
 
----
 
 <p class="section-marker">// ABOUT</p>
 
