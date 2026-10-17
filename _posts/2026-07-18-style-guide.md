@@ -195,6 +195,23 @@ Responsive 16:9 embed, scales to the text column width. Not rendered live here t
 
 {% include divider.html %}
 
+### The reading toggles — dark/sepia and easy-read, and why (Claire, 2026 Oct 17)
+
+Two independent toggles, fixed bottom-right on every page. They exist for a reason worth writing down, because the reason is the site's own argument.
+
+**Noto Serif stays on all surfaces.** The default reading face for the whole site is Noto Serif. The only exception is the easy-read toggle, for readers who need it.
+
+**I am dyslexic.** Words jump and rearrange. Growing up in the 80s and 90s there was no such thing as being dyslexic. I was not seen to — my mother thought I was lazy, but I had to use a finger to guide myself through reading. I realised space — negative space — was an aid. When mobile phones, the internet and scrolling pages arrived, I found I could use my finger or the mouse to scroll up, and my eyes somehow had an anchor. Other colleagues and friends found that annoying and asked me why I did that. But I could read better.
+
+So the site is built the way I read: dark ground first (a dark room rests eyes that had to fight paper), generous negative space (the anchor), short reading lines, open letter shapes. And the two toggles:
+
+- **Sepia light** — for eyes that read better on paper tones. Swaps the whole palette: sepia ground, dark brown ink, burnt orange accent. Noto Serif stays.
+- **Easy read** — swaps the reading serif to Atkinson Hyperlegible (Braille Institute, open letter shapes, every letter drawn to be told apart). Swaps ONLY the body reading face; the sans furniture keeps Montserrat; the palette never changes. State remembered between visits, one localStorage key per toggle.
+
+Legibility beats serif tradition — that trade was made deliberately, for the reader who is me and the readers who are like me.
+
+{% include divider.html %}
+
 ### This card, in the feed
 
 This post is filed under UX at `/ux/style-guide/` — not linked in nav yet, since UX isn't built as a real section. Findable directly by URL.

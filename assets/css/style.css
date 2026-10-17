@@ -790,8 +790,8 @@ main {
   color: #6b4423; /* eyebrow accent follows the brown family in sepia, not orange */
 }
 :root[data-font="hyperlegible"] {
-  --font-serif: "Atkinson Hyperlegible", var(--font-sans), sans-serif; /* easy-read face: Atkinson Hyperlegible (Claire, 2026 Oct 17, replaces Lexend) */
-  --font-sans: "Atkinson Hyperlegible", system-ui, sans-serif;
+  /* Easy-read (Claire, 2026 Oct 17): Noto Serif stays on all surfaces by default; the toggle swaps ONLY the reading serif for Atkinson Hyperlegible. The sans furniture keeps Montserrat. */
+  --font-serif: "Atkinson Hyperlegible", var(--font-sans), sans-serif;
 }
 :root[data-font="hyperlegible"] body {
   letter-spacing: 0.01em;
