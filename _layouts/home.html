@@ -116,6 +116,15 @@ layout: default
 @media (min-width: 700px) {
   .whoami-card { max-width: 640px; }
 }
+/* front door lighter type (Claire, 2026 Oct 17): heavy weights off these surfaces */
+.fd-door { font-weight: 400; }
+.fd-hint { font-weight: 400; }
+.fd-marker { font-weight: 400; }
+.frontdoor-intro p:not(.fd-marker) { font-weight: 400; }
+.frontdoor-intro p:not(.fd-marker), .fd-hint {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
 </style>
 
 <section class="frontdoor-intro">
@@ -133,7 +142,7 @@ layout: default
 <div class="lm-cut">
 {% include line-map.html %}
 </div>
-<a class="fd-door" href="{{ '/black-cat/' | relative_url }}">The whole book in one line →</a>
+<a class="fd-door" href="{{ '/black-cat/' | relative_url }}">Where the writing is up to →</a>
 
 <section class="other-posts">
   <p class="fd-marker">// OTHER POSTS</p>
