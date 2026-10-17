@@ -140,7 +140,7 @@ A superscript reference[^1] in the body text.
 ```
 {% endraw %}
 
-[^1]: The footnote text can go anywhere in the source file — Kramdown collects them and renders the list at the bottom regardless of where they're written.
+[^1]: The footnote text can go anywhere in the source file — Kramdown collects them and renders the list at the bottom regardless of where they're written. Numbering follows citation order. This is the site's citation apparatus: essays keep numbered references visible at the bottom as part of the argument (see The Vision, Not the Theatrics for 18 in live use). Multiple sources on one footnote: chain them with ` · ` between links. A URL containing parentheses (Lancet/ICRC-style paths) must be wrapped in angle brackets inside the link or it truncates: `[source](<https://...(...)...>)`.
 [^2]: Numbering is automatic and follows citation order, not the order the footnotes are written in.
 
 {% include divider.html %}
