@@ -136,13 +136,42 @@ a {
   margin-bottom: var(--space-2);
 }
 
-.section-intro {
-  margin-bottom: var(--space-3);
-}
-
+/* ============================================================
+   SECTION INTROS (item 12, Claire 2026 Oct 17): every section
+   opens with the front door's grammar - // marker, muted intro,
+   tight pairing. Intro text is muted (front-door register).
+   ============================================================ */
 .section-intro p {
-  margin: 0 0 var(--space-3);
+  font-weight: 400;
+  opacity: 0.8;
+  margin: 0 0 var(--space-2);
+  -webkit-font-smoothing: antialiased;
 }
+.section-marker {
+  font-family: ui-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  border-left: 3px solid var(--color-accent);
+  padding-left: 9px;
+  margin: var(--space-4) 0 var(--space-2);
+}
+.section-intro { margin-bottom: var(--space-3); }
+/* Page-down for returning readers (Black Cat): skips the intro to the line */
+.page-down {
+  display: block;
+  width: fit-content;
+  margin: 0 auto var(--space-4);
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--color-accent);
+  text-decoration: none;
+  border: 1px solid color-mix(in srgb, var(--color-accent) 45%, transparent);
+  padding: 6px var(--space-3);
+  background: color-mix(in srgb, var(--color-accent) 5%, var(--color-bg));
+}
+.page-down:hover, .page-down:focus { background: color-mix(in srgb, var(--color-accent) 14%, var(--color-bg)); }
 
 .post__title {
   font-size: 2rem;
@@ -625,6 +654,14 @@ main {
   color: var(--color-text);
   text-decoration: none;
 }
+
+/* Section feed cards match the front page's Other Posts (item 12): tight pairs + link affordance */
+.section-feed .post-card__title { margin: 0 0 2px; }
+.section-feed .post-card__subtitle { margin: 0 0 2px; }
+.section-feed .post-card__meta { margin: 0; }
+.section-feed .post-card__title a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; text-decoration-color: color-mix(in srgb, var(--color-accent) 45%, transparent); }
+.section-feed .post-card { border-bottom-color: color-mix(in srgb, var(--color-text) 30%, transparent); }
+
 /* Micro-interaction (Claire, 2026 Oct 17): the "one small yes" generalised - card titles brighten on hover */
 .post-card__title a { transition: opacity .2s; }
 .post-card__title a:hover, .post-card__title a:focus { opacity: 0.75; }

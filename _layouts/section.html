@@ -7,13 +7,16 @@ layout: default
   <h1 class="section-label page__title">{{ page.title }}</h1>
   {% case page.category %}
     {% when "black-cat" %}
+      <p class="section-marker">// BLACK CAT</p>
       <div class="section-intro">
         <p>Updated: 27 Sept 2026 - this body of work came in pieces. I started on a writing workshop and where prompts were given daily. I didn't always follow the prompts but it helped me to get started. The scenes form whole in my mind's eye, complete with sound, smell and taste.</p>
         <p>A friend said these pieces read more like scenes in a play. The lies can be read like a lone voice in the dark.</p>
         <p>The politics in these pieces live in bodies, not in arguments. What a body holds for other people, what it refuses, what it knows before anyone has a chance to think it out.</p>
       </div>
-      {% include line-map.html %}
+      <a class="page-down" href="#the-line">Skip the intro — down to the line ↓</a>
+      <div id="the-line">{% include line-map.html %}</div>
     {% when "the-floor" %}
+      <p class="section-marker">// THE FLOOR</p>
       <div class="section-intro">
         <p>The floor is the place where belonging stops being conditional.</p>
         <p>Everything above it runs on a transaction: belong by producing, by climbing, by being useful, by paying.</p>
@@ -21,6 +24,7 @@ layout: default
         <p>Some of what I found is here.</p>
       </div>
     {% when "the-art-of-small-things" %}
+      <p class="section-marker">// ART OF SMALL THINGS</p>
       <div class="section-intro">
         <p>The smallest unit is a small group.</p>
         <p>Two people. Three. A meal on the same day each month. A walk. A message thread that actually responds when something is hard.</p>
