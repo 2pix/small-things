@@ -173,6 +173,8 @@ a {
 }
 .page-down:hover, .page-down:focus { background: color-mix(in srgb, var(--color-accent) 14%, var(--color-bg)); }
 
+.page-down--line { margin-left: var(--space-2); }
+
 .post__title {
   font-size: 2rem;
   margin-bottom: var(--space-1);
