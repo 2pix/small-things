@@ -849,7 +849,8 @@ main {
 .lm__t a { color: var(--color-text); text-decoration: none; }
 .lm__t a:hover, .lm__t a:focus { color: var(--color-accent); } /* the door under your hand glows ember */
 .lm__dek { flex-basis: 100%; font-style: italic; font-size: 0.9rem; line-height: 1.4; color: var(--color-text); opacity: 0.65; padding-left: 31px; margin-top: -3px; } /* dek hugs its title (Claire, 2026 Oct 17): pair reads as one unit like band->station */
-.lm__tag { margin-left: auto; font-family: ui-monospace, monospace; font-size: 9px; letter-spacing: 0.08em; flex: none; }
+.lm__st { position: relative; }
+.lm__tag { position: absolute; top: 10px; right: 0; margin-left: 0; font-family: ui-monospace, monospace; font-size: 9px; letter-spacing: 0.08em; flex: none; } /* tag pinned to the title line (Claire, 2026 Oct 17): was wrapping to its own row below the dek */
 /* LIES: the interchange diamonds. Gradient text, ember to blue. */
 .lm__lie .lm__dot { border-radius: 3px; transform: rotate(45deg); }
 .lm__lie .lm__t a, .lm__lie .lm__tag {
