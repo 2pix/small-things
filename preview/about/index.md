@@ -4,15 +4,22 @@ permalink: /preview/about/
 ---
 
 <style>
+.page__body > .section-marker {
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-2);
+}
 .page__body > .section-marker ~ p {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 5%;
   padding-right: 5%;
+  font-weight: 400;
+  opacity: 0.8;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 </style>
-
 
 <p class="section-marker">// ABOUT</p>
 
@@ -32,8 +39,6 @@ What I am trying to do here is build a website, and a home for my projects. To s
 
 Someone once told me in order to belong, I needed to belong to myself first. I am doing that. Little by little each day.
 
-{% include divider.html %}
-
 Nothing on these pages are waiting for me to hurry.
 
 Nothing here is waiting for you to hurry either.
@@ -42,3 +47,7 @@ If you want to reach out to connect, [drop me a note](https://forms.gle/dRbW1Sh4
 
 From my basement to yours.
 Claire
+
+<p class="section-marker">// THE FLOOR</p>
+
+This is [The Floor](/the-floor/). You are standing on it now.
