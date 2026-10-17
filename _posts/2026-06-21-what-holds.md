@@ -3,6 +3,8 @@ title: What Holds
 subtitle: "Saying it had become less effort than not saying it."
 category: black-cat
 date: 2026-06-21 13:55:44 +0000
+redirect_from:
+  - /2026-06-21-what-holds/
 ---
 The lift always took a while in that block.
 

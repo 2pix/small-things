@@ -3,6 +3,8 @@ title: Sometime in the Future
 subtitle: "A kitchen tells the truth before the people in it do."
 category: black-cat
 date: 2026-03-21 09:07:01 +0000
+redirect_from:
+  - /2026-03-21-sometime-in-the-future/
 ---
 Karen had given him the address the week before. A condo at the edge of Toa Payoh, older than the new HDB going up around it, the kind that had been there long enough to stop trying to look like anything other than what it was.
 

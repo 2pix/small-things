@@ -3,6 +3,8 @@ title: What Was Owed
 subtitle: "Dec 2024 - He Was Fifty-One. He Had Been, By Every Account, Very Busy."
 category: black-cat
 date: 2026-04-26 01:42:21 +0000
+redirect_from:
+  - /2026-04-26-what-was-owed/
 ---
 His name was Raymond.
 

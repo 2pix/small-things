@@ -3,6 +3,8 @@ title: Create from Nothing
 subtitle: "On attention, exile, and returning to what is already yours"
 category: black-cat
 date: 2026-02-05
+redirect_from:
+  - /2026-02-05-create-from-nothing/
 ---
 
 Three decades ago I stood at an intersection where petrochemical industry met residential, flanked by the Yarra River. A strip of grass between dusty road and water. Thirty meters long. Six meters wide.

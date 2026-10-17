@@ -3,6 +3,8 @@ title: The Room Is There
 subtitle: "A meditation on space and sensation"
 category: black-cat
 date: 2026-03-24 12:01:38 +0000
+redirect_from:
+  - /2026-03-24-a-different-kind-of-quiet/
 ---
 He got home at seven-thirty.
 

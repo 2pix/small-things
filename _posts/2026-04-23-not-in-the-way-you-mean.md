@@ -3,6 +3,8 @@ title: Not in the Way You Mean
 subtitle: "KL, December 2014"
 category: black-cat
 date: 2026-04-23 02:01:14 +0000
+redirect_from:
+  - /2026-04-23-not-in-the-way-you-mean/
 ---
 The emails had started in October.
 

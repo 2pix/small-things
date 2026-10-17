@@ -5,6 +5,8 @@ subtitle: "Every text element on the site, in one place, for tuning sizes and sp
 category: ux
 permalink: /ux/style-guide/
 date: 2026-07-18
+redirect_from:
+  - /2026-07-18-style-guide/
 ---
 This is the reasoning behind how the site was built, not just the result. Nothing here was abstract. Every element, every naming convention, was considered and argued with before it landed.
 

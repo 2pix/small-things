@@ -3,6 +3,8 @@ title: The Borrowed Coat
 subtitle: "She had been looking. Just not only at dogs."
 category: black-cat
 date: 2026-05-25 14:53:30 +0000
+redirect_from:
+  - /2026-05-25-the-borrowed-coat/
 ---
 She sat in the car for a few minutes before going up.
 

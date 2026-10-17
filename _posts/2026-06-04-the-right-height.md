@@ -3,6 +3,8 @@ title: The Right Height
 subtitle: "Things had been surfacing. She wasn't sure when they started."
 category: black-cat
 date: 2026-06-04 15:35:12 +0000
+redirect_from:
+  - /2026-06-04-the-right-height/
 ---
 The flat was in Queenstown. Resale, a 3A HDB on a high floor. Eight months on the renovation, doing what architects do when they finally have a space entirely their own: built exactly what he wanted, without compromise, because there was no one to compromise with.
 

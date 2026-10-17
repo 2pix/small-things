@@ -625,6 +625,10 @@ main {
   color: var(--color-text);
   text-decoration: none;
 }
+/* Micro-interaction (Claire, 2026 Oct 17): the "one small yes" generalised - card titles brighten on hover */
+.post-card__title a { transition: opacity .2s; }
+.post-card__title a:hover, .post-card__title a:focus { opacity: 0.75; }
+
 
 .post-card__excerpt-link {
   text-decoration: none;
@@ -855,6 +859,18 @@ main {
   transition: filter .2s;
 }
 .lm__lie .lm__t a:hover, .lm__lie .lm__t a:focus { filter: brightness(1.25); }
+
+/* Sepia LIE gradient (Claire, 2026 Oct 17): the dark-room gradient's blue end (#6286cc) goes quiet on cream.
+   Sepia tuning: burnt orange #c1622e -> deeper blue #46608f (dark enough on #f4ecd8), hover brightness kept. */
+:root[data-theme="sepia"] .lm__lie .lm__t a,
+:root[data-theme="sepia"] .lm__lie .lm__tag {
+  background: linear-gradient(90deg, #b35a20 0%, #46608f 90%);
+  -webkit-background-clip: text; background-clip: text;
+  color: transparent; -webkit-text-fill-color: transparent;
+}
+:root[data-theme="sepia"] .lm__lie .lm__t a:hover,
+:root[data-theme="sepia"] .lm__lie .lm__t a:focus { filter: brightness(1.15); }
+
 .lm__future { opacity: 0.55; }
 .lm__future .lm__dot { border-style: dashed; background: transparent; }
 .lm__future .lm__t { font-style: italic; }

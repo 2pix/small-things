@@ -3,6 +3,8 @@ title: The Bars
 subtitle: "A lie. On self-abandonment"
 category: black-cat
 date: 2026-02-20 11:46:30 +0000
+redirect_from:
+  - /2026-02-20-the-bars-lie-1/
 ---
 I stayed.
 

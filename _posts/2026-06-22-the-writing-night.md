@@ -3,6 +3,8 @@ title: The Writing Night
 subtitle: "The love was in the not-needing-to-look."
 category: black-cat
 date: 2026-06-22 16:27:55 +0000
+redirect_from:
+  - /2026-06-22-the-writing-night/
 ---
 It was the end of the week.
 

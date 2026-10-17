@@ -3,6 +3,8 @@ title: The Studio Floor
 subtitle: "The week had been ordinary. That was the thing about it."
 category: black-cat
 date: 2026-03-17 15:43:52 +0000
+redirect_from:
+  - /2026-03-17-the-studio-floor/
 ---
 The week had been ordinary.
 

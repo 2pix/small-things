@@ -3,6 +3,8 @@ title: I know you did
 subtitle: "He was present, warm, and somewhere else entirely."
 category: black-cat
 date: 2026-03-14 13:20:18 +0000
+redirect_from:
+  - /2026-03-14-i-know-you-did/
 ---
 She was standing past the barrier with her bag still on her shoulder, the way she always stood when she was waiting for something — weight forward, already moving toward the next thing, her eyes going through the crowd with the efficiency of someone paid to read rooms.
 

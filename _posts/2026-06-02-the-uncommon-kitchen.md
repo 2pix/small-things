@@ -3,6 +3,8 @@ title: The Uncommon Kitchen
 subtitle: "She had made this dish close to the way her mother had made it and not close at all"
 category: black-cat
 date: 2026-06-02
+redirect_from:
+  - /2026-06-02-the-uncommon-kitchen/
 ---
 She arrived at the Black Cat at ten past nine with a bag of galangal she hadn't trusted the assistant to buy correctly. And the brioche loaves — Mark's, from the morning, taken from the oven at seven forty-five.
 

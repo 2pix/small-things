@@ -3,6 +3,8 @@ title: The Architecture of Nothing
 subtitle: "A Lie. What are you the gravity of?"
 category: black-cat
 date: 2026-06-13 13:57:03 +0000
+redirect_from:
+  - /2026-06-13-the-architecture-of-nothing/
 ---
 My children and I no longer speak.
 

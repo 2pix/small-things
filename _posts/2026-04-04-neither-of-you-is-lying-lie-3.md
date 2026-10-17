@@ -5,6 +5,8 @@ title: Neither of You is Lying - Lie 3
 subtitle: "Lie 17: Enough honest doors, built from True materials, add up to a house you can live in with integrity."
 category: black-cat
 date: 2026-04-04 12:02:25 +0000
+redirect_from:
+  - /2026-04-04-neither-of-you-is-lying-lie-3/
 ---
 {% include image.html src="/assets/images/neither-of-you-is-lying-page-1.jpg" alt="Handwritten page, 'The Third Lie' — You build the first door. It looks like honesty. The one true thing said early, before anything. You believe this makes you the kind of person who doesn't do this. She builds her door. It looks like choice. The clear eyes of someone who knows the terms and enters anyway. She believes this makes her the kind of person who knows what she is doing. Neither of you is lying. This is the third lie." %}
 

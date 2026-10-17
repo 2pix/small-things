@@ -3,6 +3,8 @@ title: The Longer Walk
 subtitle: "He had been in other people's questions all day."
 category: black-cat
 date: 2026-06-10 17:20:05 +0000
+redirect_from:
+  - /2026-06-10-the-longer-walk/
 ---
 Lina's door was open. The pungent smell reached him from the corridor — dried chillies, oil beginning to catch. Sunday.
 

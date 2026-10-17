@@ -3,6 +3,8 @@ title: The Handle Sits
 subtitle: "A morning in Spottiswoode"
 category: black-cat
 date: 2026-05-28 12:01:44 +0000
+redirect_from:
+  - /2026-05-28-the-handle-sits/
 ---
 The alarm went at five-forty.
 

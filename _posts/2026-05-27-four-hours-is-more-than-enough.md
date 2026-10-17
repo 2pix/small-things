@@ -3,6 +3,8 @@ title: Four Hours Is More Than Enough
 subtitle: "On stopping before you're wrecked"
 category: black-cat
 date: 2026-05-27 12:59:13 +0000
+redirect_from:
+  - /2026-05-27-four-hours-is-more-than-enough/
 ---
 The car arrived two minutes early. I noticed this before I noticed the lack of smell.
 

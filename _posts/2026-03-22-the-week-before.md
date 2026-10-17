@@ -3,6 +3,8 @@ title: The Week Before
 subtitle: "What the Heart Records When No One's Watching"
 category: black-cat
 date: 2026-03-22 14:01:21 +0000
+redirect_from:
+  - /2026-03-22-the-week-before/
 ---
 The clinic was in Orchard. Eighth floor of a medical building, the kind that housed twelve different specialists behind frosted glass doors, each with their own receptionist and their own particular version of the same waiting room chairs. He'd gotten the name from Marcus, who'd gotten it from someone at his gym, the referral travelling the way referrals travelled in Singapore — through networks, through trust, through the particular confidence of someone saying just go to him, he's good.
 

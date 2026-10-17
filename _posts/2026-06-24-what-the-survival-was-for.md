@@ -3,6 +3,8 @@ title: What the Survival Was For
 subtitle: "Lie 40. The instruction was given in good faith."
 category: black-cat
 date: 2026-06-24
+redirect_from:
+  - /2026-06-24-what-the-survival-was-for/
 ---
 The woman across from me had just left a job she'd held for eleven years.
 

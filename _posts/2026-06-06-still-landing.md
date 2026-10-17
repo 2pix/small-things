@@ -3,6 +3,8 @@ title: Still Landing
 subtitle: "The current runs differently than the script assumed it would."
 category: black-cat
 date: 2026-06-06 11:48:23 +0000
+redirect_from:
+  - /2026-06-06-still-landing/
 ---
 Sunday morning. His flat.
 

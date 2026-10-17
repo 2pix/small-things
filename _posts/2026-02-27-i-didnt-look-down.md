@@ -3,6 +3,8 @@ title: I didn't look down
 subtitle: "A Lie. I just never noticed someone was holding it."
 category: black-cat
 date: 2026-02-27 04:47:38 +0000
+redirect_from:
+  - /2026-02-27-i-didnt-look-down/
 ---
 The space felt gentle on my body.
 

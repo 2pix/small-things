@@ -3,6 +3,8 @@ title: A Place Where No One Performs
 subtitle: "And No One Needs To"
 category: black-cat
 date: 2026-02-11 02:52:18 +0000
+redirect_from:
+  - /2026-02-11-a-place-where-no-one-performs/
 ---
 Wen arrived early because her client was always late. Not dramatically. Just enough to suggest that time bent more easily around her than around anyone else.
 

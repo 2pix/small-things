@@ -3,6 +3,8 @@ title: Burnout Is What You Call It
 subtitle: "HCMC - 2014"
 category: black-cat
 date: 2026-04-20 15:45:06 +0000
+redirect_from:
+  - /2026-04-20-burnout-is-what-you-call-it/
 ---
 The fair was in District 7, in a convention centre built to accommodate the particular chaos of several thousand people looking for things to buy and sell at scale.
 

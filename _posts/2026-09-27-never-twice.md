@@ -1,6 +1,8 @@
 ---
 title: "Never Twice"
 date: 2026-09-27
+redirect_from:
+  - /2026-09-27-never-twice/
 category: black-cat
 description: "A dog’s thirteen years of reading a body versus a screen. When she finally trusts the first signal instead of waiting for a second one, something between them settles differently."
 ---

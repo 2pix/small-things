@@ -3,6 +3,8 @@ title: Without Looking
 subtitle: "The table stays the same. You don't."
 category: black-cat
 date: 2026-03-19 12:08:51 +0000
+redirect_from:
+  - /2026-03-19-without-looking/
 ---
 Marina had left the food on the table and gone to her room by the time he arrived.
 

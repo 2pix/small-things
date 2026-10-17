@@ -1,6 +1,8 @@
 ---
 title: "Uncomfortable Questions"
 date: 2026-07-30
+redirect_from:
+  - /2026-07-30-uncomfortable-questions/
 category: black-cat
 description: "A Sunday brunch in Singapore. Two neighbours ask each other about marriage, wanting, and who they’d grow old beside - questions they can’t ask themselves."
 ---

@@ -3,6 +3,8 @@ title: The Right Number
 subtitle: "A lie. The knowledge lives in the correction."
 category: black-cat
 date: 2026-06-02 15:34:00 +0000
+redirect_from:
+  - /2026-06-02-the-right-number/
 ---
 I billed in six-minute increments. Every hour of the day was divisible, assignable, recoverable as income. Six minutes was the smallest unit of time the firm could convert into something countable. The number didn't lie. It said exactly what had been turned into something that would count.
 

@@ -3,6 +3,8 @@ title: Not the margin, but the person first
 subtitle: "It is enough to have done today's part."
 category: black-cat
 date: 2026-04-19 03:01:03 +0000
+redirect_from:
+  - /2026-04-19-not-the-margin-but-the-person-first/
 ---
 He booked the flight on a Tuesday. No particular reason for the Tuesday. He had the number of the factory contact from the first trip — the man who paused before answering because he was calculating honestly. He sent a message the night before. The man replied within the hour. He would be there.
 

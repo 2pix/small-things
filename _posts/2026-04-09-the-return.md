@@ -3,6 +3,8 @@ title: The Return
 subtitle: "He only knew his part."
 category: black-cat
 date: 2026-04-09 16:13:47 +0000
+redirect_from:
+  - /2026-04-09-the-return/
 ---
 The plane came in low over open water and David watched the coastline arrange itself below. Flat. Dense. The particular geometry of a city that had decided what it was going to be and built accordingly.
 
