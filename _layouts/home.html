@@ -21,8 +21,21 @@ layout: default
 }
 .frontdoor-intro p:not(.fd-marker) {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0 auto var(--space-2);
   padding: 0 5%;
+}
+.fd-linehead .fd-marker {
+  margin-left: calc(5% + 1px);
+  margin-right: 5%;
+  max-width: 600px;
+}
+.fd-hint {
+  max-width: 600px;
+  margin: 0 auto var(--space-2);
+  padding: 0 5%;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  opacity: 0.75;
 }
 .frontdoor-intro + .lm {
   margin-top: var(--space-4);
@@ -30,14 +43,14 @@ layout: default
 /* The cut: show the first stations, fade the rest into the button */
 .lm-cut {
   position: relative;
-  max-height: 340px; /* cut sits just after station 5 (I Didn't Look Down); the whole 2012 band dissolves */
+  max-height: 475px; /* measured live: end of station 5 (I Didn't Look Down) at 390px phone width; 2012 band header sits at 474 and stays hidden */
   overflow: hidden;
-  -webkit-mask-image: linear-gradient(to bottom, black 75%, transparent 100%); /* dark: dissolve starts later so lines stay lighter longer (Claire, 2026 Oct 17) */
-  mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 76%, transparent 100%); /* dissolve starts at station 5's row, measured (Claire, 2026 Oct 17) */
+  mask-image: linear-gradient(to bottom, black 76%, transparent 100%);
 }
 :root[data-theme="sepia"] .lm-cut {
-  -webkit-mask-image: linear-gradient(to bottom, black 68%, transparent 100%); /* sepia tone is forgiving, keeps the earlier fade */
-  mask-image: linear-gradient(to bottom, black 68%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 72%, transparent 100%); /* sepia tone is forgiving; slightly earlier fade */
+  mask-image: linear-gradient(to bottom, black 72%, transparent 100%);
 }
 .fd-door {
   position: relative;
@@ -108,14 +121,19 @@ layout: default
 <section class="frontdoor-intro">
   <p class="fd-marker">// THE NOVEL</p>
   <p>The thing I have feared most is to show myself in public as I am building and making mistakes whilst doing it. I've left projects hanging. Many of them. For want of a perfect product, a perfect website, a perfect design. These projects were personal, ones I believe in and not paid to do. Over the many years, a part of me died along with the rot of these unfinished projects.</p>
-  <p>I started writing in my notes app. On scraps of paper. Diagrams, paragraphs. A sentence or even 4 words. They came from the most recent interactions. And then deeper. From dreams I had, to themes I kept returning to. I kept doing it. It was the smallest thing I could to make sense of this tangled web of thought and releasing the kinks.</p>
+  <p>I started writing in my notes app. On scraps of paper. Diagrams, paragraphs. A sentence or even 4 words. They came from the most recent interactions. And then deeper. From dreams I had, to themes I kept returning to. I kept doing it. It was the smallest thing I could do to make sense of this tangled web of thought and releasing the kinks.</p>
   <p>Much of the Black Cat are those exact notes.</p>
-  <p class="frontdoor-intro__door"><a href="{{ '/black-cat/' | relative_url }}">The whole book in one line →</a></p>
+</section>
+
+<section class="fd-linehead">
+  <p class="fd-marker">// BLACK CAT TIMELINE</p>
+  <p class="fd-hint">Every scene title is a door. Tap one to walk in.</p>
 </section>
 
 <div class="lm-cut">
 {% include line-map.html %}
 </div>
+<a class="fd-door" href="{{ '/black-cat/' | relative_url }}">The whole book in one line →</a>
 
 <section class="other-posts">
   <p class="fd-marker">// OTHER POSTS</p>
