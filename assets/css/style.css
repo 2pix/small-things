@@ -236,6 +236,10 @@ a {
   transform: rotate(-2deg);
 }
 
+.post-image--polaroid.post-image--straight {
+  transform: none;
+}
+
 .post-image--polaroid figcaption {
   font-family: var(--font-sans); /* FIX #18: Permanent Marker retired */
   font-size: 0.8125rem;

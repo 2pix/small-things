@@ -1,4 +1,4 @@
-<figure class="post-image {% if include.full %}post-image--full{% else %}post-image--polaroid{% endif %}">
+<figure class="post-image {% if include.full %}post-image--full{% elsif include.straight %}post-image--polaroid post-image--straight{% else %}post-image--polaroid{% endif %}">
   <img src="{{ include.src | relative_url }}" alt="{{ include.alt }}">
   {% if include.caption %}<figcaption>{{ include.caption }}</figcaption>{% endif %}
 </figure>
