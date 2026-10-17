@@ -2,12 +2,11 @@
 layout: default
 ---
 {%- comment -%}
-  Front door (settled shape, Claire 2026 Oct 16): what this is -> the Line -> who I am.
-  Intro reuses the /black-cat/ copy (never rewritten). Latest cards demoted below.
-  The strix borrow is grammar only: // markers, 3px accent bar, one accent.
-  Front-door styles are inline here on purpose: they touch no live page until
-  this layout replaces the homepage, and the /preview/ build renders them
-  without touching assets/css/style.css.
+  Front door (settled shape, Claire 2026 Oct 16-17): what this is -> the Line
+  (cut with a fade after "I Didn't Look Down", folding into one button) ->
+  Other Posts (no Black Cat, interim) -> WHOAMI.
+  Intro is Claire's own words. Styles inline so the live homepage is untouched
+  until approval; /preview/ renders them without touching style.css.
 {%- endcomment -%}
 <style>
 .fd-marker {
@@ -25,32 +24,49 @@ layout: default
   margin: 0 auto;
   padding: 0 5%;
 }
-.frontdoor-intro__door {
-  margin-top: var(--space-2);
-}
-.frontdoor-intro__door a {
-  text-decoration: none;
-  border-bottom: 1px solid color-mix(in srgb, var(--color-accent) 55%, transparent);
-}
 .frontdoor-intro + .lm {
-  margin-top: var(--space-6);
+  margin-top: var(--space-4);
 }
-.latest .fd-marker,
+/* The cut: show the first stations, fade the rest into the button */
+.lm-cut {
+  position: relative;
+  max-height: 620px;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to bottom, black 66%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 66%, transparent 100%);
+}
+.fd-door {
+  position: relative;
+  display: block;
+  width: fit-content;
+  margin: var(--space-2) auto var(--space-6);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  color: var(--color-accent);
+  text-decoration: none;
+  border: 1px solid color-mix(in srgb, var(--color-accent) 55%, transparent);
+  padding: var(--space-1) var(--space-3);
+  background: color-mix(in srgb, var(--color-accent) 7%, var(--color-bg));
+}
+.fd-door:hover, .fd-door:focus {
+  background: color-mix(in srgb, var(--color-accent) 16%, var(--color-bg));
+}
+.other-posts .fd-marker,
 .whoami .fd-marker {
   margin-left: calc(5% + 1px);
   margin-right: 5%;
   max-width: 600px;
 }
-.latest .post-card {
+.other-posts .post-card,
+.whoami-card {
   max-width: 600px;
   margin: 0 auto;
   padding-left: 5%;
   padding-right: 5%;
 }
 .whoami-card {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: var(--space-3) 5%;
+  padding-top: var(--space-3);
+  padding-bottom: var(--space-3);
   border: 1px solid color-mix(in srgb, var(--color-accent) 45%, transparent);
   background: color-mix(in srgb, var(--color-accent) 8%, transparent);
 }
@@ -87,17 +103,20 @@ layout: default
   <p>I started writing in public. It's the scariest thing I do — to show myself.</p>
   <p>The pieces came out in paragraphs, from dreams, from things I kept returning to.</p>
   <p>The smallest thing I could do to make sense of my train of thought.</p>
-  <p class="frontdoor-intro__door"><a href="{{ '/black-cat/' | relative_url }}">The whole book on one line →</a></p>
 </section>
 
+<div class="lm-cut">
 {% include line-map.html %}
+</div>
+<a class="fd-door" href="{{ '/black-cat/' | relative_url }}">The whole book in one line →</a>
 
-<section class="latest">
-  <p class="fd-marker">// LATEST</p>
-  {%- assign latest = site.posts | slice: 0, 5 -%}
-  {% for post in latest %}
-    {% include post-card.html post=post %}
-  {% endfor %}
+<section class="other-posts">
+  <p class="fd-marker">// OTHER POSTS</p>
+  {%- for post in site.posts -%}
+    {%- if post.category != "black-cat" -%}
+      {% include post-card.html post=post %}
+    {%- endif -%}
+  {%- endfor -%}
 </section>
 
 <section class="whoami">
