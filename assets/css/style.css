@@ -841,10 +841,10 @@ main {
 .lm { position: relative; max-width: 560px; margin: 0 auto; padding-left: 6px; }
 .lm::before { content: ""; position: absolute; left: 12px; top: 0; bottom: 0; width: 3px; background: var(--color-accent); border-radius: 2px; opacity: 0.8; }
 .lm__band { position: relative; margin: 22px 0 4px; font-family: var(--font-sans); font-size: 12px; letter-spacing: 0.12em; display: flex; align-items: center; gap: 8px; }
-.lm__banddot { width: 13px; height: 13px; border-radius: 50%; border: 2px solid var(--color-bg); margin-left: -3px; flex: none; }
+.lm__banddot { width: 13px; height: 13px; border-radius: 50%; border: 2px solid var(--color-bg); margin-left: 1px; flex: none; } /* centered on the line (Claire, 2026 Oct 17) */
 .lm__st { position: relative; display: flex; align-items: baseline; gap: 9px; padding: 8px 0 8px 6px; flex-wrap: wrap; }
 .lm__num { font-family: ui-monospace, monospace; font-size: 10.5px; opacity: 0.8; flex: none; width: 22px; text-align: right; }
-.lm__dot { position: absolute; left: -1px; top: 15px; width: 10px; height: 10px; border-radius: 50%; background: var(--color-bg); border: 3px solid var(--color-accent); flex: none; }
+.lm__dot { position: absolute; left: 2px; top: 15px; width: 10px; height: 10px; border-radius: 50%; background: var(--color-bg); border: 3px solid var(--color-accent); flex: none; } /* centered on the line (Claire, 2026 Oct 17): was 3.5px left of line center */
 .lm__t { font-size: 1.05rem; line-height: 1.35; }
 .lm__t a { color: var(--color-text); text-decoration: none; }
 .lm__t a:hover, .lm__t a:focus { color: var(--color-accent); } /* the door under your hand glows ember */
