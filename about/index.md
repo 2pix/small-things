@@ -32,3 +32,9 @@ If you want to reach out to connect, [drop me a note](https://forms.gle/dRbW1Sh4
 
 From my basement to yours.
 Claire
+
+{% include divider.html %}
+
+<p class="section-marker">// THE FLOOR</p>
+
+This is [The Floor]({{ '/the-floor/' | relative_url }}). You are standing on it now.
