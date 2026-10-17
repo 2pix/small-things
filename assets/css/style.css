@@ -796,7 +796,7 @@ main {
 :root[data-font="hyperlegible"] body {
   letter-spacing: 0.01em;
   word-spacing: 0.08em;
-  line-height: 1.75;
+  line-height: 1.5; /* Atkinson's own metrics already carry extra air (specimen renders at 1.5); 1.75 stacked on top looked loose (Claire, 2026 Oct 17) */
 }
 .toggle-row {
   display: flex;
