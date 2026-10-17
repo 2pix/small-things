@@ -2,6 +2,7 @@
 title: The Longer Walk
 subtitle: "He had been in other people's questions all day."
 category: black-cat
+description: "Lina's door was open. Dried chillies, oil beginning to catch. Sunday. David had been in other people's questions all day."
 date: 2026-06-10 17:20:05 +0000
 redirect_from:
   - /2026-06-10-the-longer-walk/

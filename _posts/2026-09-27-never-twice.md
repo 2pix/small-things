@@ -4,7 +4,7 @@ date: 2026-09-27
 redirect_from:
   - /2026-09-27-never-twice/
 category: black-cat
-description: "A dog’s thirteen years of reading a body versus a screen. When she finally trusts the first signal instead of waiting for a second one, something between them settles differently."
+description: "I am small. But I have been here a long time. I know her by the sound of her feet in the corridor, before she turns the key."
 ---
 {% include image.html src="/assets/images/yogi-the-walk-home.jpg" alt="A small apricot poodle walking ahead on a leash down a covered HDB walkway" caption="Yogi, leading the way home" %}
 

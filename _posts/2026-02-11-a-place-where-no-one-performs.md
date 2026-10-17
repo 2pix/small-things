@@ -2,6 +2,7 @@
 title: A Place Where No One Performs
 subtitle: "And No One Needs To"
 category: black-cat
+description: "A woman who made a living of noticing goes to a cafe for a meeting. And noticed a cafe that operated under a different code."
 date: 2026-02-11 02:52:18 +0000
 redirect_from:
   - /2026-02-11-a-place-where-no-one-performs/

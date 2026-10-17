@@ -2,6 +2,7 @@
 title: The Right Height
 subtitle: "Things had been surfacing. She wasn't sure when they started."
 category: black-cat
+description: "A 3A HDB in Queenstown, eight months of renovation, everything exactly as he wanted because there was no one to compromise with."
 date: 2026-06-04 15:35:12 +0000
 redirect_from:
   - /2026-06-04-the-right-height/

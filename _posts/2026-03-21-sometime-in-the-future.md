@@ -2,6 +2,7 @@
 title: Sometime in the Future
 subtitle: "A kitchen tells the truth before the people in it do."
 category: black-cat
+description: "A kitchen spec that tells the truth before the people in it do."
 date: 2026-03-21 09:07:01 +0000
 redirect_from:
   - /2026-03-21-sometime-in-the-future/

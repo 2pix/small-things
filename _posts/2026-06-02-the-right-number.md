@@ -2,6 +2,7 @@
 title: The Right Number
 subtitle: "A lie. The knowledge lives in the correction."
 category: black-cat
+description: "Six minutes was the smallest unit of time the firm could turn into income. Then my father had a stroke on a Tuesday and I wasn't there. The knowledge lives in the correction."
 date: 2026-06-02 15:34:00 +0000
 redirect_from:
   - /2026-06-02-the-right-number/

@@ -2,6 +2,7 @@
 title: Burnout Is What You Call It
 subtitle: "HCMC - 2014"
 category: black-cat
+description: "A convention centre in District 7 built for thousands buying and selling at scale. He came for three suppliers and a new line called Bare."
 date: 2026-04-20 15:45:06 +0000
 redirect_from:
   - /2026-04-20-burnout-is-what-you-call-it/

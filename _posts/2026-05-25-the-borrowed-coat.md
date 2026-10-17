@@ -2,6 +2,7 @@
 title: The Borrowed Coat
 subtitle: "She had been looking. Just not only at dogs."
 category: black-cat
+description: "She sat in the car for a few minutes before going up, other people's grief still on her clothes somewhere. She had been looking. Just not only at dogs."
 date: 2026-05-25 14:53:30 +0000
 redirect_from:
   - /2026-05-25-the-borrowed-coat/

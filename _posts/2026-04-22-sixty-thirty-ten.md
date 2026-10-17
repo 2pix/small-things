@@ -2,6 +2,7 @@
 title: Sixty Thirty Ten
 subtitle: "The ease of something exact"
 category: black-cat
+description: "The Vietnamese mill in Hall A was better than the Taiwanese one. She was at the booth next to it, unhurried. The ease of something exact."
 date: 2026-04-22 13:06:41 +0000
 redirect_from:
   - /2026-04-22-sixty-thirty-ten/

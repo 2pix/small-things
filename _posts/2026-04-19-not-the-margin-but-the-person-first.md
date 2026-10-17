@@ -2,6 +2,7 @@
 title: Not the margin, but the person first
 subtitle: "It is enough to have done today's part."
 category: black-cat
+description: "The same factory, the same man who paused before answering because he was calculating honestly. This time David knew what he was looking for."
 date: 2026-04-19 03:01:03 +0000
 redirect_from:
   - /2026-04-19-not-the-margin-but-the-person-first/

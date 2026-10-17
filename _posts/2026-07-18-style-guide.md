@@ -4,6 +4,7 @@ title: "Style Guide"
 subtitle: "Every text element on the site, in one place, for tuning sizes and spacing"
 category: ux
 permalink: /ux/style-guide/
+description: "This is the reasoning behind how the site was built. Every element, every naming convention, was considered and argued with."
 date: 2026-07-18
 redirect_from:
   - /2026-07-18-style-guide/

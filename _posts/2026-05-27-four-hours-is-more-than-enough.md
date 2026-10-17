@@ -2,6 +2,7 @@
 title: Four Hours Is More Than Enough
 subtitle: "On stopping before you're wrecked"
 category: black-cat
+description: "The car arrived two minutes early. No synthetic vanilla, no oud attempting grandeur. Just air that had moved through the system recently enough. On stopping before you're wrecked."
 date: 2026-05-27 12:59:13 +0000
 redirect_from:
   - /2026-05-27-four-hours-is-more-than-enough/

@@ -2,6 +2,7 @@
 title: Still Landing
 subtitle: "The current runs differently than the script assumed it would."
 category: black-cat
+description: "The current runs differently than the script assumed. A struggle and new word gets added to her vocabulary."
 date: 2026-06-06 11:48:23 +0000
 redirect_from:
   - /2026-06-06-still-landing/

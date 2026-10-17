@@ -2,6 +2,7 @@
 title: Walk with Me
 subtitle: "Depth without performance"
 category: black-cat
+description: "Some friendships pick up from where they left off without being in the same country. David and Kenny found each other in Australia and spent years in each other's lives. Now they barely speak."
 date: 2026-02-14 05:47:08 +0000
 redirect_from:
   - /2026-02-14-walk-with-me/

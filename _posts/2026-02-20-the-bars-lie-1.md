@@ -2,6 +2,7 @@
 title: The Bars
 subtitle: "A lie. On self-abandonment"
 category: black-cat
+description: "It didn't feel like a dungeon. It felt clean, well-lit, built from good intentions and language so soft it barely left marks. That was the first lie."
 date: 2026-02-20 11:46:30 +0000
 redirect_from:
   - /2026-02-20-the-bars-lie-1/

@@ -2,6 +2,7 @@
 title: The Garden Won't Do Itself
 subtitle: "Twelve Days of Being Nobody in Particular"
 category: black-cat
+description: "When you spend 12 days of being nobody important, and you wake up suddenly not knowing what you want."
 date: 2026-04-01 05:27:15 +0000
 redirect_from:
   - /2026-04-01-the-garden-wont-do-itself/

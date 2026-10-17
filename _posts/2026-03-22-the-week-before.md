@@ -2,6 +2,7 @@
 title: The Week Before
 subtitle: "What the Heart Records When No One's Watching"
 category: black-cat
+description: "Everything appears normal. This is what the heart records when no one's watching."
 date: 2026-03-22 14:01:21 +0000
 redirect_from:
   - /2026-03-22-the-week-before/

@@ -2,6 +2,7 @@
 title: Not in the Way You Mean
 subtitle: "KL, December 2014"
 category: black-cat
+description: "The emails had started in October. Not often. Two people who had agreed not to maintain something, and found they had things to say anyway."
 date: 2026-04-23 02:01:14 +0000
 redirect_from:
   - /2026-04-23-not-in-the-way-you-mean/

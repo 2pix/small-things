@@ -2,6 +2,7 @@
 title: Not enough room
 subtitle: "A Man Who Has Never Spent a Saturday in His Own Apartment"
 category: black-cat
+description: "A Saturday morning with nothing in it, a carry-on packed in forty minutes, and pineapple tarts in his mother's careful layers."
 date: 2026-03-27 12:20:16 +0000
 redirect_from:
   - /2026-03-27-not-enough-room/

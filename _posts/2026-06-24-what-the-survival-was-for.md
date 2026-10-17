@@ -2,6 +2,7 @@
 title: What the Survival Was For
 subtitle: "Lie 40. The instruction was given in good faith."
 category: black-cat
+description: "She left a job she'd held for eleven years and cannot explain why. Her parents built their whole lives so she wouldn't have to start from zero. Each thing was wrong in a different way."
 date: 2026-06-24
 redirect_from:
   - /2026-06-24-what-the-survival-was-for/

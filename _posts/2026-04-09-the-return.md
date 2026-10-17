@@ -2,6 +2,7 @@
 title: The Return
 subtitle: "He only knew his part."
 category: black-cat
+description: "The slow realisation when you find certain things had stopped being yours. And realising you only know your part in it."
 date: 2026-04-09 16:13:47 +0000
 redirect_from:
   - /2026-04-09-the-return/

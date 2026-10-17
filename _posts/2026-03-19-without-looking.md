@@ -2,6 +2,7 @@
 title: Without Looking
 subtitle: "The table stays the same. You don't."
 category: black-cat
+description: "Marina cooks, sets the table, and disappears into her room. That's her rhythm. The table stays the same. You don't."
 date: 2026-03-19 12:08:51 +0000
 redirect_from:
   - /2026-03-19-without-looking/

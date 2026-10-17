@@ -2,6 +2,7 @@
 title: The Architecture of Nothing
 subtitle: "A Lie. What are you the gravity of?"
 category: black-cat
+description: "My children and I no longer speak. People ask how I have what I do. I did nothing."
 date: 2026-06-13 13:57:03 +0000
 redirect_from:
   - /2026-06-13-the-architecture-of-nothing/

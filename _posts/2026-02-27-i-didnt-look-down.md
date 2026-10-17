@@ -2,6 +2,7 @@
 title: I didn't look down
 subtitle: "A Lie. I just never noticed someone was holding it."
 category: black-cat
+description: "A space so easy you never question it, because nothing in it asks you to. The lie is not the ease. It is never noticing someone was holding it. Even yourself."
 date: 2026-02-27 04:47:38 +0000
 redirect_from:
   - /2026-02-27-i-didnt-look-down/

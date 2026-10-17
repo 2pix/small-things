@@ -1,7 +1,7 @@
 ---
 title: The Vision, Not the Theatrics
 subtitle: "Who is naming, and what would it take to see them: not the climbers, but the floor?"
-description: "An essay that reads Schumacher's forgotten economics, Bader's burned deed, Titmuss's unpaid blood, Deleuze and Guattari's capture, and a hospital queue in Singapore. On the floor that makes everything else land."
+description: "How a world actually changes: not through the climb, but through people who name the arrangement everyone took as law, and remember what was built before it, until both are visible again."
 category: the-floor
 date: 2026-10-09
 redirect_from:

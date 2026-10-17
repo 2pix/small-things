@@ -2,6 +2,7 @@
 title: The Room Is There
 subtitle: "A meditation on space and sensation"
 category: black-cat
+description: "The transactions that have taken place in your life without you noticing."
 date: 2026-03-24 12:01:38 +0000
 redirect_from:
   - /2026-03-24-a-different-kind-of-quiet/

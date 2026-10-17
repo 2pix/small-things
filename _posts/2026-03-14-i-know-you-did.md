@@ -2,6 +2,7 @@
 title: I know you did
 subtitle: "He was present, warm, and somewhere else entirely."
 category: black-cat
+description: "She found him before he found her, and he saw her face change when she did. Present, warm, and somewhere else entirely."
 date: 2026-03-14 13:20:18 +0000
 redirect_from:
   - /2026-03-14-i-know-you-did/

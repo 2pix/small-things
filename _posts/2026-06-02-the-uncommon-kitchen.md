@@ -2,6 +2,7 @@
 title: The Uncommon Kitchen
 subtitle: "She had made this dish close to the way her mother had made it and not close at all"
 category: black-cat
+description: "She didn't trust the assistant to buy the galangal right, so she went herself. The dish was close to the way her mother made it, and not close at all."
 date: 2026-06-02
 redirect_from:
   - /2026-06-02-the-uncommon-kitchen/

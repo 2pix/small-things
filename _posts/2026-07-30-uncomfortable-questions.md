@@ -4,7 +4,7 @@ date: 2026-07-30
 redirect_from:
   - /2026-07-30-uncomfortable-questions/
 category: black-cat
-description: "A Sunday brunch in Singapore. Two neighbours ask each other about marriage, wanting, and who they’d grow old beside - questions they can’t ask themselves."
+description: "Wen met Amandha at an outdoor table, Yogi's pram folded flat beside her chair, a bowl of water on the pavement."
 ---
 The cafe was a short walk from the block. Striped awnings over a row of outdoor tables, a chalkboard specials list, oat milk as the default rather than the ask. Amandha had already claimed a table outside when Wen arrived. Beside her chair sat Yogi’s pram, its back folded flat into something closer to a bed than a seat, and a small metal bowl of water set on the pavement next to it.
 
