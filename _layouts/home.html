@@ -1,19 +1,112 @@
 ---
 layout: default
 ---
-{% assign latest = site.posts | slice: 0, 5 %}
+{%- comment -%}
+  Front door (settled shape, Claire 2026 Oct 16): what this is -> the Line -> who I am.
+  Intro reuses the /black-cat/ copy (never rewritten). Latest cards demoted below.
+  The strix borrow is grammar only: // markers, 3px accent bar, one accent.
+  Front-door styles are inline here on purpose: they touch no live page until
+  this layout replaces the homepage, and the /preview/ build renders them
+  without touching assets/css/style.css.
+{%- endcomment -%}
+<style>
+.fd-marker {
+  font-family: ui-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  border-left: 3px solid var(--color-accent);
+  padding-left: 9px;
+  margin: var(--space-4) 0 var(--space-2);
+}
+.frontdoor-intro p:not(.fd-marker) {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+.frontdoor-intro__door {
+  margin-top: var(--space-2);
+}
+.frontdoor-intro__door a {
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--color-accent) 55%, transparent);
+}
+.frontdoor-intro + .lm {
+  margin-top: var(--space-6);
+}
+.latest .fd-marker,
+.whoami .fd-marker {
+  margin-left: calc(5% + 1px);
+  margin-right: 5%;
+  max-width: 600px;
+}
+.latest .post-card {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.whoami-card {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: var(--space-3) 5%;
+  border: 1px solid color-mix(in srgb, var(--color-accent) 45%, transparent);
+  background: color-mix(in srgb, var(--color-accent) 8%, transparent);
+}
+.whoami-card__name {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  color: var(--color-heading);
+  margin-bottom: var(--space-1);
+}
+.whoami-card__line {
+  font-style: italic;
+  opacity: 0.9;
+}
+.whoami-card__links {
+  margin-top: var(--space-2);
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+.whoami-card__links a {
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--color-accent) 55%, transparent);
+}
+@media (min-width: 700px) {
+  .whoami-card { max-width: 640px; }
+}
+</style>
+
+<section class="frontdoor-intro">
+  <p class="fd-marker">// THE NOVEL</p>
+  <p>I started writing a book in public. It's set in Singapore and Southeast Asia.</p>
+  <p>The politics in these pieces live in bodies, not in arguments.</p>
+  <p class="frontdoor-intro__door"><a href="{{ '/black-cat/' | relative_url }}">The whole book on one line →</a></p>
+</section>
+
+{% include line-map.html %}
 
 <section class="latest">
-  <p class="latest-label">Latest</p>
+  <p class="fd-marker">// LATEST</p>
+  {%- assign latest = site.posts | slice: 0, 5 -%}
   {% for post in latest %}
     {% include post-card.html post=post %}
   {% endfor %}
 </section>
 
-<section class="start-here">
-  <article class="post-card post-card--start-here">
-    <p class="post-card__eyebrow">Start Here →</p>
-    <h2 class="post-card__title"><a href="{{ '/about/' | relative_url }}">About</a></h2>
-    <p class="post-card__subtitle">At home in a world crowded with agenda.</p>
+<section class="whoami">
+  <p class="fd-marker">// WHOAMI</p>
+  <article class="whoami-card">
+    <p class="whoami-card__name">Claire</p>
+    <p class="whoami-card__line">I write the novel in public and the essays underneath it.</p>
+    <p class="whoami-card__links">
+      <a href="{{ '/about/' | relative_url }}">About</a>
+      <a href="https://cseet.substack.com" rel="me">Unfinished, on Substack</a>
+    </p>
   </article>
 </section>
