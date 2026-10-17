@@ -90,7 +90,7 @@ a {
 .site-title {
   font-family: var(--font-sans);
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 500; /* Claire's font pass, 2026 Oct 17: 600->500 site-wide */
   text-decoration: none;
   color: var(--color-text);
 }
@@ -126,7 +126,7 @@ a {
 .section-label,
 .post__title,
 .post-card__title {
-  font-weight: 600;
+  font-weight: 500; /* Claire's font pass, 2026 Oct 17: 600->500 site-wide */
   line-height: 1.25;
   font-size: 1.9rem; /* FIX #17: open the gap - was ~20px against an 18px body */
 }
