@@ -10,6 +10,16 @@ This is the reasoning behind how the site was built, not just the result. Nothin
 
 Every heading level, blockquote, list, and shortcode the site currently knows how to render, shown together — both a visual reference for tuning sizing and spacing, and a usage guide for the shortcodes themselves, parameters included. Still a working draft, not finished prose.
 
+Since July this guide has grown from a reference into the site's law. What the later passes added, and where it is written down here:
+
+- **The reading toggles (dark/sepia, easy-read)** — why they exist, the dyslexia reasoning, and what each one changes and never changes: see "The reading toggles — dark/sepia and easy-read, and why" below.
+- **Noto Serif on all surfaces** — the default reading face everywhere; the only swap is the easy-read toggle's Atkinson Hyperlegible, and it swaps only the body reading face, never the sans furniture, never the palette.
+- **Line-height matched to the typeface's own metrics** — Atkinson Hyperlegible renders at the specimen's own 1.5; the accessibility work lives in letter spacing, word spacing, and open letter shapes, not inflated line gaps.
+- **Paired spacing rhythm** — elements that belong together read as one unit: the section marker and its hint (2px), the band header and its stations (4px), each station title and its dek (tightened to the same rhythm). When a title floats free of what it labels, the fix is measured, not guessed: the numbers come from live DOM measurement at phone width.
+- **Owned fonts** — three families, self-hosted woff2, zero third-party requests (the tiny Material icon is the sole exception): Noto Serif for reading, Montserrat for furniture, Atkinson Hyperlegible for the easy-read toggle. Lexend was retired 2026 Oct 17.
+- **Footnotes are the citation apparatus** — native kramdown `[^n]` syntax everywhere, including essays: numbered references stay visible at the bottom as part of the argument, multi-source footnotes chain with ` · `, parenthesized URLs get angle-bracket wrapping. The Vision, Not the Theatrics carries 18 in live use.
+- **Measured, not estimated** — every spacing decision on this list came from reading the rendered DOM at phone width, not from arithmetic on stylesheet values. Green builds certify nothing; the rendered page is the verdict.
+
 {% include divider.html %}
 
 ### Heading levels
