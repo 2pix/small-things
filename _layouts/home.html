@@ -32,7 +32,11 @@ layout: default
   position: relative;
   max-height: 340px; /* cut sits just after station 5 (I Didn't Look Down); the whole 2012 band dissolves */
   overflow: hidden;
-  -webkit-mask-image: linear-gradient(to bottom, black 68%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 75%, transparent 100%); /* dark: dissolve starts later so lines stay lighter longer (Claire, 2026 Oct 17) */
+  mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+}
+:root[data-theme="sepia"] .lm-cut {
+  -webkit-mask-image: linear-gradient(to bottom, black 68%, transparent 100%); /* sepia tone is forgiving, keeps the earlier fade */
   mask-image: linear-gradient(to bottom, black 68%, transparent 100%);
 }
 .fd-door {
