@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Front door preview — Art of Small Things</title>
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+/* ============================================================
+   FRONT DOOR (home layout, 2026 Oct 17) - settled shape:
+   intro -> the Line -> WHOAMI, Latest demoted below.
+   Borrow grammar from the docs-site audit: // marker, 3px accent
+   bar, one-accent discipline. Her palette, not his darkness.
+   ============================================================ */
+.fd-marker {
+  font-family: ui-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  border-left: 3px solid var(--color-accent);
+  padding-left: 9px;
+  margin: var(--space-4) 0 var(--space-2);
+}
+.frontdoor-intro p {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+.frontdoor-intro .fd-marker {
+  margin-left: calc(5% + 1px);
+  margin-right: 5%;
+  padding-left: 9px;
+  padding-right: 0;
+  max-width: 600px;
+}
+.frontdoor-intro__door {
+  margin-top: var(--space-2);
+}
+.frontdoor-intro__door a {
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--color-accent) 55%, transparent);
+}
+.frontdoor-intro + .lm {
+  margin-top: var(--space-6);
+}
+.latest .fd-marker {
+  margin-left: calc(5% + 1px);
+  margin-right: 5%;
+  max-width: 600px;
+}
+.latest .post-card {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.whoami-card {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: var(--space-3) 5%;
+  border: 1px solid color-mix(in srgb, var(--color-accent) 45%, transparent);
+  background: color-mix(in srgb, var(--color-accent) 8%, transparent);
+}
+.whoami-card__name {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  color: var(--color-heading);
+  margin-bottom: var(--space-1);
+}
+.whoami-card__line {
+  font-style: italic;
+  opacity: 0.9;
+}
+.whoami-card__links {
+  margin-top: var(--space-2);
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+.whoami-card__links a {
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--color-accent) 55%, transparent);
+}
+@media (min-width: 700px) {
+  .whoami-card { max-width: 640px; }
+}
+
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-title-row site-title-row--home">
+    <a href="#" class="site-title site-title--home">The Art of Small Things</a>
+    <p class="site-subtitle site-subtitle--home">At home in a world crowded with agenda.</p>
+  </div>
+</header>
+<main>
+<section class="frontdoor-intro">
+  <p class="fd-marker">// THE NOVEL</p>
+  <p>This is a novel written in scenes, out in the open. Singapore and Southeast Asia.</p>
+  <p>The politics in these pieces live in bodies, not in arguments.</p>
+  <p class="frontdoor-intro__door"><a href="#">Start on the Line, at station 1: Create from Nothing →</a></p>
+</section>
+
+<div class="lm">
+<div class="lm__band"><span class="lm__banddot" style="background:#5f9e7e"></span>2025</div>
+<div class="lm__st"><span class="lm__num">1</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-02-05-create-from-nothing/">Create from Nothing</a></span><span class="lm__dek">1: On attention, exile, and returning to what is already yours</span></div>
+<div class="lm__st"><span class="lm__num">2</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-02-11-a-place-where-no-one-performs/">A Place Where No One Performs</a></span><span class="lm__dek">2: And No One Needs To</span></div>
+<div class="lm__st"><span class="lm__num">3</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-02-14-walk-with-me/">Walk With Me</a></span><span class="lm__dek">3: Depth without performance</span></div>
+<div class="lm__st lm__lie"><span class="lm__num">4</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-02-20-the-bars-lie-1/">The Bars — Lie 1</a></span><span class="lm__dek">4: A lie. On self-abandonment</span><span class="lm__tag">LIE</span></div>
+<div class="lm__st lm__lie"><span class="lm__num">5</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-02-27-i-didnt-look-down/">I Didn't Look Down — Lie 2</a></span><span class="lm__dek">5. A Lie. I just never noticed someone was holding it.</span><span class="lm__tag">LIE</span></div>
+<div class="lm__band"><span class="lm__banddot" style="background:#5e8fa8"></span>2012</div>
+<div class="lm__st"><span class="lm__num">6</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-03-02-2012-body/">Body</a></span><span class="lm__dek">6. Before the floor</span></div>
+<div class="lm__st"><span class="lm__num">7</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-03-08-2012-guangzhou/">GuangZhou</a></span><span class="lm__dek">7. Where the squeezing stopped</span></div>
+<div class="lm__st"><span class="lm__num">8</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-03-11-2012-four-days-more/">Four Days More</a></span><span class="lm__dek">8. You haven't solved anything. You've just been somewhere else.</span></div>
+<div class="lm__st"><span class="lm__num">9</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-03-14-i-know-you-did/">I know you did</a></span><span class="lm__dek">9. He was present, warm, and somewhere else entirely.</span></div>
+<div class="lm__st"><span class="lm__num">10</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-03-17-the-studio-floor/">The Studio Floor</a></span><span class="lm__dek">10. The week had been ordinary. That was the thing about it.</span></div>
+<div class="lm__st"><span class="lm__num">11</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-03-19-without-looking/">Without Looking</a></span><span class="lm__dek">11. The table stays the same. You don't.</span></div>
+<div class="lm__st"><span class="lm__num">12</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-03-21-sometime-in-the-future/">Sometime in the Future</a></span><span class="lm__dek">12. A kitchen tells the truth before the people in it do.</span></div>
+<div class="lm__st"><span class="lm__num">13</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-03-22-the-week-before/">The Week Before</a></span><span class="lm__dek">13. What the Heart Records When No One's Watching</span></div>
+<div class="lm__st"><span class="lm__num">14</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-03-24-a-different-kind-of-quiet/">The Room is There</a></span><span class="lm__dek">14. A meditation on space and sensation</span></div>
+<div class="lm__st"><span class="lm__num">15</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-03-27-not-enough-room/">Not Enough Room</a></span><span class="lm__dek">15. A Man Who Has Never Spent a Saturday in His Own Apartment</span></div>
+<div class="lm__st"><span class="lm__num">16</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-04-01-the-garden-wont-do-itself/">The Garden Won't Do Itself</a></span><span class="lm__dek">16. Twelve Days of Being Nobody in Particular</span></div>
+<div class="lm__st lm__lie"><span class="lm__num">17</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-04-04-neither-of-you-is-lying-lie-3/">Neither of you is Lying - Lie 3</a></span><span class="lm__dek">Lie 17: Enough honest doors, built from True materials, add up to a house you can live in with integrity.</span><span class="lm__tag">LIE</span></div>
+<div class="lm__st"><span class="lm__num">18</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-04-09-the-return/">The Return</a></span><span class="lm__dek">18. He only knew his part.</span></div>
+<div class="lm__st lm__lie"><span class="lm__num">19</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-04-14-enough/">Enough: another lie about love</a></span><span class="lm__dek">19. Lie. She asked the right question. I was answering mine.</span><span class="lm__tag">LIE</span></div>
+<div class="lm__band"><span class="lm__banddot" style="background:#8a7ea8"></span>2013</div>
+<div class="lm__st"><span class="lm__num">20</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-04-14-kunming/">Kunming</a></span><span class="lm__dek">20. 昆明 — Bright Clarity</span></div>
+<div class="lm__st"><span class="lm__num">22</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-04-14-two-lines/">Two Lines</a></span><span class="lm__dek">21. He left the notebook on the desk. The phone was enough.</span></div>
+<div class="lm__st"><span class="lm__num">23</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-04-19-not-the-margin-but-the-person-first/">Not the Margin, but the person first</a></span><span class="lm__dek">23. It is enough to have done today's part.</span></div>
+<div class="lm__band"><span class="lm__banddot" style="background:#7a6ba8"></span>2014</div>
+<div class="lm__st"><span class="lm__num">24</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-04-20-burnout-is-what-you-call-it/">Burn out is what you call it</a></span><span class="lm__dek">24. HCMC - 2014</span></div>
+<div class="lm__st"><span class="lm__num">25</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-04-22-sixty-thirty-ten/">Sixty-Thirty-Ten</a></span><span class="lm__dek">25. The ease of something exact</span></div>
+<div class="lm__st"><span class="lm__num">26</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-04-23-not-in-the-way-you-mean/">Not in the way you mean</a></span><span class="lm__dek">26. KL, December 2014</span></div>
+<div class="lm__band"><span class="lm__banddot" style="background:#b0685a"></span>2024</div>
+<div class="lm__st"><span class="lm__num">27</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-04-26-what-was-owed/">What Was Owed</a></span><span class="lm__dek">27. Dec 2024 - He Was Fifty-One. He Had Been, By Every Account, Very Busy.</span></div>
+<div class="lm__st"><span class="lm__num">28</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-05-25-the-borrowed-coat/">The Borrowed Coat</a></span><span class="lm__dek">28. She had been looking. Just not only at dogs.</span></div>
+<div class="lm__band"><span class="lm__banddot" style="background:#5f9e7e"></span>2025</div>
+<div class="lm__st"><span class="lm__num">29</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-05-27-four-hours-is-more-than-enough/">Four Hours Is More Than Enough</a></span><span class="lm__dek">29. On stopping before you're wrecked</span></div>
+<div class="lm__st"><span class="lm__num">30</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-05-28-the-handle-sits/">The Handle Sits</a></span><span class="lm__dek">30. A morning in Spottiswoode</span></div>
+<div class="lm__st"><span class="lm__num">31</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-06-02-the-uncommon-kitchen/">The Uncommon Kitchen</a></span><span class="lm__dek">31. She had made this dish close to the way her mother had made it and not close at all</span></div>
+<div class="lm__st"><span class="lm__num">32</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-06-02-the-right-number/">The Right Number</a></span><span class="lm__dek">32. A lie. The knowledge lives in the correction.</span></div>
+<div class="lm__st"><span class="lm__num">33</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-06-03-the-live/">The Live</a></span><span class="lm__dek">33. You think watching is safer. It isn't.</span></div>
+<div class="lm__st"><span class="lm__num">34</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-06-04-the-right-height/">The Right Height</a></span><span class="lm__dek">34. Things had been surfacing. She wasn't sure when they started.</span></div>
+<div class="lm__st"><span class="lm__num">35</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-06-06-still-landing/">Still Landing</a></span><span class="lm__dek">35. The current runs differently than the script assumed it would.</span></div>
+<div class="lm__st"><span class="lm__num">36</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-06-10-the-longer-walk/">The Longer Walk</a></span><span class="lm__dek">36. He had been in other people's questions all day.</span></div>
+<div class="lm__st lm__lie"><span class="lm__num">37</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-06-13-the-architecture-of-nothing/">The Architecture of Nothing</a></span><span class="lm__dek">37. A Lie. What are you the gravity of?</span><span class="lm__tag">LIE</span></div>
+<div class="lm__st"><span class="lm__num">38</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-06-21-what-holds/">What Holds</a></span><span class="lm__dek">38. Saying it had become less effort than not saying it.</span></div>
+<div class="lm__st"><span class="lm__num">39</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-06-22-the-writing-night/">The Writing Night</a></span><span class="lm__dek">39. The love was in the not-needing-to-look.</span></div>
+<div class="lm__st lm__lie"><span class="lm__num">40</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-06-24-what-the-survival-was-for/">What the survival was for</a></span><span class="lm__dek">Lie 40. The instruction was given in good faith.</span><span class="lm__tag">LIE</span></div>
+<div class="lm__st"><span class="lm__num">41</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-06-27-the-apple/">The Apple</a></span><span class="lm__dek">41. She wasn't closing any doors. She just wasn't opening them either.</span></div>
+<div class="lm__st"><span class="lm__num">42</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-07-29-start-small/">Start Small</a></span><span class="lm__dek">42. The first time you've said that out loud.</span></div>
+<div class="lm__st"><span class="lm__num">43</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-07-30-uncomfortable-questions/">Uncomfortable Questions</a></span><span class="lm__dek">A Sunday brunch in Singapore. Two neighbours ask each other about marriage, wanting, and who they’d grow old beside - questions they can’t ask themselves.</span></div>
+<div class="lm__st"><span class="lm__num">44</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-09-10-something-came-loose/">Something came Loose</a></span><span class="lm__dek">A phone call with David about hiring his mother’s caregiver turns into real advice about dignity over competence. Walking home, Amandha faces down a marriage built on staying rather than wanting, and decides to keep her own flat unfinished, on purpose.</span></div>
+<div class="lm__st lm__lie"><span class="lm__num">45</span><span class="lm__dot"></span><span class="lm__t"><a href="/black-cat/2026-09-27-never-twice/">Never Twice</a></span><span class="lm__dek">A dog’s thirteen years of reading a body versus a screen. When she finally trusts the first signal instead of waiting for a second one, something between them settles differently.</span><span class="lm__tag">LIE</span></div>
+<div class="lm__st lm__future"><span class="lm__num">·</span><span class="lm__dot"></span></div>
+<div class="lm__band"><span class="lm__banddot" style="background:var(--color-accent)"></span>2026</div>
+</div>
+
+<section class="latest">
+  <p class="fd-marker">// LATEST</p>
+  
+<article class="post-card">
+  <a class="post-card__excerpt-link" href="#">
+    <h2 class="post-card__title"><a href="#">Never Twice</a></h2>
+    <p class="post-card__subtitle">3: The day the door did not stay shut</p>
+    <p class="post-card__meta">2026 Sep 27 · Black Cat</p>
+  </a>
+</article>
+<article class="post-card">
+  <a class="post-card__excerpt-link" href="#">
+    <h2 class="post-card__title"><a href="#">Something Came Loose</a></h2>
+    <p class="post-card__subtitle">2: On the day the routine broke</p>
+    <p class="post-card__meta">2026 Sep 10 · Black Cat</p>
+  </a>
+</article>
+<article class="post-card">
+  <a class="post-card__excerpt-link" href="#">
+    <h2 class="post-card__title"><a href="#">The Vision, Not the Theatrics</a></h2>
+    <p class="post-card__subtitle">What survives capture in mutual aid</p>
+    <p class="post-card__meta">2026 Oct 9 · The Floor</p>
+  </a>
+</article>
+<article class="post-card">
+  <a class="post-card__excerpt-link" href="#">
+    <h2 class="post-card__title"><a href="#">Uncomfortable Questions</a></h2>
+    <p class="post-card__subtitle">1: Where the asking starts</p>
+    <p class="post-card__meta">2026 Jul 30 · Black Cat</p>
+  </a>
+</article>
+
+</section>
+
+<section class="whoami">
+  <p class="fd-marker">// WHOAMI</p>
+  <article class="whoami-card">
+    <p class="whoami-card__name">Claire</p>
+    <p class="whoami-card__line">I write the novel in public and the essays underneath it.</p>
+    <p class="whoami-card__links"><a href="#">About</a> <a href="#">Unfinished, on Substack</a></p>
+  </article>
+</section>
+</main>
+<footer class="site-footer" style="max-width:600px;margin:0 auto;padding:32px 5%;font-size:.8rem;opacity:.7">artofsmallthings.com — front door preview, 2026 Oct 17</footer>
+</body>
+</html>
