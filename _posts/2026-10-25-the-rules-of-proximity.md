@@ -6,7 +6,7 @@ redirect_from:
 category: black-cat
 description: "Saturday in Singapore. He comes with money for two coffees and a story about a caregiver. She reads him in one sentence, then opens her bag."
 ---
-{% include image.html src="/assets/images/yogi-empty-flat.png" alt="An old dog sitting in the corner of an empty room beside a window, looking straight into the camera" caption="Saturday" straight=true %}
+{% include image.html src="/assets/images/yogi-empty-flat.png" alt="An old dog sitting in the corner of an empty room beside a window, looking straight into the camera" caption="The one she did not plan." straight=true %}
 
 The stool is warm from the morning sun. He chose the corner, back to the wall, the angle that lets him see the door without seeming to watch it. Mark is at the counter with his back to the room, adjusting the grind. The sound comes in bursts, a whir and a stop, then the soft knock of the portafilter against the bin. 
 
