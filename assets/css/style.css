@@ -927,8 +927,8 @@ main {
 /* Claire's hand-drawn rail icons (2026 Oct 25) - alpha masks, recolor with currentColor */
 .rail-icon {
   display: block;
-  width: 60px;
-  height: 60px;
+  width: 39px;
+  height: 39px;
   background-color: currentColor;
   -webkit-mask-size: contain;
   mask-size: contain;
