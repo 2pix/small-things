@@ -45,6 +45,10 @@ exclude:
   - 00-README.md
   - black-cat/00-Index.md
   - small-things/00-Index.md
+  # Working documents that must never reach the live site (2026 Oct 23).
+  # Folders beginning with _ are ignored by Jekyll, but that is a convention
+  # rather than a promise, so it is listed here explicitly.
+  - _ignore
   - the-floor/00-Index.md
   - about/00-Index.md
   - RULES.md
