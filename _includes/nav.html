@@ -1,7 +1,7 @@
 <nav class="stories-row">
   <a href="{{ '/' | relative_url }}" class="rail-logo" aria-label="{{ site.title }}">
     <span class="rail-logo__mark" aria-hidden="true">
-      <span class="rail-icon rail-icon--logo" style="-webkit-mask-image:url('/assets/icons/icon-01.png');mask-image:url('/assets/icons/icon-01.png')"></span>
+      <span class="rail-icon rail-icon--logo" style="-webkit-mask-image:url('/assets/icons/icon-01.png?v=2');mask-image:url('/assets/icons/icon-01.png?v=2')"></span>
     </span>
   </a>
   <div class="rail-nav-middle">
@@ -11,11 +11,11 @@
       <span class="rail-icon story-pill__icon" aria-hidden="true"
         {% case section.key %}
         {% when 'black-cat' %}
-        style="-webkit-mask-image:url('/assets/icons/icon-03.png');mask-image:url('/assets/icons/icon-03.png')"
+        style="-webkit-mask-image:url('/assets/icons/icon-03.png?v=2');mask-image:url('/assets/icons/icon-03.png?v=2')"
         {% when 'the-floor' %}
-        style="-webkit-mask-image:url('/assets/icons/icon-02.png');mask-image:url('/assets/icons/icon-02.png')"
+        style="-webkit-mask-image:url('/assets/icons/icon-02.png?v=2');mask-image:url('/assets/icons/icon-02.png?v=2')"
         {% when 'small-things' %}
-        style="-webkit-mask-image:url('/assets/icons/icon-05.png');mask-image:url('/assets/icons/icon-05.png')"
+        style="-webkit-mask-image:url('/assets/icons/icon-05.png?v=2');mask-image:url('/assets/icons/icon-05.png?v=2')"
         {% endcase %}></span>
       <span class="story-pill__label">{{ section.label }}</span>
       <span class="story-pill__dot" aria-hidden="true"></span>
@@ -23,7 +23,7 @@
     {% endfor %}
   </div>
   <a href="{{ '/about/' | relative_url }}" class="story-pill story-pill--about{% if page.url == '/about/' %} is-active{% endif %}">
-    <span class="rail-icon story-pill__icon" aria-hidden="true" style="-webkit-mask-image:url('/assets/icons/icon-04.png');mask-image:url('/assets/icons/icon-04.png')"></span>
+    <span class="rail-icon story-pill__icon" aria-hidden="true" style="-webkit-mask-image:url('/assets/icons/icon-04.png?v=2');mask-image:url('/assets/icons/icon-04.png?v=2')"></span>
     <span class="story-pill__label">About</span>
   </a>
 </nav>
