@@ -1,0 +1,63 @@
+# artofsmallthings.com
+# Search engines and answer engines are both welcome. Nothing here is paywalled,
+# so there is nothing to withhold. Written 2026 Oct 30: the crawlers are named
+# rather than allowed by omission, so the decision is on the record.
+#
+# Note: jekyll-sitemap generates a robots.txt containing only the Sitemap line
+# when the site has none. This file takes precedence over that.
+
+User-agent: *
+Allow: /
+
+# OpenAI
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: Claude-User
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+
+# Google (Gemini training and grounding) and Apple Intelligence
+User-agent: Google-Extended
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+
+# Common Crawl, which feeds many open datasets
+User-agent: CCBot
+Allow: /
+
+# ByteDance. The largest of these by traffic, and it has been documented
+# ignoring robots.txt. Named for the record, not for control.
+User-agent: Bytespider
+Allow: /
+
+# Amazon, Cohere, Mistral, DuckDuckGo's assistant, and Meta
+User-agent: Amazonbot
+Allow: /
+User-agent: cohere-ai
+Allow: /
+User-agent: MistralAI-Training
+Allow: /
+User-agent: DuckAssistBot
+Allow: /
+User-agent: meta-externalagent
+Allow: /
+User-agent: meta-webindexer
+Allow: /
+
+Sitemap: https://artofsmallthings.com/sitemap.xml
